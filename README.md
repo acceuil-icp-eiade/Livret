@@ -1,7 +1,4 @@
 <head>
-* {
-  box-sizing: border-box;
-}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil Étudiants IADE - ICP</title>
