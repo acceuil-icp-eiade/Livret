@@ -1,4 +1,7 @@
 <head>
+* {
+  box-sizing: border-box;
+}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil Étudiants IADE - ICP</title>
@@ -8,6 +11,7 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
+      padding: 10px
       background-color: #f7f9fb;
       color: #2c3e50;
     }
