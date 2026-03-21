@@ -94,13 +94,13 @@
   </div>
 
   <div class="card">
-    <h2>📚 Documents utiles</h2>
-    <ul>
-      <li><a href="#">Protocoles anesthésie</a></li>
-      <li><a href="#">Check-list sécurité</a></li>
-      <li><a href="#">Fiche urgences</a></li>
-    </ul>
-  </div>
+  <h2>📚 Documents utiles</h2>
+  <ul>
+    <li><a href="protocoles.pdf" target="_blank">Protocoles anesthésie</a></li>
+    <li><a href="checklist.pdf" target="_blank">Check-list sécurité</a></li>
+    <li><a href="urgence-anesthesie.pdf" target="_blank">Fiche urgences</a></li>
+  </ul>
+</div>
 
   <div class="card">
     <h2>📞 Contacts</h2>
