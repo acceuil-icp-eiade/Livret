@@ -1,60 +1,72 @@
+<<!DOCTYPE html>
+<html lang="fr">
 <head>
-* {
-  box-sizing: border-box;
-}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil Étudiants IADE - ICP</title>
-<!DOCTYPE html>
+  <title>Accueil IADE - ICP</title>
 
   <style>
+    * { box-sizing: border-box; }
+
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 10px
-      background-color: #f7f9fb;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f4f6f8;
       color: #2c3e50;
     }
 
     header {
       background: linear-gradient(135deg, #5dade2, #48c9b0);
       color: white;
-      padding: 30px;
+      padding: 20px;
       text-align: center;
     }
 
-    h1 {
-      margin: 0;
+    .login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      padding: 20px;
+    }
+
+    input {
+      padding: 12px;
+      margin: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 200px;
+      text-align: center;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
     }
 
     .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+      padding: 15px;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 12px;
+      border-radius: 15px;
+      padding: 18px;
+      margin-bottom: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
-    h2 {
-      color: #3498db;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #7f8c8d;
-      font-size: 14px;
-    }
+    h2 { color: #3498db; }
   </style>
 </head>
 
@@ -62,71 +74,57 @@
 
 <header>
   <h1>Bienvenue à l’ICP ❤️</h1>
-  <p>Bloc opératoire – Accueil des étudiants IADE</p>
+  <p>Accueil des étudiants IADE</p>
 </header>
 
-<div class="container">
-
-  <div class="card">
-    <h2>👋 Message de bienvenue</h2>
-    <p>
-      Toute l’équipe du bloc opératoire de l’Institut Cœur Poumon est ravie de vous accueillir.  
-      Nous savons que les débuts peuvent être impressionnants — ici, vous êtes là pour apprendre, progresser et poser toutes vos questions.
-    </p>
-    <p><strong>👉 Il n’y a pas de “mauvaises questions”.</strong></p>
-  </div>
-
-  <div class="card">
-    <h2>📍 Votre premier jour</h2>
-    <ul>
-      <li><strong>Heure :</strong> 7h30</li>
-      <li><strong>Lieu :</strong> Salle de repos du bloc</li>
-      <li><strong>Tenue :</strong> Pyjama de bloc</li>
-      <li><strong>À prévoir :</strong> Badge, carnet de stage</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>🏥 Organisation du service</h2>
-    <ul>
-      <li>Bloc opératoire</li>
-      <li>SSPI</li>
-      <li>Consultation d’anesthésie</li>
-    </ul>
-    <p>
-      Vous serez encadré(e) par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
-    </p>
-  </div>
-
-  <div class="card">
-  <h2>📚 Documents utiles</h2>
-  <ul>
-    <li><a href="protocoles.pdf" target="_blank">Protocoles anesthésie</a></li>
-    <li><a href="checklist.pdf" target="_blank">Check-list sécurité</a></li>
-    <li><a href="urgence-anesthesie.pdf" target="_blank">Fiche urgences</a></li>
-  </ul>
+<!-- 🔐 ÉCRAN DE CONNEXION -->
+<div id="loginPage" class="login">
+  <h2>Accès réservé</h2>
+  <input type="password" id="password" placeholder="Mot de passe">
+  <button onclick="checkPassword()">Entrer</button>
+  <p id="error" style="color:red;"></p>
 </div>
 
-  <div class="card">
-    <h2>📞 Contacts</h2>
-    <p><strong>Cadre :</strong> (à compléter)</p>
-    <p><strong>Référent IADE :</strong> (à compléter)</p>
-  </div>
+<!-- CONTENU -->
+<div id="content" class="hidden">
 
-  <div class="card">
-    <h2>💬 Petit mot pour vous</h2>
-    <p>
-      Le bloc est un environnement exigeant, mais aussi passionnant.  
-      Prenez le temps d’observer, de comprendre… et surtout de vous faire confiance.
-    </p>
-    <p><strong>On est là pour vous accompagner 🤝</strong></p>
+  <div class="container">
+
+    <div class="card">
+      <h2>👋 Bienvenue</h2>
+      <p>
+        Toute l’équipe est ravie de vous accueillir au bloc opératoire de l’ICP.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>📄 Documents</h2>
+      <ul>
+        <li><a href="docs/protocoles.pdf" target="_blank">Protocoles</a></li>
+        <li><a href="docs/checklist.pdf" target="_blank">Check-list</a></li>
+        <li><a href="docs/urgence.pdf" target="_blank">Urgences</a></li>
+      </ul>
+    </div>
+
   </div>
 
 </div>
 
-<footer>
-  Institut Cœur Poumon – Bloc opératoire
-</footer>
+<script>
+  function checkPassword() {
+    const password = document.getElementById("password").value;
+    
+    // 🔑 MOT DE PASSE À MODIFIER ICI
+    const correctPassword = "iade543";
+
+    if (password === correctPassword) {
+      document.getElementById("loginPage").classList.add("hidden");
+      document.getElementById("content").classList.remove("hidden");
+    } else {
+      document.getElementById("error").innerText = "Mot de passe incorrect";
+    }
+  }
+</script>
 
 </body>
 </html>
