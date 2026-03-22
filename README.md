@@ -202,7 +202,7 @@ function checkPassword() {
   const password = document.getElementById("password").value;
 
   // 🔑 CHANGE TON MOT DE PASSE ICI
-  const correctPassword = "suivi du livret";
+  const correctPassword = "iadeicp543";
 
   if (password === correctPassword) {
     document.getElementById("loginPage").classList.add("hidden");
