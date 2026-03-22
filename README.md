@@ -138,8 +138,8 @@
   <div class="card">
     <h2>📍 Votre premier jour</h2>
     <ul>
-      <li><strong>Heure :</strong> 7h30</li>
-      <li><strong>Lieu :</strong> Salle de repos du bloc</li>
+      <li><strong>Heure :</strong> 8h</li>
+      <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
       <li><strong>Tenue :</strong> Pyjama de bloc</li>
       <li><strong>À prévoir :</strong> Badge, carnet de stage</li>
     </ul>
