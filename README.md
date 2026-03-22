@@ -140,7 +140,7 @@
     <ul>
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
-      <li><strong>Tenue :</strong> Pyjama de bloc</li>
+      <li><strong>Tenue :</strong> Pyjama de bloc, calot, masque </li>
       <li><strong>À prévoir :</strong> Badge, feuilles de stage</li>
     </ul>
   </div>
