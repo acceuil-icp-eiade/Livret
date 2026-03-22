@@ -141,7 +141,7 @@
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
       <li><strong>Tenue :</strong> Pyjama de bloc</li>
-      <li><strong>À prévoir :</strong> Badge, carnet de stage</li>
+      <li><strong>À prévoir :</strong> Badge, feuilles de stage</li>
     </ul>
   </div>
 
@@ -176,8 +176,8 @@
 
   <div class="card">
     <h2>📞 Contacts</h2>
-    <p><strong>Cadre :</strong> (à compléter)</p>
-    <p><strong>Référent IADE :</strong> (à compléter)</p>
+    <p><strong>Cadre :</strong> Mme hennache</p>
+    <p><strong>Référent IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
   </div>
 
   <div class="card">
