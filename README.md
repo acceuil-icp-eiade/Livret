@@ -109,7 +109,7 @@
 <body>
 
 <header>
-  <h1>Bienvenue à l’ICP ❤️</h1>
+  <h1>Bienvenue à l’ICP ❤️ 🫁</h1>
   <p>Bloc opératoire – Accueil des étudiants IADE</p>
 </header>
 
