@@ -132,7 +132,7 @@
       Toute l’équipe du bloc opératoire de l’Institut Cœur Poumon est ravie de vous accueillir.  
       Nous savons que les débuts peuvent être impressionnants — ici, vous êtes là pour apprendre, progresser et poser toutes vos questions.
     </p>
-    <p><strong>👉 Il n’y a pas de “mauvaises questions”.</strong></p>
+    <p><strong>👉 Il n’y a que des bonnes questions.</strong></p>
   </div>
 
   <div class="card">
@@ -140,7 +140,7 @@
     <ul>
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
-      <li><strong>Tenue :</strong> Pyjama de bloc, calot, masque </li>
+      <li><strong>Tenue :</strong> Pyjama de bloc, calot, masque, chaussures dédiées</li>
       <li><strong>À prévoir :</strong> Badge, feuilles d'évaluation de stage</li>
     </ul>
   </div>
@@ -165,19 +165,23 @@
     </a>
 
     <a class="btn" href="docs/checklist.pdf" target="_blank">
-      ✅ Check-list sécurité
+      ✅ les chirurgies 
     </a>
 
     <a class="btn" href="docs/urgence.pdf" target="_blank">
       🚨 Urgences anesthésie
     </a>
 
+    <a class="btn" href="doc/telephone.pdf" target="_blank">
+      ☎️ Telephone 
+      </a>
+
   </div>
 
   <div class="card">
     <h2>📞 Contacts</h2>
-    <p><strong>Cadre :</strong> Mme hennache</p>
-    <p><strong>Référent IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
+    <p><strong>Cadre :</strong> Mme Hennache</p>
+    <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
   </div>
 
   <div class="card">
