@@ -150,7 +150,7 @@
     <ul>
       <li>Bloc opératoire</li>
       <li>SSPI</li>
-      <li>Consultation d’anesthésie</li>
+      <li>PTI</li>
     </ul>
     <p>
       Vous serez encadré(e) par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
@@ -173,7 +173,7 @@
     </a>
 
     <a class="btn" href="doc/telephone.pdf" target="_blank">
-      ☎️ Telephone 
+      ☎️ Telephones
       </a>
 
   </div>
