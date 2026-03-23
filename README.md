@@ -163,11 +163,11 @@
 .video.show {
   opacity: 1;
 }
-  </style>
 
 body {
   padding-bottom: 70px;
 }
+</style>
 </head>
 <div>
 <div class="bottom-menu">
