@@ -337,7 +337,7 @@ body {
     Votre avis est essentiel pour améliorer l’accueil des étudiants.
   </p>
 
-  <a class="btn" href="TON_LIEN_GOOGLE_FORM" target="_blank">
+  <a class="btn" href=""https://forms.gle/4ATLvfYK83cmkXiN7 target="_blank">
     📝 Donner mon avis
     
   </a>
