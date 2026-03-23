@@ -255,7 +255,7 @@ body {
     <p>👉 Espace de repos réservé à l’équipe.</p>
   </div>
   <div class="info">
-    <h3>🍽️ Salle à manger</h3>
+    <h3>🍽️ Salle à manger, restauration</h3>
     <p>La salle à manger est située (à compléter).</p>
     <p>👉 Possibilité de réchauffer vos repas sur place.
     </p>
