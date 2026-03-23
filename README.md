@@ -302,6 +302,66 @@ body {
     <a class="btn" href="docs/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
     </a>
+    <h2>Fiches par spécialité</h2>
+
+<div class="fiche-container">
+
+  <div class="fiche">
+    <a href="pdf/chirurgie_cardiaque.pdf" target="_blank">
+      <strong>Chirurgie cardiaque</strong><br>
+      📄 Télécharger la fiche
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/chirurgie_thoracique.pdf" target="_blank">
+      <strong>Chirurgie thoracique</strong><br>
+      📄 Télécharger la fiche
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/chirurgie_vasculaire.pdf" target="_blank">
+      <strong>Chirurgie vasculaire</strong><br>
+      📄 Télécharger la fiche
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/cardiologie_interventionnelle.pdf" target="_blank">
+      <strong>Cardiologie interventionnelle</strong><br>
+      📄 Télécharger la fiche
+    </a>
+  </div>
+
+</div>
+
+<style>
+.fiche-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.fiche {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.fiche a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.fiche:hover {
+  background: #e6f2ff;
+  transform: translateY(-2px);
+}
+</style>
 
     <a class="btn" href="docs/urgences.pdf" target="_blank">
       🚨 Urgences anesthésie
