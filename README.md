@@ -334,7 +334,9 @@ body {
       📄 Télécharger la fiche
     </a>
   </div>
-
+.fiche:last-child {
+  margin-bottom: 25px;
+}
 
 </div>
 
