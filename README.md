@@ -153,7 +153,7 @@
       <li>PTI</li>
     </ul>
     <p>
-      Vous serez encadré(e) par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
+      Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
     </p>
   </div>
 
