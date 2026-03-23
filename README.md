@@ -166,7 +166,7 @@
   </style>
 </head>
 <div class="bottom-menu">
-  <a href="#documents"📑</a>
+  <a href="#documents">📑</a>
   <a href="#pratique">🏥</a>
   <a href="#visite">🎥</a>
 </div>
