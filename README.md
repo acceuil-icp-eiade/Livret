@@ -127,6 +127,42 @@
   margin: 0 0 5px 0;
   font-size: 16px;
 }
+    .video-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #48c9b0, #5dade2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.video-btn:active {
+  transform: scale(0.98);
+}
+
+.video {
+  margin-top: 15px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.video.show {
+  opacity: 1;
+}
   </style>
 </head>
 
@@ -192,7 +228,21 @@
     <p>👉 Possibilité de réchauffer vos repas sur place.
     </p>
   </div>
+<div class="card">
+  <h2>🎥 Visite du service</h2>
 
+  <button id="videoBtn" class="video-btn" onclick="toggleVideo()">
+    ▶️ Voir la visite du bloc
+  </button>
+
+  <div id="videoContainer" class="video hidden">
+    <iframe 
+      src="https://www.youtube.com/embed/TON_ID_VIDEO"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
   <div class="card">
     <h2>🏥 Organisation du service</h2>
     <ul>
@@ -261,6 +311,22 @@ function checkPassword() {
     document.getElementById("content").classList.remove("hidden");
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
+  }
+}
+</script>
+<script>
+function toggleVideo() {
+  const video = document.getElementById("videoContainer");
+  const button = document.getElementById("videoBtn");
+
+  if (video.classList.contains("show")) {
+    video.classList.remove("show");
+    setTimeout(() => video.classList.add("hidden"), 400);
+    button.innerHTML = "▶️ Voir la visite du bloc";
+  } else {
+    video.classList.remove("hidden");
+    setTimeout(() => video.classList.add("show"), 10);
+    button.innerHTML = "❌ Fermer la vidéo";
   }
 }
 </script>
