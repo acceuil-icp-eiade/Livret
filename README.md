@@ -321,9 +321,11 @@ function checkPassword() {
   }
 }
 </script>
-<script>
+
+  <script>
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
+  const iframe = document.getElementById("videoFrame");
   const button = document.getElementById("videoBtn");
 
   if (video.classList.contains("show")) {
@@ -334,6 +336,16 @@ function toggleVideo() {
     video.classList.remove("hidden");
     setTimeout(() => video.classList.add("show"), 10);
     button.innerHTML = "❌ Fermer la vidéo";
+
+    setTimeout(() => {
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      }
+    }, 500);
   }
 }
 </script>
