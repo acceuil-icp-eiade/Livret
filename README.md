@@ -165,7 +165,32 @@
 }
   </style>
 </head>
+<div class="bottom-menu">
+  <a href="#documents">📘</a>
+  <a href="#pratique">🏥</a>
+  <a href="#visite">🎥</a>
+</div>
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
 
+.bottom-menu a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+body {
+  padding-bottom: 70px;
+}
 <body>
 
 <header>
@@ -205,7 +230,7 @@
     </ul>
   </div>
 
-  <div class="card">
+  <div class="card" id="pratique">
   <h2>🏥 Vie pratique</h2>
   <div class="info">
     <h3>👕 Vestiaires</h3>
@@ -228,7 +253,7 @@
     <p>👉 Possibilité de réchauffer vos repas sur place.
     </p>
   </div>
-<div class="card">
+<div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
   <button id="videoBtn" class="video-btn" onclick="toggleVideo()">
@@ -243,7 +268,7 @@
     </iframe>
   </div>
 </div>
-  <div class="card">
+  <div class="card" id="organisation">
     <h2>🏥 Organisation du service</h2>
     <ul>
       <li>Bloc opératoire</li>
@@ -255,7 +280,7 @@
     </p>
   </div>
 
-  <div class="card">
+  <div class="card" id="documents">
     <h2>📄 Accès rapide aux documents</h2>
 
     <a class="btn" href="docs/protocoles.pdf" target="_blank">
