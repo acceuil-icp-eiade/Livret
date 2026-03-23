@@ -147,7 +147,6 @@
 
   <div class="card">
   <h2>🏥 Vie pratique</h2>
-
   <div class="info">
     <h3>👕 Vestiaires</h3>
     <p>Les vestiaires sont situés (à compléter).</p>
@@ -166,7 +165,8 @@
   <div class="info">
     <h3>🍽️ Salle à manger</h3>
     <p>La salle à manger est située (à compléter).</p>
-    <p>👉 Possibilité de réchauffer vos repas sur place.</p>
+    <p>👉 Possibilité de réchauffer vos repas sur place.
+    </p>
   </div>
 
   <div class="card">
