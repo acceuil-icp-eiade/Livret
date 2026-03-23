@@ -242,7 +242,7 @@
 
   <div id="videoContainer" class="video hidden">
     <iframe 
-      src="https://www.youtube.com/embed/TON_ID_VIDEO"
+      src="https://www.youtube.com/embed/TON_ID_VIDEO?autoplay=1"
       frameborder="0"
       allowfullscreen>
     </iframe>
