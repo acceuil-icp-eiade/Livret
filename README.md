@@ -103,6 +103,30 @@
       color: #7f8c8d;
       font-size: 12px;
     }
+    .info {
+  background: #f9fbfc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #48c9b0;
+}
+
+.info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+    .info {
+  background: #f9fbfc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #48c9b0;
+}
+
+.info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
   </style>
 </head>
 
