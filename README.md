@@ -186,7 +186,9 @@
 body {
   padding-bottom: 70px;
 }
-
+.fiche:last-child {
+  margin-bottom: 25px;
+}
 
 </style>
 
@@ -334,12 +336,7 @@ body {
       📄 Télécharger la fiche
     </a>
   </div>
-.fiche:last-child {
-  margin-bottom: 25px;
-}
-  <div>
-    
-
+  
 </div>
 
 <style>
