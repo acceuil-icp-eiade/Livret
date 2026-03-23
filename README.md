@@ -196,6 +196,7 @@ body {
   <a href="#documents">📑</a>
   <a href="#pratique">🏥</a>
   <a href="#visite">🎥</a>
+  <a href="#retour">📝</a>
 </div>
 
 <body>
