@@ -132,7 +132,7 @@
       Toute l’équipe du bloc opératoire de l’Institut Cœur Poumon est ravie de vous accueillir.  
       Nous savons que les débuts peuvent être impressionnants — ici, vous êtes là pour apprendre, progresser et poser toutes vos questions.
     </p>
-    <p><strong>👉 Il n’y a que des bonnes questions.</strong></p>
+    <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
   </div>
 
   <div class="card">
@@ -161,18 +161,18 @@
     <h2>📄 Accès rapide aux documents</h2>
 
     <a class="btn" href="docs/protocoles.pdf" target="_blank">
-      📘 Protocoles anesthésie
+      📘 Protocoles d'anesthésie
     </a>
 
-    <a class="btn" href="docs/checklist.pdf" target="_blank">
+    <a class="btn" href="docs/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
     </a>
 
-    <a class="btn" href="docs/urgence.pdf" target="_blank">
+    <a class="btn" href="docs/urgences.pdf" target="_blank">
       🚨 Urgences anesthésie
     </a>
 
-    <a class="btn" href="doc/telephone.pdf" target="_blank">
+    <a class="btn" href="doc/telephones.pdf" target="_blank">
       ☎️ Telephones
       </a>
 
