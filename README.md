@@ -302,6 +302,7 @@ body {
     <a class="btn" href="docs/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
     </a>
+    
     <h2>Fiches par spécialité</h2>
 
 <div class="fiche-container">
@@ -333,6 +334,7 @@ body {
       📄 Télécharger la fiche
     </a>
   </div>
+
 
 </div>
 
