@@ -180,7 +180,7 @@
 
   <div class="card">
     <h2>📞 Contacts</h2>
-    <p><strong>Cadre :</strong> Mme Hennache</p>
+    <p><strong>Cadre :</strong> Mme Hennache Audrey</p>
     <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
   </div>
 
