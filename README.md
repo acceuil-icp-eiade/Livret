@@ -274,7 +274,7 @@ body {
   id="videoFrame"
   src="https://www.youtube.com/embed/TON_ID_VIDEO?autoplay=1"
   frameborder="0"
-  allow="fullscreen"
+  allow="fullscreen; autoplay"
   allowfullscreen>
 </iframe>
   </div>
