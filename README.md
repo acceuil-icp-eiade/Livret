@@ -164,7 +164,29 @@
   opacity: 1;
 }
   </style>
+  .bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.bottom-menu a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+body {
+  padding-bottom: 70px;
+}
 </head>
+<div>
 <div class="bottom-menu">
   <a href="#documents">📑</a>
   <a href="#pratique">🏥</a>
@@ -232,7 +254,9 @@
     <p>La salle à manger est située (à compléter).</p>
     <p>👉 Possibilité de réchauffer vos repas sur place.
     </p>
+    
   </div>
+  
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
