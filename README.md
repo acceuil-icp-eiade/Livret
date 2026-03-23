@@ -333,10 +333,10 @@ body {
       <strong>Cardiologie interventionnelle</strong><br>
       📄 Télécharger la fiche
     </a>
-  </div>
 .fiche:last-child {
   margin-bottom: 25px;
 }
+  </div>
 
 </div>
 
