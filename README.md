@@ -329,10 +329,6 @@ body {
 
 </div>
 
-<footer>
-  Institut Cœur Poumon – Bloc opératoire
-</footer>
-
 </div>
 <div class="card" id="retour">
   <h2>📝 Retour de stage</h2>
@@ -345,6 +341,10 @@ body {
     📝 Donner mon avis
   </a>
 </div>
+
+<footer>
+  Institut Cœur Poumon – Bloc opératoire
+</footer>
 
 <script>
 function checkPassword() {
