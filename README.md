@@ -170,18 +170,6 @@
   <a href="#pratique">🏥</a>
   <a href="#visite">🎥</a>
 </div>
-.bottom-menu {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
 
 .bottom-menu a {
   text-decoration: none;
