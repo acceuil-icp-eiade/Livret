@@ -334,6 +334,17 @@ body {
 </footer>
 
 </div>
+<div class="card" id="retour">
+  <h2>📝 Retour de stage</h2>
+
+  <p>
+    Votre avis est essentiel pour améliorer l’accueil des étudiants.
+  </p>
+
+  <a class="btn" href="TON_LIEN_GOOGLE_FORM" target="_blank">
+    📝 Donner mon avis
+  </a>
+</div>
 
 <script>
 function checkPassword() {
