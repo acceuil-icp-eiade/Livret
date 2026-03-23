@@ -306,7 +306,7 @@ body {
       🚨 Urgences anesthésie
     </a>
 
-    <a class="btn" href="doc/telephones.pdf" target="_blank">
+    <a class="btn" href="docs/telephones.pdf" target="_blank">
       ☎️ Telephones
       </a>
 
