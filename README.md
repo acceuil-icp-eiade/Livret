@@ -171,14 +171,6 @@
   <a href="#visite">🎥</a>
 </div>
 
-.bottom-menu a {
-  text-decoration: none;
-  font-size: 22px;
-}
-
-body {
-  padding-bottom: 70px;
-}
 <body>
 
 <header>
