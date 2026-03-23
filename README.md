@@ -242,10 +242,12 @@
 
   <div id="videoContainer" class="video hidden">
     <iframe 
-      src="https://www.youtube.com/embed/TON_ID_VIDEO?autoplay=1"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+  id="videoFrame"
+  src="https://www.youtube.com/embed/TON_ID_VIDEO?autoplay=1"
+  frameborder="0"
+  allow="fullscreen"
+  allowfullscreen>
+</iframe>
   </div>
 </div>
   <div class="card" id="organisation">
