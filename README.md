@@ -164,10 +164,9 @@
   opacity: 1;
 }
 
-body {
-  padding-bottom: 70px;
-}
-    position: fixed;
+
+.bottom-menu {
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -183,7 +182,12 @@ body {
   text-decoration: none;
   font-size: 22px;
 }
-    
+
+body {
+  padding-bottom: 70px;
+}
+
+
 </style>
 
 </head>
