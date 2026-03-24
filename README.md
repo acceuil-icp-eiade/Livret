@@ -163,7 +163,21 @@
 .video.show {
   opacity: 1;
 }
+.btn-pdf {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2c7be5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+}
 
+.btn-pdf:hover {
+  background-color: #1a5fd0;
+}
 
 .bottom-menu {
   position: fixed;
@@ -269,8 +283,16 @@ body {
     <p> le self est situé au niveau-2.</p>    <p>👉 Possibilité de réchauffer vos repas sur place.
     </p>
 </div>
-  </div>
-  
+    <div class="fiche">
+  <h3>🗺️ Plan du bloc opératoire</h3>
+  <p>Consultez le plan pour vous repérer facilement dans le service.</p>
+
+  <a href="pdf/plan-bloc.pdf" target="_blank" class="btn-pdf">
+    📄 Télécharger le plan
+  </a>
+</div>
+</div>
+
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
