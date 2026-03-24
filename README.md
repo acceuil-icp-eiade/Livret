@@ -296,7 +296,7 @@ body {
       Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
     </p>
     <div class="card">
-    <h2> Encadrement</h2>
+    <h2> Référents</h2>
     <p><strong>Cadre :</strong> Mme Hennache Audrey 29099</p>
     <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
   </div>
