@@ -401,9 +401,6 @@ body {
     <p><strong>On est là pour vous accompagner 🤝</strong></p>
   </div>
 
-</div>
-
-</div>
 <div class="card" id="retour">
   <h2>📝 Retour de stage</h2>
 
@@ -418,7 +415,7 @@ body {
   
 </div>
 </div>
-<div>
+
 
 <footer>
   Institut Cœur Poumon – Bloc opératoire
