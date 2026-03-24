@@ -378,7 +378,7 @@ body {
 </style>
 
     <a class="btn" href="docs/urgences.pdf" target="_blank">
-      🚨 Urgences anesthésie
+      🚨 Protocoles d'urgence 
     </a>
     
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
