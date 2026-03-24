@@ -226,7 +226,11 @@ body {
     <h2>👋 Message de bienvenue</h2>
     <p>
       Toute l’équipe du bloc opératoire de l’Institut Cœur Poumon est ravie de vous accueillir.  
-      Nous savons que les débuts peuvent être impressionnants — ici, vous êtes là pour apprendre, progresser et poser toutes vos questions.
+    </p>
+    <p>
+      Nous savons que les débuts peuvent être impressionnants — ici, vous êtes là pour apprendre, progresser et poser toutes vos questions...
+    </p>
+    <p>
       votre bien être,  votre épanouissement professionnel et votre autonomisation sont au cœur de notre accompagnement.
     </p>
     <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
