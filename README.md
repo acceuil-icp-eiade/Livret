@@ -196,7 +196,13 @@
   text-decoration: none;
   font-size: 22px;
 }
-
+.fiche {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 15px;
+}
 body {
   padding-bottom: 70px;
 }
