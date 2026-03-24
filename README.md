@@ -253,20 +253,20 @@ body {
     <p>Les vestiaires sont situés (à compléter).</p>
     <p>👉 Pensez à prévoir un cadenas pour votre casier.</p>
   </div>
-  <div class="info">
+  
     <h3>🧥 Casiers</h3>
     <p>Des casiers sont à votre disposition dans les vestiaires.</p>
     <p>👉 Merci de ne pas laisser d’objets de valeur.</p>
   </div>
-  <div class="info">
+  
     <h3>☕ Salle de pause</h3>
     <p>La salle de pause se trouve (à compléter).</p>
     <p>👉 Espace de repos réservé à l’équipe.</p>
   </div>
-  <div class="info">
-    <h3>🍽️ Salle à manger, restauration</h3>
+
+    <h3>🍽️ restauration</h3>
     <p>La salle à manger est située (à compléter).</p>
-    <p>👉 Possibilité de réchauffer vos repas sur place.
+    <p> le self est situé au niveau-2.</p>    <p>👉 Possibilité de réchauffer vos repas sur place.
     </p>
     
   </div>
