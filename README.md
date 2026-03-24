@@ -281,7 +281,9 @@ body {
   allow="fullscreen; autoplay"
   allowfullscreen>
 </iframe>
+    
   </div>
+  
 </div>
   <div class="card" id="organisation">
     <h2>🏥 Organisation du service</h2>
@@ -302,9 +304,7 @@ body {
   <div class="card" id="documents">
     <h2>📄 Accès rapide aux documents</h2>
 
-    <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
-      📘 bilan de demi-stage
-    </a>
+    
 
     <a class="btn" href="docs/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
@@ -374,7 +374,10 @@ body {
     <a class="btn" href="docs/urgences.pdf" target="_blank">
       🚨 Urgences anesthésie
     </a>
-
+    
+<a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
+      📘 bilan de demi-stage
+    </a>
   </div>
 
   <div class="card">
