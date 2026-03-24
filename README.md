@@ -199,6 +199,7 @@ body {
   <a href="#pratique">🏥</a>
   <a href="#visite">🎥</a>
   <a href="#retour">📝</a>
+  <a href="téléphone">☎️</a>
 </div>
 
 <body>
@@ -295,15 +296,15 @@ body {
     <p><strong>📞 Téléphones utiles :</strong></p>
 
 <a class="btn" href="docs/telephones.pdf" target="_blank">
-  ☎️ Annuaire du service
+  ☎️ Telephones 
 </a>
   </div>
 
   <div class="card" id="documents">
     <h2>📄 Accès rapide aux documents</h2>
 
-    <a class="btn" href="docs/protocoles.pdf" target="_blank">
-      📘 Protocoles d'anesthésie
+    <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
+      📘 bilan de demi-stage
     </a>
 
     <a class="btn" href="docs/chirurgies.pdf" target="_blank">
