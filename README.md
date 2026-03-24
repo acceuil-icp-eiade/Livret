@@ -293,7 +293,6 @@ body {
     <p>
       Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
     </p>
-    <p><strong>📞 Téléphones utiles :</strong></p>
 
 <a class="btn" href="docs/telephones.pdf" target="_blank">
   ☎️ Telephones 
