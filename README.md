@@ -248,7 +248,7 @@ body {
 
   <div class="card" id="pratique">
   <h2>🏥 Vie pratique</h2>
-  <div class="info">
+  <div>
     <h3>👕 Vestiaires</h3>
     <p>Les vestiaires sont situés (à compléter).</p>
     <p>👉 Pensez à prévoir un cadenas pour votre casier.</p>
