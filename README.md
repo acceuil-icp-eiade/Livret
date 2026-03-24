@@ -285,8 +285,8 @@ body {
   </div>
   
 </div>
-  <div class="card" id="organisation">
-    <h2>🏥 Organisation du service</h2>
+  <div class="card" id="organigramme">
+    <h2>🏥 Organigramme du service</h2>
     <ul>
       <li>Bloc opératoire</li>
       <li>SSPI</li>
@@ -295,6 +295,11 @@ body {
     <p>
       Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
     </p>
+    <div class="card">
+    <h2> Encadrement</h2>
+    <p><strong>Cadre :</strong> Mme Hennache Audrey 29099</p>
+    <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
+  </div>
 
 <a class="btn" href="docs/telephones.pdf" target="_blank">
   ☎️ Telephones 
@@ -380,11 +385,7 @@ body {
     </a>
   </div>
 
-  <div class="card">
-    <h2>📞 Contacts</h2>
-    <p><strong>Cadre :</strong> Mme Hennache Audrey</p>
-    <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
-  </div>
+  
 
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
