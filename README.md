@@ -417,6 +417,7 @@ body {
   </a>
   
 </div>
+</body>
 
 <footer>
   Institut Cœur Poumon – Bloc opératoire
