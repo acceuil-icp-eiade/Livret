@@ -292,6 +292,11 @@ body {
     <p>
       Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
     </p>
+    <p><strong>📞 Téléphones utiles :</strong></p>
+
+<a class="btn" href="docs/telephones.pdf" target="_blank">
+  ☎️ Annuaire du service
+</a>
   </div>
 
   <div class="card" id="documents">
@@ -369,10 +374,6 @@ body {
     <a class="btn" href="docs/urgences.pdf" target="_blank">
       🚨 Urgences anesthésie
     </a>
-
-    <a class="btn" href="docs/telephones.pdf" target="_blank">
-      ☎️ Telephones
-      </a>
 
   </div>
 
