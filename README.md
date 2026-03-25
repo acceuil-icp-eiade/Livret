@@ -332,6 +332,7 @@ body {
     <h2> Référents</h2>
     <p><strong>Cadre :</strong> Mme Hennache Audrey 29099</p>
     <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
+      <p><strong>Référent SSPI:</strong> Eve</p>
   </div>
 
 <a class="btn" href="docs/telephones.pdf" target="_blank">
