@@ -270,27 +270,23 @@ body {
 
   <div class="card" id="pratique">
   <h2>🏥 Vie pratique</h2>
-  <div>
+    <ul>
+    <li> à votre disposition</li>
     <h3>👕 Vestiaires</h3>
-    <p>Les vestiaires sont situés (à compléter).</p>
-    <p>👉 Pensez à prévoir un cadenas pour votre casier.</p>
-  </div>
-  <div>
+    <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
     <h3>🧥 Casiers</h3>
-    <p>Des casiers sont à votre disposition dans les vestiaires.</p>
-    <p>👉 Merci de ne pas laisser d’objets de valeur.</p>
-  </div>
-  <div>
+    <li>Des casiers sont à votre disposition dans les vestiaires.</li>
+    <li>👉 Merci de ne pas laisser d’objets de valeur.</li>
     <h3>☕ Salle de pause</h3>
-    <p>La salle de pause se trouve (à compléter).</p>
-    <p>👉 Espace de repos réservé à l’équipe.</p>
-  </div>
-<div>
+    <li>La salle de pause se trouve (à compléter).</li>
+    <li>👉 Espace de repos réservé à l’équipe.</li>
     <h3>🍽️ restauration</h3>
-    <p>La salle à manger est située (à compléter).</p>
-    <p> le self est situé au niveau-2.</p>    <p>👉 Possibilité de réchauffer vos repas sur place.
-    </p>
+    <li>La salle à manger est située (à compléter).</li>
+    <li> le self est situé au niveau-2.</li>    <li>👉 Possibilité de réchauffer vos repas sur place.
+    </li>
+    </ul>
 </div>
+
     <div class="fiche">
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
