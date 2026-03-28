@@ -298,7 +298,7 @@ body {
     📄 Télécharger le plan
   </a>
 </div>
-</div>
+
 
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
@@ -318,7 +318,7 @@ body {
     
   </div>
   
-</div>
+
   <div class="card" id="organigramme">
     <h2>🏥 Organigramme du service</h2>
     <ul>
@@ -329,9 +329,7 @@ body {
       <li><strong>Anesthésie:</strong></li>
       <li>Chef de service: Dr Desbordes</li>
     </ul>
-    <p>
-      Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
-    </p>
+    <p> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.  </p>
     <div class="card">
     <h2> Référents</h2>
     <p><strong>Cadre :</strong> Mme Hennache Audrey 29099</p>
