@@ -209,11 +209,22 @@ body {
 .fiche:last-child {
   margin-bottom: 25px;
 }
+ ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.card ul {
+  margin-top: 10px;
+}
 
 </style>
 
 </head>
-<div>
+<body>
 <div class="bottom-menu">
   <a href="#documents">📑</a>
   <a href="#plan">🗺</a>
@@ -222,7 +233,6 @@ body {
   <a href="téléphone">☎️</a>
 </div>
 
-<body>
 
 <header>
   <h1>Bienvenue à l’ICP 🫀🫁</h1>
@@ -323,7 +333,7 @@ body {
     <ul>
       <li><strong>bloc opératoire :</strong></li>
       <li>Chirurgie cardiaque: Pr Vinventelli </li>
-      <li>Chirurgie thoracique:Pr Venissac       <li><strong>PTI:</strong></li>
+      <li>Chirurgie thoracique:Pr Venissac</li>       <li><strong>PTI:</strong></li>
       <LI>Cardiologie:Pr </LI>
       <li><strong>Anesthésie:</strong></li>
       <li>Chef de service: Dr Desbordes</li>
@@ -334,9 +344,11 @@ body {
   
     <div class="card">
     <h2> Référents</h2>
+    <ul>
     <li><strong>Cadre :</strong> Mme Hennache Audrey 29099</li>
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
+      </ul>
   </div>
 <div>
 <a class="btn" href="docs/telephones.pdf" target="_blank">
