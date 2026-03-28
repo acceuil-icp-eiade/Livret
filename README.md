@@ -216,7 +216,7 @@ body {
 <div>
 <div class="bottom-menu">
   <a href="#documents">📑</a>
-  <a href="#pratique">🏥</a>
+  <a href="#plan">🗺</a>
   <a href="#visite">🎥</a>
   <a href="#retour">📝</a>
   <a href="téléphone">☎️</a>
@@ -290,7 +290,7 @@ body {
     </ul>
 </div>
 
-    <div class="fiche">
+    <div class="fiche" id="plan">
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
 
