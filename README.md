@@ -405,9 +405,9 @@ li {
   grid-template-columns: 1fr;
   gap: 15px;
   margin-top: 20px;
+  
 }
-
-.fiche {
+.fiche-container .fiche {
   background: #f5f5f5;
   padding: 15px;
   border-radius: 12px;
