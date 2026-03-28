@@ -316,9 +316,9 @@ li {
   <button id="videoBtn" class="video-btn" onclick="toggleVideo()">
     ▶️ Voir la visite du bloc
   </button>
-
   <div id="videoContainer" class="video hidden">
-    <iframe id="videoFrame">
+  
+  <iframe id="videoFrame"
   src="https://www.youtube.com/embed/TON_ID_VIDEO?autoplay=1"
   frameborder="0"
   allow="fullscreen; autoplay"
