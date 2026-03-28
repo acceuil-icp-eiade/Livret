@@ -328,15 +328,18 @@ body {
       <LI>Cardiologie:Pr </LI>
       <li><strong>Anesthésie:</strong></li>
       <li>Chef de service: Dr Desbordes</li>
-    </ul>
+  
     <p> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.  </p>
+    </ul>
+  </div>
+  
     <div class="card">
     <h2> Référents</h2>
     <p><strong>Cadre :</strong> Mme Hennache Audrey 29099</p>
     <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
       <p><strong>Référent SSPI:</strong> Bichelberger Eve</p>
   </div>
-
+<div>
 <a class="btn" href="docs/telephones.pdf" target="_blank">
   ☎️ Telephones 
 </a>
