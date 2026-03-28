@@ -308,8 +308,7 @@ body {
   </button>
 
   <div id="videoContainer" class="video hidden">
-    <iframe 
-  id="videoFrame">
+    <iframe id="videoFrame">
   src="https://www.youtube.com/embed/TON_ID_VIDEO?autoplay=1"
   frameborder="0"
   allow="fullscreen; autoplay"
@@ -329,15 +328,15 @@ body {
       <li><strong>Anesthésie:</strong></li>
       <li>Chef de service: Dr Desbordes</li>
   
-    <p> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.  </p>
+    <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.  </li>
     </ul>
   </div>
   
     <div class="card">
     <h2> Référents</h2>
-    <p><strong>Cadre :</strong> Mme Hennache Audrey 29099</p>
-    <p><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</p>
-      <p><strong>Référent SSPI:</strong> Bichelberger Eve</p>
+    <li><strong>Cadre :</strong> Mme Hennache Audrey 29099</li>
+    <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
+      <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
   </div>
 <div>
 <a class="btn" href="docs/telephones.pdf" target="_blank">
