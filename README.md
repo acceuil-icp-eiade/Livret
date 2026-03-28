@@ -224,7 +224,9 @@ li {
 </style>
 
 </head>
+
 <body>
+  
 <div class="bottom-menu">
   <a href="#documents">📑</a>
   <a href="#plan">🗺</a>
