@@ -227,13 +227,7 @@ li {
 
 <body>
   
-<div class="bottom-menu">
-  <a href="#documents">📑</a>
-  <a href="#plan">🗺</a>
-  <a href="#visite">🎥</a>
-  <a href="#retour">📝</a>
-  <a href="téléphone">☎️</a>
-</div>
+
 
 
 <header>
@@ -250,6 +244,14 @@ li {
 </div>
 
 <!-- 🔓 CONTENU -->
+
+<div class="bottom-menu">
+  <a href="#documents">📑</a>
+  <a href="#plan">🗺</a>
+  <a href="#visite">🎥</a>
+  <a href="#retour">📝</a>
+  <a href="téléphone">☎️</a>
+</div>
 <div id="content" class="hidden">
 
 
