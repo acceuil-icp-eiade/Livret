@@ -322,9 +322,12 @@ body {
   <div class="card" id="organigramme">
     <h2>🏥 Organigramme du service</h2>
     <ul>
-      <li>Bloc opératoire</li>
-      <li>SSPI</li>
-      <li>PTI</li>
+      <li><strong>bloc opératoire :</strong></li>
+      <li>Chirurgie cardiaque: Pr Vinventelli </li>
+      <li>Chirurgie thoracique:Pr Venissac       <li><strong>PTI:</strong></li>
+      <LI>Cardiologie:Pr </LI>
+      <li><strong>Anesthésie:</strong></li>
+      <li>Chef de service: Dr Desbordes</li>
     </ul>
     <p>
       Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.
