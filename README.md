@@ -299,8 +299,8 @@ li {
     </li>
     </ul>
 </div>
-
-    <div class="fiche" id="plan">
+<div class="fiche fiche-plan" id="plan">
+  
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
 
@@ -405,8 +405,8 @@ li {
   grid-template-columns: 1fr;
   gap: 15px;
   margin-top: 20px;
-  
 }
+  
 .fiche-container .fiche {
   background: #f5f5f5;
   padding: 15px;
@@ -424,6 +424,9 @@ li {
   background: #e6f2ff;
   transform: translateY(-2px);
 }
+  .fiche-plan {
+  background: white;
+  }
 </style>
 
     <a class="btn" href="docs/urgences.pdf" target="_blank">
