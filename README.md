@@ -226,9 +226,6 @@ li {
 </head>
 
 <body>
-  
-
-
 
 <header>
   <h1>Bienvenue à l’ICP 🫀🫁</h1>
@@ -518,4 +515,3 @@ function toggleVideo() {
 }
 </script>
 
-</body></htlm>
