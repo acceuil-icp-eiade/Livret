@@ -274,15 +274,18 @@ body {
     <li> à votre disposition</li>
     <h3>👕 Vestiaires</h3>
     <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
+    <li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
     <h3>🧥 Casiers</h3>
-    <li>Des casiers sont à votre disposition dans les vestiaires.</li>
-    <li>👉 Merci de ne pas laisser d’objets de valeur.</li>
+    <li>Des casiers sont à votre disposition en SSPI.</li>
+    
     <h3>☕ Salle de pause</h3>
-    <li>La salle de pause se trouve (à compléter).</li>
-    <li>👉 Espace de repos réservé à l’équipe.</li>
+    <li>Une salle de pause est à votre disposition.</li>
+    <li>👉 Espace de repos réservé au café.</li>
     <h3>🍽️ restauration</h3>
-    <li>La salle à manger est située (à compléter).</li>
-    <li> le self est situé au niveau-2.</li>    <li>👉 Possibilité de réchauffer vos repas sur place.
+    <li>La salle à manger est située au sein du bloc.</li>
+    <li>le self est situé au niveau-2.</li>  
+    <li>le relais H est situé au niveau 0.</li>
+    <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
 </div>
