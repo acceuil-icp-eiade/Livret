@@ -309,7 +309,7 @@ body {
 
   <div id="videoContainer" class="video hidden">
     <iframe 
-  id="videoFrame"
+  id="videoFrame">
   src="https://www.youtube.com/embed/TON_ID_VIDEO?autoplay=1"
   frameborder="0"
   allow="fullscreen; autoplay"
