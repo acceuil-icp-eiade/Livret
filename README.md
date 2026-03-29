@@ -334,12 +334,13 @@ li {
     <ul>
       <li><strong>bloc opératoire :</strong></li>
       <li>Chirurgie cardiaque:Pr Vinventelli </li>
-      <li>Chirurgie thoracique:Pr Venissac</li>       <li><strong>PTI:</strong></li>
+      <li>Chirurgie thoracique:Pr Venissac</li>      
+      <li><strong>PTI:</strong></li>
       <LI>Cardiologie:Pr Lemesle</LI>
       <li><strong>Anesthésie:</strong></li>
       <li>Chef de service:Dr Desbordes</li>
   
-    <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.  </li>
+    <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s.  </li>
     </ul>
   </div>
   
