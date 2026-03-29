@@ -289,8 +289,7 @@ li {
     <li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
     <h3>🧥 Casiers</h3>
     <li>Des casiers sont à votre disposition en SSPI.</li>
-    
-    <h3>☕ Salle de pause</h3>
+     <h3>☕ Salle de pause</h3>
     <li>Une salle de pause est à votre disposition.</li>
     <li>👉 Espace de repos réservé au café.</li>
     <h3>🍽️ restauration</h3>
@@ -334,11 +333,11 @@ li {
     <h2>🏥 Organigramme du service</h2>
     <ul>
       <li><strong>bloc opératoire :</strong></li>
-      <li>Chirurgie cardiaque: Pr Vinventelli </li>
+      <li>Chirurgie cardiaque:Pr Vinventelli </li>
       <li>Chirurgie thoracique:Pr Venissac</li>       <li><strong>PTI:</strong></li>
-      <LI>Cardiologie:Pr </LI>
+      <LI>Cardiologie:Pr Lemesle</LI>
       <li><strong>Anesthésie:</strong></li>
-      <li>Chef de service: Dr Desbordes</li>
+      <li>Chef de service:Dr Desbordes</li>
   
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimentés.  </li>
     </ul>
@@ -347,7 +346,7 @@ li {
     <div class="card">
     <h2> Référents</h2>
     <ul>
-    <li><strong>Cadre :</strong> Mme Hennache Audrey 29099</li>
+    <li><strong>Cadre :</strong> Mme Hennache Audrey </li>
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
