@@ -353,7 +353,7 @@ li {
       </ul>
   </div>
 <div>
-<a class="btn" href="docs/telephones.pdf" target="_blank">
+<a class="btn" href="pdf/telephones.pdf" target="_blank">
   ☎️ Telephones 
 </a>
   </div>
