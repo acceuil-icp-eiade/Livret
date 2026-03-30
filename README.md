@@ -247,7 +247,7 @@ li {
   <a href="#plan">🗺</a>
   <a href="#visite">🎥</a>
   <a href="#retour">📝</a>
-  <a href="telephones">☎️</a>
+  <a href="pdf/telephones.pdf">☎️</a>
 </div>
 <div id="content" class="hidden">
 
