@@ -353,7 +353,7 @@ li {
   </div>
 
 </div>
-
+</div>
 </div> 
   <style>  
 .fiche-container {  
