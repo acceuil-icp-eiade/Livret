@@ -431,7 +431,7 @@ li {
   }
 </style>
 
-    <a class="btn" href="docs/urgences.pdf" target="_blank">
+    <a class="btn" href="urgences.htlm" target="_blank">
       🚨 Protocoles d'urgence 
     </a>
     
