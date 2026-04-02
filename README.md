@@ -356,8 +356,8 @@ li {
     <a class="btn" href="docs/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
     </a>
-    
-    <div class="btn" onclick="toggleSpecialites()">
+</div>
+  <div class="btn" onclick="toggleSpecialites()">
   📂 Fiches par spécialité
 </div>
 
@@ -388,7 +388,6 @@ li {
   </div>
 
 </div>
-  
 </div>
 
 <style>
@@ -532,6 +531,17 @@ function toggleUrgences() {
 function toggleSpecialites() {
   const menu = document.getElementById("specialitesMenu");
   menu.classList.toggle("hidden");
+}
+</script>
+<script>
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+
+  if (menu.classList.contains("hidden")) {
+    menu.classList.remove("hidden");
+  } else {
+    menu.classList.add("hidden");
+  }
 }
 </script>
 </body>
