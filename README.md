@@ -384,6 +384,7 @@ li {
       target="_blank">
       🌡 hyperthermie maligne
     </a>
+  </div>
     <div class="fiche">  
     <a href="pdf/arret_cardiaque.pdf" target="_blank">  
       ❤️ Arrêt cardiaque  
