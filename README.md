@@ -319,31 +319,43 @@ li {
   </div>  
   <div class="card" id="documents">  
     <h2>📄 Accès rapide aux documents</h2>  
-    <a class="btn" href="docs/chirurgies.pdf" target="_blank">  
+    <a class="btn" href="pdf/chirurgies.pdf" target="_blank">  
       ✅ les chirurgies   
-    </a>  <h2>Fiches par spécialité</h2>
+    </a> 
+    <div class="btn" onclick="toggleSpecialites()">
+  📂 Fiches par spécialité
+</div>
 
-<div class="fiche-container">    <div class="fiche">  
-    <a href="pdf/chirurgie_cardiaque.pdf" target="_blank">  
-      <strong>Chirurgie cardiaque</strong><br>  
-      📄 Télécharger la fiche  
-    </a>  
-  </div>    <div class="fiche">  
-    <a href="pdf/chirurgie_thoracique.pdf" target="_blank">  
-      <strong>Chirurgie thoracique</strong><br>  
-      📄 Télécharger la fiche  
-    </a>  
-  </div>    <div class="fiche">  
-    <a href="pdf/chirurgie_vasculaire.pdf" target="_blank">  
-      <strong>Chirurgie vasculaire</strong><br>  
-      📄 Télécharger la fiche  
-    </a>  
-  </div>    <div class="fiche">  
-    <a href="pdf/cardiologie_interventionnelle.pdf" target="_blank">  
-      <strong>Cardiologie interventionnelle</strong><br>  
-      📄 Télécharger la fiche  
-    </a>  
-  </div>  </div>  <style>  
+<div id="specialitesMenu" class="hidden">
+
+  <div class="fiche">
+    <a href="pdf/chirurgie_cardiaque.pdf" target="_blank">
+      ❤️ Chirurgie cardiaque
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/chirurgie_thoracique.pdf" target="_blank">
+      🫁 Chirurgie thoracique
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/chirurgie_vasculaire.pdf" target="_blank">
+      🩸 Chirurgie vasculaire
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/cardiologie_interventionnelle.pdf" target="_blank">
+      💉 Cardiologie interventionnelle
+    </a>
+  </div>
+
+</div>
+
+</div> 
+  <style>  
 .fiche-container {  
   display: grid;  
   grid-template-columns: 1fr;  
@@ -450,7 +462,14 @@ function checkPassword() {
     document.getElementById("error").innerText = "Mot de passe incorrect";  
   }  
 }  
-</script>    <script>  
+</script>   
+<script>
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
+<script>  
 function toggleVideo() {  
   const video = document.getElementById("videoContainer");  
   const iframe = document.getElementById("videoFrame");  
