@@ -493,9 +493,6 @@ function checkPassword() {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
-</script>
-
-  <script>
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
@@ -527,13 +524,12 @@ function toggleUrgences() {
   menu.classList.toggle("hidden");
 }
 
-<script>
+
 function toggleSpecialites() {
   const menu = document.getElementById("specialitesMenu");
   menu.classList.toggle("hidden");
 }
-</script>
-<script>
+
 function toggleSpecialites() {
   const menu = document.getElementById("specialitesMenu");
 
