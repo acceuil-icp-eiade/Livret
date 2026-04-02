@@ -375,7 +375,7 @@ li {
 </div>  
 </div>
 <div>
-<a class="btn" href="pdf/antibioprophylaxie_ICP.pdf" target="_blank">  
+<a class="btn" href="docs/antibioprophylaxie_ICP.pdf" target="_blank">  
       💊 Antibioprophylaxie
     </a>  
   </div>  
