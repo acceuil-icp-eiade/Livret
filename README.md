@@ -372,12 +372,12 @@ li {
   background: white;  
   }  
 </style>  
-<div>
-<a href="pdf/antibioprophylaxie.pdf" class="card" target="_blank">
-  <h2>Antibioprophylaxie</h2>
-  <p>Protocoles et recommandations</p>
-</a>
-</div>
+</div>  
+<a class="btn" href="pdf/antibioprophylaxie.pdf" target="_blank">  
+      💊 Antibioprophylaxie
+    </a>  
+  </div>  
+
 <div class="btn" onclick="toggleUrgences()">  
   🚨 Protocoles d'urgence  
 </div>  
