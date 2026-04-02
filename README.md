@@ -487,14 +487,20 @@ li {
 
 <script>
 function checkPassword() {
-  const password = document.getElementById("password").value;
-  const correctPassword = "iadeicp543";
+  const input = document.getElementById("password");
+  const login = document.getElementById("loginPage");
+  const content = document.getElementById("content");
 
-  if (password === correctPassword) {
-    document.getElementById("loginPage").classList.add("hidden");
-    document.getElementById("content").classList.remove("hidden");
+  if (!input || !login || !content) {
+    alert("Erreur: éléments manquants dans le HTML");
+    return;
+  }
+
+  if (input.value === "iadeicp543") {
+    login.style.display = "none";
+    content.style.display = "block";
   } else {
-    document.getElementById("error").innerText = "Mot de passe incorrect";
+    alert("Mot de passe incorrect");
   }
 }
 
