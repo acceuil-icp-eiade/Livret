@@ -396,7 +396,7 @@ li {
     </a>
   </div>
     <div class="fiche">  
-    <a href="pdf/arret_cardiiaque.pdf" target="_blank">  
+    <a href="pdf/arret_cardiaque.pdf" target="_blank">  
       ❤️ Arrêt cardiaque  
     </a>  
   </div>   
