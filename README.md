@@ -309,8 +309,6 @@ li {
     📄 Télécharger le plan
   </a>
 </div>
-
-
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
@@ -431,17 +429,46 @@ li {
   }
 </style>
 
-    <a class="btn" href="urgences.htlm" target="_blank">
-      🚨 Protocoles d'urgence 
+  <div class="btn" onclick="toggleUrgences()">
+  🚨 Protocoles d'urgence
+</div>
+
+<div id="urgencesMenu" class="hidden">
+
+  <div class="fiche">
+    <a href="pdf/hemorragie.pdf" target="_blank">
+      🩸 Hémorragie
     </a>
-    
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/arret_cardiaque.pdf" target="_blank">
+      ❤️ Arrêt cardiaque
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/choc_anaphylactique.pdf" target="_blank">
+      ⚠️ Choc anaphylactique
+    </a>
+  </div>
+
+  <div class="fiche">
+    <a href="pdf/detresse_respiratoire.pdf" target="_blank">
+      🫁 Détresse respiratoire
+    </a>
+  </div>
+  <script>
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
+</div>
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
   </div>
-
-  
-
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
     <p>
@@ -460,13 +487,8 @@ li {
 
   <a class="btn" href="https://forms.gle/4ATLvfYK83cmkXiN7" target="_blank">
     📝 Donner mon avis
-    
   </a>
-  
 </div>
-
-
-
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
