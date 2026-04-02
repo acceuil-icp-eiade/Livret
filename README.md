@@ -484,7 +484,7 @@ li {
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
-
+<script >
 <script>
 function checkPassword() {
   const input = document.getElementById("password");
@@ -503,7 +503,8 @@ function checkPassword() {
     alert("Mot de passe incorrect");
   }
 }
-
+</script>
+<script>
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
   if (menu) {
@@ -517,7 +518,8 @@ function toggleSpecialites() {
     menu.classList.toggle("hidden");
   }
 }
-
+</script>
+<script>
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
@@ -539,6 +541,7 @@ function toggleVideo() {
     }, 500);
   }
 }
+</script>
 </script>
 </body>
 
