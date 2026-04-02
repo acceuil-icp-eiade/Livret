@@ -371,9 +371,17 @@ li {
   .fiche-plan {  
   background: white;  
   }  
-</style>    <div class="btn" onclick="toggleUrgences()">  
+</style>  
+<div>
+<a href="pdf/antibioprophylaxie.pdf" class="card" target="_blank">
+  <h2>Antibioprophylaxie</h2>
+  <p>Protocoles et recommandations</p>
+</a>
+</div>
+<div class="btn" onclick="toggleUrgences()">  
   🚨 Protocoles d'urgence  
-</div>  <div id="urgencesMenu" class="hidden">  
+</div>  
+<div id="urgencesMenu" class="hidden">  
   <div class="fiche">  
     <a href="pdf/hemorragie.pdf" target="_blank">  
       🩸 Hémorragie  
