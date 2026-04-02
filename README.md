@@ -373,15 +373,23 @@ li {
   }  
 </style>    <div class="btn" onclick="toggleUrgences()">  
   🚨 Protocoles d'urgence  
-</div>  <div id="urgencesMenu" class="hidden">    <div class="fiche">  
+</div>  <div id="urgencesMenu" class="hidden">  
+  <div class="fiche">  
     <a href="pdf/hemorragie.pdf" target="_blank">  
       🩸 Hémorragie  
     </a>  
-  </div>    <div class="fiche">  
+  </div>   
+  <div class="fiche">
+    <a href="pdf/hyperthermie_maligne.pdf"
+      target="_blank">
+      🌡 hyperthermie maligne
+    </a>
+    <div class="fiche">  
     <a href="pdf/arret_cardiaque.pdf" target="_blank">  
       ❤️ Arrêt cardiaque  
     </a>  
-  </div>    <div class="fiche">  
+  </div>   
+  <div class="fiche">  
     <a href="pdf/choc_anaphylactique.pdf" target="_blank">  
       ⚠️ Choc anaphylactique  
     </a>  
