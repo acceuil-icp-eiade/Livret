@@ -416,7 +416,7 @@ function toggleUrgences() {
 }  
 </script>  
 </div>  
-<a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">  
+<a class="btn" href="pdf/bilan_de_demi_stage.pdf" target="_blank">  
       📘 bilan de demi-stage  
     </a>  
   </div>  
