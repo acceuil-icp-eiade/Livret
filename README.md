@@ -237,9 +237,10 @@ li {
   <h2>Accès réservé</h2>
   <input type="password" id="password" placeholder="Mot de passe">
   <button onclick="checkPassword()">Entrer</button>
-  <p id="error" style="color:red;"></p><div id="content" style="display:none;">
+  <p id="error" style="color:red;">👎</p><div id="content" style="display:none;">
   </div>
 </div>
+
 
 <!-- 🔓 CONTENU -->
 
@@ -250,12 +251,10 @@ li {
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
+
 <div id="content" class="hidden">
-
-
 <div class="container">
-
-  <div class="card">
+ <div class="card">
     <h2>👋 Message de bienvenue</h2>
     <p>
       Toute l’équipe du bloc opératoire de l’Institut Cœur Poumon est ravie de vous accueillir.  
@@ -310,6 +309,7 @@ li {
     📄 Télécharger le plan
   </a>
 </div>
+
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
@@ -325,6 +325,7 @@ li {
   allowfullscreen>
 </iframe>
   </div>
+  
   <div class="card" id="organigramme">
     <h2>🏥 Organigramme du service</h2>
     <ul>
@@ -339,6 +340,7 @@ li {
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s.  </li>
     </ul>
   </div>
+  
     <div class="card">
     <h2> Référents</h2>
     <ul>
@@ -347,11 +349,13 @@ li {
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
   </div>
+  
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
   ☎️ Telephones 
 </a>
   </div>
+  
   <div class="card" id="documents">
     <h2>📄 Accès rapide aux documents</h2>
     <a class="btn" href="docs/chirurgies.pdf" target="_blank">
@@ -389,7 +393,7 @@ li {
   </div>
 
 </div>
-</div>
+
 
 <style>
 .fiche-container {
@@ -449,6 +453,7 @@ li {
     <a href="pdf/detresse_respiratoire.pdf" target="_blank">
       🫁 Détresse respiratoire
     </a>
+  </div>
   </div>
 </script>
 </div>
