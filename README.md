@@ -312,6 +312,7 @@ li {
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>  
       </ul>  
   </div>  
+  </div>
 <div>  
 <a class="btn" href="pdf/telephones.pdf" target="_blank">  
   ☎️ Telephones   
@@ -353,7 +354,7 @@ li {
   </div>
 
 </div>
-</div>
+
 </div> 
   <style>  
 .fiche-container {  
