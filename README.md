@@ -327,10 +327,11 @@ li {
     <a class="btn" href="pdf/chirurgies.pdf" target="_blank">  
       ✅ les chirurgies   
     </a> 
+  </div>
     <div class="btn" onclick="toggleSpecialites()">
   📂 Fiches par spécialité
-
-
+    </div>
+    
 <div id="specialitesMenu" class="hidden">
 
   <div class="fiche">
