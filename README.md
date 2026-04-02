@@ -329,7 +329,7 @@ li {
     </a> 
     <div class="btn" onclick="toggleSpecialites()">
   📂 Fiches par spécialité
-</div>
+
 
 <div id="specialitesMenu" class="hidden">
 
