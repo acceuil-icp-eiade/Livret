@@ -357,37 +357,37 @@ li {
       ✅ les chirurgies 
     </a>
     
-    <h2>Fiches par spécialité</h2>
+    <div class="btn" onclick="toggleSpecialites()">
+  📂 Fiches par spécialité
+</div>
 
-<div class="fiche-container">
+<div id="specialitesMenu" class="hidden">
 
   <div class="fiche">
     <a href="pdf/chirurgie_cardiaque.pdf" target="_blank">
-      <strong>Chirurgie cardiaque</strong><br>
-      📄 Télécharger la fiche
+      ❤️ Chirurgie cardiaque
     </a>
   </div>
 
   <div class="fiche">
     <a href="pdf/chirurgie_thoracique.pdf" target="_blank">
-      <strong>Chirurgie thoracique</strong><br>
-      📄 Télécharger la fiche
+      🫁 Chirurgie thoracique
     </a>
   </div>
 
   <div class="fiche">
     <a href="pdf/chirurgie_vasculaire.pdf" target="_blank">
-      <strong>Chirurgie vasculaire</strong><br>
-      📄 Télécharger la fiche
+      🩸 Chirurgie vasculaire
     </a>
   </div>
 
   <div class="fiche">
     <a href="pdf/cardiologie_interventionnelle.pdf" target="_blank">
-      <strong>Cardiologie interventionnelle</strong><br>
-      📄 Télécharger la fiche
+      💉 Cardiologie interventionnelle
     </a>
   </div>
+
+</div>
   
 </div>
 
@@ -525,6 +525,12 @@ function toggleVideo() {
       
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
+<script>
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
   menu.classList.toggle("hidden");
 }
 </script>
