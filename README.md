@@ -323,10 +323,7 @@ li {
   allow="fullscreen; autoplay"
   allowfullscreen>
 </iframe>
-    
   </div>
-  
-
   <div class="card" id="organigramme">
     <h2>🏥 Organigramme du service</h2>
     <ul>
@@ -341,7 +338,6 @@ li {
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s.  </li>
     </ul>
   </div>
-  
     <div class="card">
     <h2> Référents</h2>
     <ul>
@@ -355,12 +351,8 @@ li {
   ☎️ Telephones 
 </a>
   </div>
-
   <div class="card" id="documents">
     <h2>📄 Accès rapide aux documents</h2>
-
-    
-
     <a class="btn" href="docs/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
     </a>
