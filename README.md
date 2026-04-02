@@ -482,8 +482,6 @@ li {
 <script>
 function checkPassword() {
   const password = document.getElementById("password").value;
-
-  // 🔑 CHANGE TON MOT DE PASSE ICI
   const correctPassword = "iadeicp543";
 
   if (password === correctPassword) {
@@ -493,6 +491,21 @@ function checkPassword() {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
+
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  if (menu) {
+    menu.classList.toggle("hidden");
+  }
+}
+
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+  if (menu) {
+    menu.classList.toggle("hidden");
+  }
+}
+
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
@@ -510,33 +523,8 @@ function toggleVideo() {
     setTimeout(() => {
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
-      } else if (iframe.webkitRequestFullscreen) {
-        iframe.webkitRequestFullscreen();
-      } else if (iframe.msRequestFullscreen) {
-        iframe.msRequestFullscreen();
       }
     }, 500);
-  }
-}
-      
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
-}
-
-
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("hidden");
-}
-
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-
-  if (menu.classList.contains("hidden")) {
-    menu.classList.remove("hidden");
-  } else {
-    menu.classList.add("hidden");
   }
 }
 </script>
