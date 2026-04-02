@@ -330,7 +330,6 @@ li {
   </div>
     <div class="btn" onclick="toggleSpecialites()">
   📂 Fiches par spécialité
-    </div>
     
 <div id="specialitesMenu" class="hidden">
 
@@ -357,8 +356,6 @@ li {
       💉 Cardiologie interventionnelle
     </a>
   </div>
-
-
 </div> 
   <style>  
 .fiche-container {  
