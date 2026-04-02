@@ -357,7 +357,6 @@ li {
     </a>
   </div>
 
-</div>
 
 </div> 
   <style>  
