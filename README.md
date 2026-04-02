@@ -356,7 +356,7 @@ li {
       💉 Cardiologie interventionnelle
     </a>
   </div>
-</div> 
+
   <style>  
 .fiche-container {  
   display: grid;  
@@ -387,7 +387,7 @@ li {
   }  
 </style>  
 </div>  
-</div>
+
 <div>
 <a class="btn" href="pdf/Antibioprophylaxie_ICP.pdf" target="_blank">  
       💊 Antibioprophylaxie
