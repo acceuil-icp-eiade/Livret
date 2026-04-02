@@ -450,12 +450,7 @@ li {
       🫁 Détresse respiratoire
     </a>
   </div>
-  <script>
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+
 </div>
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
@@ -527,5 +522,11 @@ function toggleVideo() {
     }, 500);
   }
 }
+      
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
 </script>
+</body>
 
