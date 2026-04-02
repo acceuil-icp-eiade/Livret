@@ -280,6 +280,7 @@ li {
     📄 Télécharger le plan  
   </a>  
 </div>  
+</div>
   <div>
 <div class="card" id="visite">  
   <h2>🎥 Visite du service</h2>    <button id="videoBtn" class="video-btn" onclick="toggleVideo()">  
@@ -292,6 +293,7 @@ li {
   allowfullscreen>  
 </iframe>  
   </div>  
+</div>
 </div>
   <div class="card" id="organigramme">  
     <h2>🏥 Organigramme du service</h2>  
