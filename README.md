@@ -419,7 +419,7 @@ li {
   .fiche-plan {
   background: white;
   }
-</style>
+
 
   <div class="btn" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
@@ -450,7 +450,7 @@ li {
       🫁 Détresse respiratoire
     </a>
   </div>
-
+</script>
 </div>
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
@@ -527,7 +527,7 @@ function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
   menu.classList.toggle("hidden");
 }
-</script>
+
 <script>
 function toggleSpecialites() {
   const menu = document.getElementById("specialitesMenu");
