@@ -218,7 +218,7 @@ li {
   margin-top: 10px;  
 }  
   
-</style>  </head>  <body>  <header>  
+</style>  </head>    
   <h1>Bienvenue à l’ICP 🫀🫁</h1>  
   <p>Bloc opératoire – Accueil des étudiants IADE</p>  
 </header>  <!-- 🔐 PAGE DE CONNEXION -->  <div id="loginPage" class="login">  
