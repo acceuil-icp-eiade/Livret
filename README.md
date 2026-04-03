@@ -1,3 +1,4 @@
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -219,19 +220,10 @@ li {
 .card ul {
   margin-top: 10px;
 }
-    }
 
 </style>
 
 </head>
-<div>
-<div class="bottom-menu">
-  <a href="#documents">📑</a>
-  <a href="#pratique">🏥</a>
-  <a href="#visite">🎥</a>
-  <a href="#retour">📝</a>
-</div>
-</div>
 
 <body>
 
@@ -246,16 +238,23 @@ li {
   <input type="password" id="password" placeholder="Mot de passe">
   <button onclick="checkPassword()">Entrer</button>
   <p id="error" style="color:red;"></p>
-  <div id="content" style="display:none;">
-  </div>
 </div>
-
 
 <!-- 🔓 CONTENU -->
 
+<div class="bottom-menu">
+  <a href="#documents">📑</a>
+  <a href="#plan">🗺</a>
+  <a href="#visite">🎥</a>
+  <a href="#retour">📝</a>
+  <a href="pdf/telephones.pdf">☎️</a>
+</div>
 <div id="content" class="hidden">
+
+
 <div class="container">
- <div class="card">
+
+  <div class="card">
     <h2>👋 Message de bienvenue</h2>
     <p>
       Toute l’équipe du bloc opératoire de l’Institut Cœur Poumon est ravie de vous accueillir.  
@@ -310,7 +309,6 @@ li {
     📄 Télécharger le plan
   </a>
 </div>
-
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
@@ -326,7 +324,6 @@ li {
   allowfullscreen>
 </iframe>
   </div>
-  
   <div class="card" id="organigramme">
     <h2>🏥 Organigramme du service</h2>
     <ul>
@@ -341,7 +338,6 @@ li {
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s.  </li>
     </ul>
   </div>
-  
     <div class="card">
     <h2> Référents</h2>
     <ul>
@@ -350,51 +346,50 @@ li {
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
   </div>
-  
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
   ☎️ Telephones 
 </a>
   </div>
-  
   <div class="card" id="documents">
     <h2>📄 Accès rapide aux documents</h2>
-    <a class="btn" href="pdf/chirurgies.pdf" target="_blank">
+    <a class="btn" href="docs/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
     </a>
-</div>
-  <div class="btn" onclick="toggleSpecialites()">
-  📂 Fiches par spécialité
-  </div>
+    
+    <h2>Fiches par spécialité</h2>
 
-<div id="specialitesMenu" class="hidden">
+<div class="fiche-container">
 
   <div class="fiche">
     <a href="pdf/chirurgie_cardiaque.pdf" target="_blank">
-      ❤️ Chirurgie cardiaque
+      <strong>Chirurgie cardiaque</strong><br>
+      📄 Télécharger la fiche
     </a>
   </div>
 
   <div class="fiche">
     <a href="pdf/chirurgie_thoracique.pdf" target="_blank">
-      🫁 Chirurgie thoracique
+      <strong>Chirurgie thoracique</strong><br>
+      📄 Télécharger la fiche
     </a>
   </div>
 
   <div class="fiche">
     <a href="pdf/chirurgie_vasculaire.pdf" target="_blank">
-      🩸 Chirurgie vasculaire
+      <strong>Chirurgie vasculaire</strong><br>
+      📄 Télécharger la fiche
     </a>
   </div>
 
   <div class="fiche">
     <a href="pdf/cardiologie_interventionnelle.pdf" target="_blank">
-      💉 Cardiologie interventionnelle
+      <strong>Cardiologie interventionnelle</strong><br>
+      📄 Télécharger la fiche
     </a>
   </div>
-
+  
 </div>
-
 
 <style>
 .fiche-container {
@@ -424,7 +419,7 @@ li {
   .fiche-plan {
   background: white;
   }
-
+</style>
 
   <div class="btn" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
@@ -455,10 +450,13 @@ li {
       🫁 Détresse respiratoire
     </a>
   </div>
-  
-
-
-  <div>
+  <script>
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
+</div>
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
@@ -483,61 +481,27 @@ li {
     📝 Donner mon avis
   </a>
 </div>
-
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
 
 <script>
-  function checkPassword() {  
-  const password = document.getElementById("password").value;  
-  
-  // 🔑 CHANGE TON MOT DE PASSE ICI  
-  const correctPassword = "iadeicp543";  
-  
-  if (password === correctPassword) {  
-    document.getElementById("loginPage").classList.add("hidden");  
-    document.getElementById("content").classList.remove("hidden");  
-  } else {  
-    document.getElementById("error").innerText = "Mot de passe incorrect";  
-  }  
-}  
-</script>   
-<script>
 function checkPassword() {
-  const input = document.getElementById("password");
-  const login = document.getElementById("loginPage");
-  const content = document.getElementById("content");
+  const password = document.getElementById("password").value;
 
-  if (!input || !login || !content) {
-    alert("Erreur: éléments manquants dans le HTML");
-    return;
-  }
+  // 🔑 CHANGE TON MOT DE PASSE ICI
+  const correctPassword = "iadeicp543";
 
-  if (input.value === "iadeicp543") {
-    login.style.display = "none";
-    content.style.display = "block";
+  if (password === correctPassword) {
+    document.getElementById("loginPage").classList.add("hidden");
+    document.getElementById("content").classList.remove("hidden");
   } else {
-    alert("Mot de passe incorrect");
+    document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
 </script>
-<script>
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  if (menu) {
-    menu.classList.toggle("hidden");
-  }
-}
 
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  if (menu) {
-    menu.classList.toggle("hidden");
-  }
-}
-</script>
-<script>
+  <script>
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
@@ -555,11 +519,12 @@ function toggleVideo() {
     setTimeout(() => {
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
       }
     }, 500);
   }
 }
 </script>
-
-</body>
-
