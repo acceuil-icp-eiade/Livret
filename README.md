@@ -464,7 +464,7 @@ function toggleUrgences() {
 </script>
 </div>
 <a class="btn"
-  href="pdf/antibioprophylaxie.pdf"
+  href="pdf/antibioprophylaxie_ICP.pdf"
   target="_blank">
       💊 Antibioprophylaxie
 </a>
