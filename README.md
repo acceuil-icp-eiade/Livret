@@ -363,7 +363,7 @@ li {
 </div>
   <div class="btn" onclick="toggleSpecialites()">
   📂 Fiches par spécialité
-</div>
+  </div>
 
 <div id="specialitesMenu" class="hidden">
 
