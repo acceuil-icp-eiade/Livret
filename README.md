@@ -487,6 +487,20 @@ li {
 </footer>
 <script >
 <script>
+  function checkPassword() {  
+  const password = document.getElementById("password").value;  
+  
+  // 🔑 CHANGE TON MOT DE PASSE ICI  
+  const correctPassword = "iadeicp543";  
+  
+  if (password === correctPassword) {  
+    document.getElementById("loginPage").classList.add("hidden");  
+    document.getElementById("content").classList.remove("hidden");  
+  } else {  
+    document.getElementById("error").innerText = "Mot de passe incorrect";  
+  }  
+}  
+</script>   
 function checkPassword() {
   const input = document.getElementById("password");
   const login = document.getElementById("loginPage");
