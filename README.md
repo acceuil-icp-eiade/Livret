@@ -231,7 +231,7 @@ li {
   <a href="#visite">🎥</a>
   <a href="#retour">📝</a>
 </div>
-
+</div>
 
 <body>
 
