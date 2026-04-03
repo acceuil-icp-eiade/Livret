@@ -218,15 +218,23 @@ li {
   margin-top: 10px;  
 }  
   
-</style>  </head>    
+</style> 
+</head>  
+<body> 
+  <script>
+    <header>
   <h1>Bienvenue à l’ICP 🫀🫁</h1>  
   <p>Bloc opératoire – Accueil des étudiants IADE</p>  
-</header>  <!-- 🔐 PAGE DE CONNEXION -->  <div id="loginPage" class="login">  
+</header> 
+      <!-- 🔐 PAGE DE CONNEXION -->
+  <div id="loginPage" class="login">  
   <h2>Accès réservé</h2>  
   <input type="password" id="password" placeholder="Mot de passe">  
   <button onclick="checkPassword()">Entrer</button>  
   <p id="error" style="color:red;"></p>  
-</div>  <!-- 🔓 CONTENU -->  <div class="bottom-menu">  
+</div> 
+      <!-- 🔓 CONTENU --> 
+      <div class="bottom-menu">  
   <a href="#documents">📑</a>  
   <a href="#plan">🗺</a>  
   <a href="#visite">🎥</a>  
