@@ -463,6 +463,11 @@ function toggleUrgences() {
 }
 </script>
 </div>
+<a class="btn"
+  href="pdf/antibioprophylaxie.pdf"
+  target="_blank">
+      💊 Antibioprophylaxie
+</a>
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
