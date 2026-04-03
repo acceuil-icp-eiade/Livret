@@ -358,7 +358,7 @@ li {
   
   <div class="card" id="documents">
     <h2>📄 Accès rapide aux documents</h2>
-    <a class="btn" href="docs/chirurgies.pdf" target="_blank">
+    <a class="btn" href="pdf/chirurgies.pdf" target="_blank">
       ✅ les chirurgies 
     </a>
 </div>
