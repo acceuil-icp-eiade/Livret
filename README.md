@@ -280,8 +280,6 @@ li {
     📄 Télécharger le plan  
   </a>  
 </div>  
-</div>
-  <div>
 <div class="card" id="visite">  
   <h2>🎥 Visite du service</h2>    <button id="videoBtn" class="video-btn" onclick="toggleVideo()">  
     ▶️ Voir la visite du bloc  
@@ -293,8 +291,6 @@ li {
   allowfullscreen>  
 </iframe>  
   </div>  
-</div>
-</div>
   <div class="card" id="organigramme">  
     <h2>🏥 Organigramme du service</h2>  
     <ul>  
@@ -327,10 +323,10 @@ li {
     <a class="btn" href="pdf/chirurgies.pdf" target="_blank">  
       ✅ les chirurgies   
     </a> 
-  </div>
     <div class="btn" onclick="toggleSpecialites()">
   📂 Fiches par spécialité
-    
+</div>
+
 <div id="specialitesMenu" class="hidden">
 
   <div class="fiche">
@@ -357,6 +353,9 @@ li {
     </a>
   </div>
 
+</div>
+
+</div> 
   <style>  
 .fiche-container {  
   display: grid;  
@@ -387,7 +386,7 @@ li {
   }  
 </style>  
 </div>  
-
+</div>
 <div>
 <a class="btn" href="pdf/Antibioprophylaxie_ICP.pdf" target="_blank">  
       💊 Antibioprophylaxie
@@ -430,12 +429,10 @@ function toggleUrgences() {
 }  
 </script>  
 </div>  
-<div>
 <a class="btn" href="pdf/bilan_de_demi_stage.pdf" target="_blank">  
       📘 bilan de demi-stage  
     </a>  
   </div>  
-  
   <div class="card">  
     <h2>💬 Petit mot pour vous</h2>  
     <p>  
