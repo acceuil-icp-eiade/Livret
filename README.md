@@ -219,6 +219,7 @@ li {
 .card ul {
   margin-top: 10px;
 }
+    }
 
 </style>
 
