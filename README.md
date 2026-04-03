@@ -224,6 +224,14 @@ li {
 </style>
 
 </head>
+<div>
+<div class="bottom-menu">
+  <a href="#documents">📑</a>
+  <a href="#pratique">🏥</a>
+  <a href="#visite">🎥</a>
+  <a href="#retour">📝</a>
+</div>
+
 
 <body>
 
@@ -243,14 +251,6 @@ li {
 
 
 <!-- 🔓 CONTENU -->
-
-<div class="bottom-menu">
-  <a href="#documents">📑</a>
-  <a href="#plan">🗺</a>
-  <a href="#visite">🎥</a>
-  <a href="#retour">📝</a>
-  <a href="pdf/telephones.pdf">☎️</a>
-</div>
 
 <div id="content" class="hidden">
 <div class="container">
