@@ -455,9 +455,10 @@ li {
       🫁 Détresse respiratoire
     </a>
   </div>
-  </div>
-</script>
+  
+
 </div>
+  <div>
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
@@ -485,7 +486,6 @@ li {
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
-<script >
 <script>
   function checkPassword() {  
   const password = document.getElementById("password").value;  
@@ -501,6 +501,7 @@ li {
   }  
 }  
 </script>   
+<script>
 function checkPassword() {
   const input = document.getElementById("password");
   const login = document.getElementById("loginPage");
