@@ -236,7 +236,7 @@ li {
 <div id="loginPage" class="login">
   <h2>Accès réservé</h2>
   <input type="password" id="password" placeholder="Mot de passe">
-  <button onclick="checkPassword()">Entrer</button>
+  <button> onclick="checkPassword()">Entrer</button>
   <p id="error" style="color:red;"></p><div id="content" style="display:none;">
   </div>
 </div>
