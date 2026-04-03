@@ -457,7 +457,7 @@ li {
   </div>
   
 
-</div>
+
   <div>
 <a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
@@ -483,9 +483,11 @@ li {
     📝 Donner mon avis
   </a>
 </div>
+
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
+
 <script>
   function checkPassword() {  
   const password = document.getElementById("password").value;  
