@@ -361,14 +361,17 @@ li {
   </div>
 
   <div id="chirMenu" class="hidden">
-    <a class="btn" href="pdf/chirurgie1.pdf" target="_blank">📄 Chirurgie à cœur ouvert</a>
-    <a class="btn" href="pdf/chirurgie2.pdf" target="_blank">📄 Chirurgie vasculaire</a>
+    <a class="btn" href="pdf/chirurgie1.pdf" target="_blank">📄 interventions à cœur ouvert</a>
+    <a class="btn" href="pdf/chirurgie2.pdf" target="_blank">📄 La CEC</a>
     <a class="btn" href="pdf/chirurgie3.pdf" target="_blank">📄 Cardiologie interventionnelle</a>
     <a class="btn"
 href="pdf/chirurgie4.pdf" target="_blank">
-📄 La CEC</a>
+📄 Interventions vasculaires</a>
+    <a class="btn"
+href="pdf/chirurgie5.pdf" target="_blank">
+📄 interventions thoraciques</a>
   </div>
-  <style>
+    <style>
 .hidden {
   display: none;
 }
