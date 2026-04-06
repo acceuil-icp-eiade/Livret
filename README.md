@@ -365,6 +365,17 @@ li {
     <a class="btn" href="pdf/chirurgie2.pdf" target="_blank">📄 Chirurgie 2</a>
     <a class="btn" href="pdf/chirurgie3.pdf" target="_blank">📄 Chirurgie 3</a>
   </div>
+  <style>
+.hidden {
+  display: none;
+}
+</style>
+<script>
+function toggleChir() {
+  var menu = document.getElementById("chirMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 </div>
     
   <div class="btn" onclick="toggleSpecialites()">
