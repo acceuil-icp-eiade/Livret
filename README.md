@@ -352,12 +352,20 @@ li {
   ☎️ Telephones 
 </a>
   </div>
-  <div class="card" id="documents">
-    <h2>📄 Accès rapide aux documents</h2>
-    <a class="btn" href="pdf/chirurgies.pdf" target="_blank">
-      ✅ les chirurgies 
-    </a>
-    
+  
+    <div class="card" id="documents">
+  <h2>📄 Accès rapide aux documents</h2>
+
+  <div class="btn" onclick="toggleChir()">
+    ✅ les chirurgies
+  </div>
+
+  <div id="chirMenu" class="hidden">
+    <a class="btn" href="pdf/chirurgie1.pdf" target="_blank">📄 Chirurgie 1</a>
+    <a class="btn" href="pdf/chirurgie2.pdf" target="_blank">📄 Chirurgie 2</a>
+    <a class="btn" href="pdf/chirurgie3.pdf" target="_blank">📄 Chirurgie 3</a>
+  </div>
+</div>
     
   <div class="btn" onclick="toggleSpecialites()">
   📂 Fiches par spécialité
