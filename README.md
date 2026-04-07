@@ -383,10 +383,10 @@ li {
     <a class="btn" href="pdf/CARDIOLOGIE.pdf" target="_blank">❤️ interventionnelle</a> 
     <a class="btn"
 href="pdf/VASCULAIRE.pdf" target="_blank">
-📕 la vasculaire</a>    
+📕 vasculaire</a>    
     <a class="btn"
 href="pdf/POUMON.pdf" target="_blank">
-🩻 la thoracique</a>
+🩻 thoracique</a>
       
   </div>
   
