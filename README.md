@@ -391,7 +391,7 @@ function toggleChir() {
 <div id="specialitesMenu" class="hidden">
 
   <div class="fiche">
-    <a href="pdf/chirurgie_cardiaque.pdf" target="_blank">
+    <a href="pdf/CHIRURGIE_CARDIAQUE.pdf" target="_blank">
       ❤️ Chirurgie cardiaque
     </a>
   </div>
