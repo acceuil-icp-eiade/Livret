@@ -397,7 +397,7 @@ function toggleChir() {
   </div>
 
   <div class="fiche">
-    <a href="pdf/chirurgie_thoracique.pdf" target="_blank">
+    <a href="pdf/CHIRURGIE_THORACIQUE.pdf" target="_blank">
       🫁 Chirurgie thoracique
     </a>
   </div>
