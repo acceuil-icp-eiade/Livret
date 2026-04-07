@@ -451,9 +451,35 @@ function toggleSpecialites() {
   .fiche-plan {
   background: white;
   }
+  .btn.urgence {
+  background: linear-gradient(135deg, #ff3b3b, #b30000);
+  color: white;
+  animation: pulseUrgence 1.8s infinite;
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+}
+
+@keyframes pulseUrgence {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+}
+
+.btn.urgence:hover {
+  background: linear-gradient(135deg, #ff1a1a, #800000);
+  transform: scale(1.08);
+}
 </style>
 
-  <div class="btn" onclick="toggleUrgences()">
+  <div class="btn urgence" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
 </div>
 
