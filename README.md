@@ -403,7 +403,7 @@ function toggleChir() {
   </div>
 
   <div class="fiche">
-    <a href="pdf/chirurgie_vasculaire.pdf" target="_blank">
+    <a href="pdf/CHIRURGIE_VASCULAIRE.pdf" target="_blank">
       🩸 Chirurgie vasculaire
     </a>
   </div>
