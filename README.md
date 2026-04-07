@@ -477,6 +477,15 @@ function toggleSpecialites() {
   background: linear-gradient(135deg, #ff1a1a, #800000);
   transform: scale(1.08);
 }
+.btn.bilan {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.btn.bilan:hover {
+  background: linear-gradient(135deg, #34d058, #19692c);
+  transform: scale(1.05);
+}
 </style>
 
   <div class="btn urgence" onclick="toggleUrgences()">
@@ -520,7 +529,7 @@ function toggleUrgences() {
   target="_blank">
       💊 Antibioprophylaxie
 </a>
-<a class="btn" href="docs/bilan_de_demi_stage.pdf" target="_blank">
+<a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
   </div>
