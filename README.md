@@ -220,6 +220,13 @@ li {
 .card ul {
   margin-top: 10px;
 }
+    .btn.chirurgie {
+  background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
 
 </style>
 
