@@ -409,7 +409,7 @@ function toggleChir() {
   </div>
 
   <div class="fiche">
-    <a href="pdf/cardiologie_interventionnelle.pdf" target="_blank">
+    <a href="pdf/TAVI.pdf" target="_blank">
       💉 Cardiologie interventionnelle
     </a>
   </div>
