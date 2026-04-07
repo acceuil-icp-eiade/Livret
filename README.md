@@ -357,18 +357,18 @@ li {
   <h2>📄 Accès rapide aux documents</h2>
 
   <div class="btn" onclick="toggleChir()">
-    ✅ les chirurgies
+    ✅ presentation des chirurgies
   </div>
 
   <div id="chirMenu" class="hidden">
-    <a class="btn" href="pdf/chirurgie1.pdf" target="_blank">📄 interventions à cœur ouvert</a>
-    <a class="btn" href="pdf/chirurgie2.pdf" target="_blank">📄 La CEC</a>
-    <a class="btn" href="pdf/chirurgie3.pdf" target="_blank">📄 Cardiologie interventionnelle</a>
+    <a class="btn" href="pdf/COEUR.pdf" target="_blank">📄 interventions à cœur ouvert</a>
+    <a class="btn" href="pdf/CEC.pdf" target="_blank">📄 La CEC</a>
+    <a class="btn" href="pdf/CARDIOLOGIE.pdf" target="_blank">📄 Cardiologie interventionnelle</a>
     <a class="btn"
-href="pdf/chirurgie4.pdf" target="_blank">
+href="pdf/VASCULAIRE.pdf" target="_blank">
 📄 Interventions vasculaires</a>
     <a class="btn"
-href="pdf/chirurgie5.pdf" target="_blank">
+href="pdf/POUMON.pdf" target="_blank">
 📄 interventions thoraciques</a>
   </div>
     <style>
