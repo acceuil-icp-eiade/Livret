@@ -388,7 +388,7 @@ function toggleChir() {
 </div>
     
   <div class="btn" onclick="toggleSpecialites()">
-  📂 Fiches par spécialité
+  📂 Anesthésie par spécialité
 </div>
 
 <div id="specialitesMenu" class="hidden">
