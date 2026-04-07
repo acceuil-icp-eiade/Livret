@@ -231,7 +231,12 @@ li {
   padding: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
-
+#chirMenu {
+  background-color: #ff4fa3; /* rose */
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
 </style>
 
 </head>
