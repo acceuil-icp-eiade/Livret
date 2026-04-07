@@ -370,7 +370,9 @@ href="pdf/VASCULAIRE.pdf" target="_blank">
     <a class="btn"
 href="pdf/POUMON.pdf" target="_blank">
 🫁 interventions thoraciques</a>
+    
   </div>
+  
     <style>
 .hidden {
   display: none;
