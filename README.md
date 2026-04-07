@@ -378,15 +378,15 @@ li {
   </div>
 
   <div id="chirMenu" class="hidden">  
-    <a class="btn" href="pdf/COEUR.pdf" target="_blank"> 🫀 interventions à cœur ouvert</a> 
+    <a class="btn" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
     <a class="btn" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
-    <a class="btn" href="pdf/CARDIOLOGIE.pdf" target="_blank">❤️ Cardiologie interventionnelle</a> 
+    <a class="btn" href="pdf/CARDIOLOGIE.pdf" target="_blank">❤️ l'interventionnel</a> 
     <a class="btn"
 href="pdf/VASCULAIRE.pdf" target="_blank">
-📕 Interventions vasculaires</a>    
+📕 la vasculaire</a>    
     <a class="btn"
 href="pdf/POUMON.pdf" target="_blank">
-🩻 interventions thoraciques</a>
+🩻 la thoracique</a>
       
   </div>
   
