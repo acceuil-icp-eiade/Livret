@@ -220,6 +220,10 @@ li {
 .card ul {
   margin-top: 10px;
 }
+    #chirMenu {
+  background-color: #ff4fa3;
+  color: white;
+    }
     .btn.chirurgie {
   background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
   color: white;
