@@ -357,6 +357,7 @@ li {
   <h2>📄 Accès rapide aux documents</h2>
 
   <div class="btn" onclick="toggleChir()">
+    
     ✅ présentation des chirurgies
   </div>
 
