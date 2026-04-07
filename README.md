@@ -373,6 +373,7 @@ href="pdf/POUMON.pdf" target="_blank">
 🫁 interventions thoraciques</a>
       
   </div>
+  </div>
   
     <style>
 .hidden {
