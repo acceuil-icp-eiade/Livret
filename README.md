@@ -361,7 +361,7 @@ li {
   </div>
 
   <div id="chirMenu" class="hidden">  
-    <a class="btn" href="pdf/COEUR.pdf" target="_blank> 🫀 interventions à cœur ouvert</a>      
+    <a class="btn" href="pdf/COEUR.pdf" target="_blank> 🫀 interventions à cœur ouvert</a> 
     <a class="btn" href="pdf/CEC.pdf" target=_blank> 🔧 La CEC</a>
     <a class="btn" href="pdf/CARDIOLOGIE.pdf" target="_blank">❤️ Cardiologie interventionnelle</a>
     <a class="btn"
