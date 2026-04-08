@@ -321,7 +321,7 @@ li {
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
 
-  <a href="pdf/PLAN1.pdf" target="_blank" class="btn-pdf">
+  <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
     📄 Télécharger le plan
   </a>
 </div>
