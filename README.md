@@ -358,7 +358,7 @@ li {
     <h2> Référents</h2>
     <ul>
       <li><strong>cadre sup:</strong> Mme Reumaux Laurence </li>
-    <li><strong>Cadre :</strong> Mme Hennache Audrey </li>
+    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li>
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
