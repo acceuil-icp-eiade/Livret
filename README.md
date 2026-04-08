@@ -327,10 +327,10 @@ li {
 </div>
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
-
-  <button id="videoBtn" class="video-btn" onclick="toggleVideo()">
-    ▶️ Voir la visite du bloc
-  </button>
+<button id="urgenceBtn" class="video-btn urgence" onclick="toggleUrgences()">
+  🚨 Accès rapide – Protocoles d'urgence
+</button>
+  
   <div id="videoContainer" class="video hidden">
   
   <iframe id="videoFrame"
