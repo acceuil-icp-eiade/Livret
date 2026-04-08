@@ -507,7 +507,7 @@ function toggleSpecialites() {
 }
 </style>
 
-  <div class="btn urgence" onclick="toggleUrgences()">
+  <div class="btn urgence" id="urgenceBtn" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
 </div>
 
@@ -593,29 +593,21 @@ function checkPassword() {
 </script>
 
   <script>
-function toggleVideo() {
-  const video = document.getElementById("videoContainer");
-  const iframe = document.getElementById("videoFrame");
-  const button = document.getElementById("videoBtn");
 
-  if (video.classList.contains("show")) {
-    video.classList.remove("show");
-    setTimeout(() => video.classList.add("hidden"), 400);
-    button.innerHTML = "▶️ Voir la visite du bloc";
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  const button = document.getElementById("urgenceBtn");
+
+  if (menu.classList.contains("show")) {
+    menu.classList.remove("show");
+    setTimeout(() => menu.classList.add("hidden"), 400);
+    button.innerHTML = "🚨 Protocoles d'urgence";
   } else {
-    video.classList.remove("hidden");
-    setTimeout(() => video.classList.add("show"), 10);
-    button.innerHTML = "❌ Fermer la vidéo";
-
-    setTimeout(() => {
-      if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-      } else if (iframe.webkitRequestFullscreen) {
-        iframe.webkitRequestFullscreen();
-      } else if (iframe.msRequestFullscreen) {
-        iframe.msRequestFullscreen();
-      }
-    }, 500);
+    menu.classList.remove("hidden");
+    setTimeout(() => menu.classList.add("show"), 10);
+    button.innerHTML = "❌ Fermer les protocoles";
   }
 }
+
+
 </script>
