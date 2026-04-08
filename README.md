@@ -237,15 +237,6 @@ li {
   padding: 10px;
   border-radius: 8px;
 }
-    #urgencesMenu.show {
-  display: block;
-  animation: fadeIn 0.4s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 </style>
 
 </head>
@@ -270,7 +261,7 @@ li {
 <div class="bottom-menu">
   <a href="#documents">📑</a>
   <a href="#plan">🗺</a>
-  <a href="#urgences">🚨</a>
+  <a href="#visite">🎥</a>
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
@@ -288,7 +279,7 @@ li {
       Nous savons que les débuts peuvent être impressionnants — ici, vous êtes là pour apprendre, progresser et poser toutes vos questions...
     </p>
     <p>
-      votre bien être,  votre épanouissement professionnel et votre autonomisation sont au cœur de notre accompagnement.
+      votre bien être, votre épanouissement professionnel et votre autonomisation sont au cœur de notre accompagnement.
     </p>
     <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
   </div>
@@ -330,7 +321,7 @@ li {
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
 
-  <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
+  <a href="pdf/plan-bloc.pdf" target="_blank" class="btn-pdf">
     📄 Télécharger le plan
   </a>
 </div>
@@ -360,14 +351,14 @@ li {
       <li><strong>Anesthésie:</strong></li>
       <li>Chef de service:Dr Desbordes</li>
   
-    <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s.  </li>
+    <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
   </div>
     <div class="card">
     <h2> Référents</h2>
     <ul>
       <li><strong>cadre sup:</strong> Mme Reumaux Laurence </li>
-    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li>
+    <li><strong>Cadre :</strong> Mme Hennache Audrey </li>
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
@@ -516,7 +507,7 @@ function toggleSpecialites() {
 }
 </style>
 
-  <div class="btn urgence" id="urgenceBtn" onclick="toggleUrgences()">
+  <div class="btn urgence" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
 </div>
 
@@ -545,7 +536,12 @@ function toggleSpecialites() {
       🫁 Détresse respiratoire
     </a>
   </div>
-  
+  <script>
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 </div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
@@ -597,20 +593,29 @@ function checkPassword() {
 </script>
 
   <script>
+function toggleVideo() {
+  const video = document.getElementById("videoContainer");
+  const iframe = document.getElementById("videoFrame");
+  const button = document.getElementById("videoBtn");
 
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  const button = document.getElementById("urgenceBtn");
-
-  if (menu.classList.contains("show")) {
-    menu.classList.remove("show");
-    setTimeout(() => menu.classList.add("hidden"), 400);
-    button.innerHTML = "🚨 Protocoles d'urgence";
+  if (video.classList.contains("show")) {
+    video.classList.remove("show");
+    setTimeout(() => video.classList.add("hidden"), 400);
+    button.innerHTML = "▶️ Voir la visite du bloc";
   } else {
-    menu.classList.remove("hidden");
-    setTimeout(() => menu.classList.add("show"), 10);
-    button.innerHTML = "❌ Fermer les protocoles";
+    video.classList.remove("hidden");
+    setTimeout(() => video.classList.add("show"), 10);
+    button.innerHTML = "❌ Fermer la vidéo";
+
+    setTimeout(() => {
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      }
+    }, 500);
   }
 }
-
 </script>
