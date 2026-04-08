@@ -237,6 +237,15 @@ li {
   padding: 10px;
   border-radius: 8px;
 }
+    #urgencesMenu.show {
+  display: block;
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 </style>
 
 </head>
@@ -536,12 +545,7 @@ function toggleSpecialites() {
       🫁 Détresse respiratoire
     </a>
   </div>
-  <script>
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+  
 </div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
@@ -608,6 +612,5 @@ function toggleUrgences() {
     button.innerHTML = "❌ Fermer les protocoles";
   }
 }
-
 
 </script>
