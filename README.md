@@ -344,7 +344,7 @@ li {
     <h2>🏥 Organigramme du service</h2>
     <ul>
       <li><strong>bloc opératoire :</strong></li>
-      <li>Chirurgie cardiaque: Professeur Vinventelli </li>
+      <li>Chirurgie cardiaque: Professeur Vincentelli </li>
       <li>Chirurgie thoracique: Professeur Venissac</li>      
       <li><strong>PTI:</strong></li>
       <LI>Cardiologie: Professeur Lemesle</LI>
