@@ -380,7 +380,7 @@ li {
   <div id="chirMenu" class="hidden">  
     <a class="btn" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
     <a class="btn" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
-    <a class="btn" href="pdf/CARDIOLOGIE(1).pdf" target="_blank">❤️ interventionnelle</a> 
+    <a class="btn" href="pdf/CARDIOLOGIE1.pdf" target="_blank">❤️ interventionnelle</a> 
     <a class="btn"
 href="pdf/VASCULAIRE.pdf" target="_blank">
 📕 vasculaire</a>    
