@@ -325,7 +325,6 @@ li {
   <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
   </div>
-  </div>
 
   <script>
 function acceptDisclaimer() {
@@ -474,6 +473,7 @@ href="pdf/POUMON.pdf" target="_blank">
 🩻 thoracique</a>
       
   </div>
+  </div>
   
     <style>
 .hidden {
@@ -486,7 +486,7 @@ function toggleChir() {
   menu.classList.toggle("hidden");
 }
 </script>
-</div>
+
     
   <div class="btn" onclick="toggleSpecialites()">
   📂 Anesthésie par spécialité
@@ -621,18 +621,21 @@ function toggleSpecialites() {
       🫁 Détresse respiratoire
     </a>
   </div>
+
   <script>
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
   menu.classList.toggle("hidden");
 }
 </script>
-</div>
+<div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
   target="_blank">
       💊 Antibioprophylaxie
 </a>
+</div>
+<div>
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
