@@ -391,6 +391,7 @@ li {
       <li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
     </ul>
   </div>
+</div>
   
 <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Vie pratique</h2>
@@ -413,6 +414,7 @@ li {
     <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
+</div>
 </div>
 
 <div class="fiche fiche-plan" id="plan">
@@ -456,6 +458,7 @@ li {
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
   </div>
+  </div>
 
   <div class="card clickable" onclick="toggleItem(this)">
     <h2> Référents</h2>
@@ -467,6 +470,7 @@ li {
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
+  </div>
   </div>
   
 <div>
@@ -496,6 +500,7 @@ href="pdf/POUMON.pdf" target="_blank">
       
   </div>
   </div>
+
     <style>
 .hidden {
   display: none;
@@ -679,10 +684,10 @@ function toggleUrgences() {
     📝 Donner mon avis
   </a>
 </div>
+
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
-
 
 <script>
   function checkPassword() {
