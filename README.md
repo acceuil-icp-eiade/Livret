@@ -350,7 +350,7 @@ function acceptDisclaimer() {
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
 
-<div id="content" style="dysplay:none">
+<div id="content" style="display:none">
 <div class="container">
 
   <div class="card">
