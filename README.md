@@ -287,6 +287,9 @@ li {
 .hidden {
   display: none;
 }
+    .hidden {
+  display: none !important;
+    }
 </style>
 
 </head>
@@ -651,6 +654,21 @@ function toggleUrgences() {
 
 
 <script>
+  function checkPassword() {
+  const pass = document.getElementById("password").value;
+
+  if (pass === "TON_MOT_DE_PASSE") {
+
+    // cacher login
+    document.getElementById("loginPage").style.display = "none";
+
+    // afficher disclaimer
+    document.getElementById("disclaimer").classList.remove("hidden");
+
+  } else {
+    document.getElementById("error").innerText = "Mot de passe incorrect";
+  }
+  }
 function checkPassword() {
   const password = document.getElementById("password").value;
 
