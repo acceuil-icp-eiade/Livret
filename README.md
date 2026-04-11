@@ -703,5 +703,5 @@ function acceptDisclaimer() {
   document.getElementById("mainContent").classList.remove("hidden");
 }
 </script>
-</body>
+
 
