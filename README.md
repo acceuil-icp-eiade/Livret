@@ -501,7 +501,6 @@ href="pdf/POUMON.pdf" target="_blank">
 🩻 thoracique</a>
       
   </div>
-  </div>
 
     <style>
 .hidden {
