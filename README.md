@@ -264,7 +264,51 @@ li {
   opacity: 1;
   pointer-events: all;
 }
+.disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.disclaimer-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+    .disclaimer-box {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+
+  /* 👇 animation */
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.disclaimer-overlay.show .disclaimer-box {
+  transform: scale(1);
+  opacity: 1;
+}
 .disclaimer-box {
   background: rgba(255,255,255,0.85);
 backdrop-filter: blur(6px);
@@ -319,6 +363,15 @@ border-radius: 16px;
 
 .hidden {
   display: none;
+}
+    #loginPage {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#loginPage.hide {
+  opacity: 0;
+  pointer-events: none;
 }
 </style>
 
