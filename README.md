@@ -324,7 +324,9 @@ li {
     </p>
 
     <p>
-      Ce site est non officiel et n’engage pas le CHU de lille.
+      Ce site est non officiel et n’engage pas le CHU de lille.</p>
+      <p>
+      En cliquant sur Continuer, vous reconnaissez avoir pris connaissance de cet avertissement.
     </p>
 
     <button onclick="acceptDisclaimer()">✅ Continuer</button>
