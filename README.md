@@ -325,6 +325,7 @@ li {
 
     <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
+  </div>
   <script>
 function acceptDisclaimer() {
   // cacher le disclaimer
