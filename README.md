@@ -663,7 +663,6 @@ function toggleUrgences() {
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
-  </div>
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
     <p>
@@ -684,7 +683,6 @@ function toggleUrgences() {
     📝 Donner mon avis
   </a>
 </div>
-
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
