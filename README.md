@@ -461,7 +461,7 @@ li {
   </div>
 
   <div class="card clickable" onclick="toggleItem(this)">
-    <h2> Référents</h2>
+    <h2> ♻️ Référents</h2>
     
     <div class="content hidden">
     <ul>
