@@ -330,8 +330,6 @@ li {
   <script>
 function acceptDisclaimer() {
   document.getElementById("disclaimer").classList.add("hidden");
-
-  // 👉 ICI on affiche TON vrai contenu
   document.getElementById("content").classList.remove("hidden");
 }
 </script>
