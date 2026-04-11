@@ -664,6 +664,8 @@ function checkPassword() {
   }
 }
 </script>
+// Au lieu d'afficher directement le site :
+showDisclaimer();
 
   <script>
 function toggleVideo() {
