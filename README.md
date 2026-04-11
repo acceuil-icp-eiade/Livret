@@ -359,8 +359,8 @@ li {
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
-<div id="content" class="hidden">
 
+<div id="content" class="hidden">
 
 <div class="container">
 
@@ -391,7 +391,7 @@ li {
       <li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
     </ul>
   </div>
-</div>
+
 <script>
 function toggleItem(element) {
   const content = element.querySelector(".content");
@@ -418,7 +418,6 @@ function toggleItem(element) {
     <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
-</div>
 </div>
 
 <div class="fiche fiche-plan" id="plan">
@@ -461,8 +460,6 @@ function toggleItem(element) {
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
   </div>
-  </div>
-</div>
   
   <div class="card clickable" onclick="toggleItem(this)">
     <h2> Référents</h2>
@@ -473,7 +470,6 @@ function toggleItem(element) {
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
-  </div>
   </div>
   
 <div>
