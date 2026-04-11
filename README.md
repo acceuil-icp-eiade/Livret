@@ -326,6 +326,7 @@ li {
   </div>
   </div>
   </div>
+
   <script>
 function acceptDisclaimer() {
   // cacher le disclaimer
@@ -655,6 +656,7 @@ function toggleUrgences() {
   <a class="btn" href="https://forms.gle/4ATLvfYK83cmkXiN7" target="_blank">
     📝 Donner mon avis
   </a>
+</div>
 </div>
 <footer>
   Institut Cœur Poumon – Bloc opératoire
