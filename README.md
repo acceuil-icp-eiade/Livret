@@ -349,9 +349,8 @@ function acceptDisclaimer() {
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
+
 <div id="content" style="dysplay:none">
-
-
 <div class="container">
 
   <div class="card">
@@ -519,7 +518,7 @@ function toggleChir() {
   </div>
 
 </div>
-  
+  </div>
 </div>
 <script>
 function toggleSpecialites() {
