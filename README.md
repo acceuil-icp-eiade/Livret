@@ -289,6 +289,23 @@ li {
     window.onload = function () {
   showDisclaimer();
 };
+    .clickable {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clickable:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.01);
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
 </style>
 
 </head>
@@ -361,8 +378,10 @@ li {
     <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
   </div>
 
-  <div class="card">
-    <h2>📍 Votre premier jour</h2>
+  <div class="card clickable" onclick="toggleItem(this)">
+  <h2>📍 Votre premier jour</h2>
+
+  <div class="content hidden">
     <ul>
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
@@ -372,7 +391,13 @@ li {
       <li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
     </ul>
   </div>
-
+</div>
+<script>
+function toggleItem(element) {
+  const content = element.querySelector(".content");
+  content.classList.toggle("hidden");
+}
+</script>
   <div class="card" id="pratique">
   <h2>🏥 Vie pratique</h2>
     <ul>
