@@ -442,6 +442,7 @@ li {
 </iframe>
   </div>
   
+  
   <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Organigramme du service</h2>
 
@@ -470,6 +471,7 @@ li {
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
+  </div>
   </div>
   </div>
   
