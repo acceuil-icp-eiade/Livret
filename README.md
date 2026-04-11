@@ -445,6 +445,7 @@ function toggleItem(element) {
   allowfullscreen>
 </iframe>
   </div>
+  
   <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Organigramme du service</h2>
     <div class="card clickable" 
@@ -461,6 +462,7 @@ function toggleItem(element) {
     </ul>
   </div>
   </div>
+  
   <div class="card clickable" onclick="toggleItem(this)">
     <h2> Référents</h2>
     <div class="card clickable" 
