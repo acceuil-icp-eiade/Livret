@@ -15,15 +15,13 @@
       background-color: #f7f9fb;
       color: #2c3e50;
     }
-    
-header {
-  background: rgba(93, 173, 226, 0.7);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 25px;
-}
-    
-
+    header {
+      background: linear-gradient(135deg, #5dade2, #48c9b0);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
     h1 {
       margin: 0;
       font-size: 22px;
