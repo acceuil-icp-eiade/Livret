@@ -1,3 +1,4 @@
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -478,7 +479,14 @@ href="pdf/POUMON.pdf" target="_blank">
   display: none;
 }
 </style>
+<script>
+function toggleChir() {
+  var menu = document.getElementById("chirMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 
+    
   <div class="btn" onclick="toggleSpecialites()">
   📂 Anesthésie par spécialité
 </div>
@@ -512,7 +520,12 @@ href="pdf/POUMON.pdf" target="_blank">
 </div>
   </div>
 </div>
-
+<script>
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 <style>
 .fiche-container {
   display: grid;
@@ -607,6 +620,13 @@ href="pdf/POUMON.pdf" target="_blank">
       🫁 Détresse respiratoire
     </a>
   </div>
+
+  <script>
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 <div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
@@ -618,7 +638,7 @@ href="pdf/POUMON.pdf" target="_blank">
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
-</div>
+  </div>
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
     <p>
@@ -639,19 +659,11 @@ href="pdf/POUMON.pdf" target="_blank">
     📝 Donner mon avis
   </a>
 </div>
+</div>
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
-
 <script>
-function toggleChir() {
-  var menu = document.getElementById("chirMenu");
-  menu.classList.toggle("hidden");
-}
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("hidden");
-}
 function checkPassword() {
   const password = document.getElementById("password").value;
   const correctPassword = "iadeicp543";
@@ -662,12 +674,10 @@ function checkPassword() {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
-  
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden")9;
-}
+</script>
+</script>
 
+  <script>
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
@@ -694,4 +704,5 @@ function toggleVideo() {
   }
 }
   </script>
+</script>
 
