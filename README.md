@@ -660,15 +660,12 @@ function checkPassword() {
   const correctPassword = "iadeicp543";
 
   if (password === correctPassword) {
-    document.getElementById("loginPage").classList.add("hidden");
-
-    // 👉 ON AFFICHE LE DISCLAIMER (et PAS le contenu)
-    showDisclaimer();
-
-  } else {
+    document.getElementById("disclaimer").classList.remove("hidden");
+    } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
+</script>
 </script>
 
   <script>
