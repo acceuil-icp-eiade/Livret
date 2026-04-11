@@ -700,10 +700,13 @@ function showDisclaimer() {
   document.getElementById("disclaimer").classList.remove("hidden");
 }
 
-function acceptDisclaimer() {
-  document.getElementById("disclaimer").classList.add("hidden");
-  document.getElementById("mainContent").classList.remove("hidden");
-}
+  function acceptDisclaimer() {
+  const disclaimer = document.getElementById("disclaimer");
+  const content = document.getElementById("content");
+
+  disclaimer.style.display = "none";
+  content.classList.remove("hidden");
+  }
 </script>
 
 
