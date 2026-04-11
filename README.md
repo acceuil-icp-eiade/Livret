@@ -478,14 +478,7 @@ href="pdf/POUMON.pdf" target="_blank">
   display: none;
 }
 </style>
-<script>
-function toggleChir() {
-  var menu = document.getElementById("chirMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
 
-    
   <div class="btn" onclick="toggleSpecialites()">
   📂 Anesthésie par spécialité
 </div>
@@ -519,12 +512,7 @@ function toggleChir() {
 </div>
   </div>
 </div>
-<script>
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+
 <style>
 .fiche-container {
   display: grid;
@@ -619,13 +607,6 @@ function toggleSpecialites() {
       🫁 Détresse respiratoire
     </a>
   </div>
-
-  <script>
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
 <div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
@@ -658,11 +639,19 @@ function toggleUrgences() {
     📝 Donner mon avis
   </a>
 </div>
-
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
+
 <script>
+function toggleChir() {
+  var menu = document.getElementById("chirMenu");
+  menu.classList.toggle("hidden");
+}
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+  menu.classList.toggle("hidden");
+}
 function checkPassword() {
   const password = document.getElementById("password").value;
   const correctPassword = "iadeicp543";
@@ -673,10 +662,12 @@ function checkPassword() {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
-</script>
-</script>
+  
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden")9;
+}
 
-  <script>
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
@@ -703,5 +694,4 @@ function toggleVideo() {
   }
 }
   </script>
-</script>
 
