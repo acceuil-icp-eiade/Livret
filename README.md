@@ -632,10 +632,12 @@ function toggleUrgences() {
   target="_blank">
       💊 Antibioprophylaxie
 </a>
+</div>
+<div>
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
-  
+</div>
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
     <p>
