@@ -243,11 +243,26 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.85);
+
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+
+  /* 🔥 effet flou */
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* 🎬 animation */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.disclaimer-overlay.show {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .disclaimer-box {
@@ -286,9 +301,6 @@ li {
     .hidden {
   display: none !important;
     }
-    window.onload = function () {
-  showDisclaimer();
-};
     .clickable {
   cursor: pointer;
   transition: 0.3s;
@@ -326,7 +338,7 @@ li {
 </div>
 
 <!-- DISCLAIMER -->
-<div id="disclaimer" class="disclaimer-overlay hidden">
+<div id="disclaimer" class="disclaimer-overlay">
   <div class="disclaimer-box">
     <h2>⚠️ Avertissement</h2>
     
@@ -697,7 +709,7 @@ function toggleUrgences() {
     document.getElementById("loginPage").classList.add("hidden");
 
     // ⚠️ montrer disclaimer ici
-    document.getElementById("disclaimer").classList.remove("hidden");
+    document.getElementById("disclaimer").classList.add("show");
 
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
@@ -732,14 +744,13 @@ function toggleVideo() {
 }
     
 function showDisclaimer() {
-  document.getElementById("disclaimer").classList.remove("hidden");
+  document.getElementById("disclaimer").classList.add("show");
 }
 
   function acceptDisclaimer() {
   const disclaimer = document.getElementById("disclaimer");
   const content = document.getElementById("content");
-
-  disclaimer.style.display = "none";
+disclaimer.classList.remove("show");
   content.classList.remove("hidden");
   }
 function toggleItem(element) {
