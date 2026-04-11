@@ -398,7 +398,7 @@ function toggleItem(element) {
   content.classList.toggle("hidden");
 }
 </script>
-  <div class="card" id="pratique">
+<div class="card clickable" onclick="toggleItem(this)">
   <h2>🏥 Vie pratique</h2>
     <ul>
     <li> à votre disposition</li>
@@ -418,6 +418,7 @@ function toggleItem(element) {
     </li>
     </ul>
 </div>
+
 <div class="fiche fiche-plan" id="plan">
   
   <h3>🗺️ Plan du bloc opératoire</h3>
