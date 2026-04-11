@@ -655,32 +655,19 @@ function toggleUrgences() {
 
 <script>
   function checkPassword() {
-  const pass = document.getElementById("password").value;
+  const password = document.getElementById("password").value;
+  const correctPassword = "iadeicp543";
 
-  if (pass === "TON_MOT_DE_PASSE") {
+  if (password === correctPassword) {
+    document.getElementById("loginPage").classList.add("hidden");
 
-    // cacher login
-    document.getElementById("loginPage").style.display = "none";
-
-    // afficher disclaimer
+    // ⚠️ montrer disclaimer ici
     document.getElementById("disclaimer").classList.remove("hidden");
 
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
-  }
-function checkPassword() {
-  const password = document.getElementById("password").value;
 
-  // 🔑 CHANGE TON MOT DE PASSE ICI
-  const correctPassword = "iadeicp543";
-
-  if (password === correctPassword) {
-    document.getElementById("loginPage").classList.add("hidden");
-    document.getElementById("content").classList.remove("hidden");
-  } else {
-    document.getElementById("error").innerText = "Mot de passe incorrect";
-  }
 }
 
 function toggleVideo() {
