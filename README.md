@@ -445,8 +445,9 @@ function toggleItem(element) {
   allowfullscreen>
 </iframe>
   </div>
-  <div class="card" id="organigramme">
+  <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Organigramme du service</h2>
+    <div class="card clickable" 
     <ul>
       <li><strong>bloc opératoire :</strong></li>
       <li>Chirurgie cardiaque: Professeur Vincentelli </li>
@@ -459,14 +460,17 @@ function toggleItem(element) {
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
   </div>
-    <div class="card">
+  </div>
+  <div class="card clickable" onclick="toggleItem(this)">
     <h2> Référents</h2>
+    <div class="card clickable" 
     <ul>
       <li><strong>cadre sup:</strong> Mme Reumaux Laurence </li>
     <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li>
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
+  </div>
   </div>
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
