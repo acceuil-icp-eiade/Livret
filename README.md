@@ -329,8 +329,14 @@ li {
   </div>
   <script>
 function acceptDisclaimer() {
-  document.getElementById("disclaimer").classList.add("hidden");
-  document.getElementById("content").classList.remove("hidden");
+  // cacher le disclaimer
+  document.getElementById("disclaimer").style.display = "none";
+
+  // afficher le contenu
+  document.getElementById("content").style.display = "block";
+
+  // sécurité : cacher le login au cas où
+  document.getElementById("loginPage").style.display = "none";
 }
 </script>
 </div>
@@ -344,7 +350,7 @@ function acceptDisclaimer() {
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
-<div id="content" class="hidden">
+<div id="content" style="dysplay:none">
 
 
 <div class="container">
