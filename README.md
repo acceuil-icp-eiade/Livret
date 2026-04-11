@@ -392,12 +392,6 @@ li {
     </ul>
   </div>
 
-<script>
-function toggleItem(element) {
-  const content = element.querySelector(".content");
-  content.classList.toggle("hidden");
-}
-</script>
 <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Vie pratique</h2>
   <div class="content hidden">
@@ -741,6 +735,10 @@ function showDisclaimer() {
   disclaimer.style.display = "none";
   content.classList.remove("hidden");
   }
+function toggleItem(element) {
+  const content = element.querySelector(".content");
+  content.classList.toggle("hidden");
+}
 </script>
 
 
