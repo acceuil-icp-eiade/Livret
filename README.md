@@ -377,7 +377,8 @@ li {
     </p>
     <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
   </div>
-
+  
+<div class="card">
   <div class="card clickable" onclick="toggleItem(this)">
   <h2>📍 Votre premier jour</h2>
 
@@ -391,7 +392,9 @@ li {
       <li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
     </ul>
   </div>
-
+  
+  
+<div class="card">
 <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Vie pratique</h2>
   <div class="content hidden">
@@ -438,7 +441,7 @@ li {
   allowfullscreen>
 </iframe>
   </div>
-  
+  <div class="card">
   <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Organigramme du service</h2>
     <div class="card clickable" 
@@ -454,7 +457,7 @@ li {
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
   </div>
-  
+  <div class="card">
   <div class="card clickable" onclick="toggleItem(this)">
     <h2> Référents</h2>
     <div class="card clickable" 
