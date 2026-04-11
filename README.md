@@ -399,7 +399,8 @@ function toggleItem(element) {
 }
 </script>
 <div class="card clickable" onclick="toggleItem(this)">
-  <h2>🏥 Vie pratique</h2>
+    <h2>🏥 Vie pratique</h2>
+  <div class="content hidden">
     <ul>
     <li> à votre disposition</li>
     <h3>👕 Vestiaires</h3>
@@ -417,6 +418,7 @@ function toggleItem(element) {
     <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
+</div>
 </div>
 
 <div class="fiche fiche-plan" id="plan">
