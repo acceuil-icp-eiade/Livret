@@ -327,6 +327,14 @@ li {
 
     <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
+  <script>
+function acceptDisclaimer() {
+  document.getElementById("disclaimer").classList.add("hidden");
+
+  // 👉 ICI on affiche TON vrai contenu
+  document.getElementById("content").classList.remove("hidden");
+}
+</script>
 </div>
 
 <!-- 🔓 CONTENU -->
@@ -648,24 +656,22 @@ function toggleUrgences() {
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
-
 <script>
 function checkPassword() {
   const password = document.getElementById("password").value;
-
-  // 🔑 CHANGE TON MOT DE PASSE ICI
   const correctPassword = "iadeicp543";
 
   if (password === correctPassword) {
     document.getElementById("loginPage").classList.add("hidden");
-    document.getElementById("content").classList.remove("hidden");
+
+    // 👉 ON AFFICHE LE DISCLAIMER (et PAS le contenu)
+    showDisclaimer();
+
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
 </script>
-// Au lieu d'afficher directement le site :
-showDisclaimer();
 
   <script>
 function toggleVideo() {
@@ -694,14 +700,5 @@ function toggleVideo() {
   }
 }
   </script>
-    <script>
-function showDisclaimer() {
-  document.getElementById("disclaimer").classList.remove("hidden");
-}
-
-function acceptDisclaimer() {
-  document.getElementById("disclaimer").classList.add("hidden");
-  document.getElementById("mainContent").classList.remove("hidden");
-}
 </script>
 
