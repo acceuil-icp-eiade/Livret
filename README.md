@@ -284,9 +284,7 @@ li {
   background: #218838;
 }
 
-.hidden {
-  display: none;
-}
+
     .hidden {
   display: none !important;
     }
