@@ -322,8 +322,8 @@ li {
     <p>
       Ce site est non officiel et n’engage pas le CHU de lille.
     </p>
-
-    <button onclick="acceptDisclaimer()">✅ Continuer</button>
+  <button onclick="acceptDisclaimer()">✅ Continuer</button>
+  </div>
   </div>
   </div>
   <script>
