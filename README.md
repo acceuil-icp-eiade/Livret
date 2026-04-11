@@ -15,6 +15,7 @@
       background-color: #f7f9fb;
       color: #2c3e50;
     }
+
     header {
       background: linear-gradient(135deg, #5dade2, #48c9b0);
       color: white;
@@ -22,6 +23,7 @@
       text-align: center;
       border-radius: 10px;
     }
+
     h1 {
       margin: 0;
       font-size: 22px;
@@ -322,23 +324,10 @@ li {
     <p>
       Ce site est non officiel et n’engage pas le CHU de lille.
     </p>
-  <button onclick="acceptDisclaimer()">✅ Continuer</button>
+
+    <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
-  </div>
-
-  <script>
-function acceptDisclaimer() {
-  // cacher le disclaimer
-  document.getElementById("disclaimer").style.display = "none";
-
-  // afficher le contenu
-  document.getElementById("content").style.display = "block";
-
-  // sécurité : cacher le login au cas où
-  document.getElementById("loginPage").style.display = "none";
-}
-</script>
-
+</div>
 
 <!-- 🔓 CONTENU -->
 
@@ -349,8 +338,9 @@ function acceptDisclaimer() {
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
+<div id="content" class="hidden">
 
-<div id="content" style="display:none">
+
 <div class="container">
 
   <div class="card">
@@ -472,7 +462,6 @@ href="pdf/POUMON.pdf" target="_blank">
 🩻 thoracique</a>
       
   </div>
-  </div>
   
     <style>
 .hidden {
@@ -485,7 +474,7 @@ function toggleChir() {
   menu.classList.toggle("hidden");
 }
 </script>
-
+</div>
     
   <div class="btn" onclick="toggleSpecialites()">
   📂 Anesthésie par spécialité
@@ -518,7 +507,7 @@ function toggleChir() {
   </div>
 
 </div>
-  </div>
+  
 </div>
 <script>
 function toggleSpecialites() {
@@ -620,21 +609,18 @@ function toggleSpecialites() {
       🫁 Détresse respiratoire
     </a>
   </div>
-
   <script>
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
   menu.classList.toggle("hidden");
 }
 </script>
-<div>
+</div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
   target="_blank">
       💊 Antibioprophylaxie
 </a>
-</div>
-<div>
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
@@ -659,23 +645,27 @@ function toggleUrgences() {
     📝 Donner mon avis
   </a>
 </div>
-</div>
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
+
 <script>
 function checkPassword() {
   const password = document.getElementById("password").value;
+
+  // 🔑 CHANGE TON MOT DE PASSE ICI
   const correctPassword = "iadeicp543";
 
   if (password === correctPassword) {
-    document.getElementById("disclaimer").classList.remove("hidden");
-    } else {
+    document.getElementById("loginPage").classList.add("hidden");
+    document.getElementById("content").classList.remove("hidden");
+  } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
 }
 </script>
-</script>
+// Au lieu d'afficher directement le site :
+showDisclaimer();
 
   <script>
 function toggleVideo() {
@@ -704,5 +694,14 @@ function toggleVideo() {
   }
 }
   </script>
+    <script>
+function showDisclaimer() {
+  document.getElementById("disclaimer").classList.remove("hidden");
+}
+
+function acceptDisclaimer() {
+  document.getElementById("disclaimer").classList.add("hidden");
+  document.getElementById("mainContent").classList.remove("hidden");
+}
 </script>
 
