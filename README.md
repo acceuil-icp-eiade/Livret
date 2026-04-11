@@ -286,6 +286,9 @@ li {
     .hidden {
   display: none !important;
     }
+    window.onload = function () {
+  showDisclaimer();
+};
 </style>
 
 </head>
