@@ -283,8 +283,6 @@ li {
 .disclaimer-box button:hover {
   background: #218838;
 }
-
-
     .hidden {
   display: none !important;
     }
@@ -469,6 +467,7 @@ href="pdf/POUMON.pdf" target="_blank">
   display: none;
 }
 </style>
+
 <script>
 function toggleChir() {
   var menu = document.getElementById("chirMenu");
