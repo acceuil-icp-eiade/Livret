@@ -236,6 +236,56 @@ li {
   color: white;
   padding: 10px;
   border-radius: 8px;
+  }
+    .disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.disclaimer-box {
+  background: #fff;
+  color: #000;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.disclaimer-box h2 {
+  margin-bottom: 15px;
+}
+
+.disclaimer-box p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.disclaimer-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.disclaimer-box button:hover {
+  background: #218838;
+}
+
+.hidden {
+  display: none;
 }
 </style>
 
@@ -254,6 +304,29 @@ li {
   <input type="password" id="password" placeholder="Mot de passe">
   <button onclick="checkPassword()">Entrer</button>
   <p id="error" style="color:red;"></p>
+</div>
+
+<!-- DISCLAIMER -->
+<div id="disclaimer" class="disclaimer-overlay hidden">
+  <div class="disclaimer-box">
+    <h2>⚠️ Avertissement</h2>
+    
+    <p>
+      Ce site est un support pédagogique personnel destiné aux étudiants IADE.
+      Il ne remplace en aucun cas les protocoles officiels de notre établissement.
+    </p>
+
+    <p>
+      Les informations présentées sont générales et doivent être adaptées
+      aux pratiques locales et aux recommandations en vigueur.
+    </p>
+
+    <p>
+      Ce site est non officiel et n’engage pas le CHU de lille.
+    </p>
+
+    <button onclick="acceptDisclaimer()">✅ Continuer</button>
+  </div>
 </div>
 
 <!-- 🔓 CONTENU -->
@@ -618,4 +691,15 @@ function toggleVideo() {
     }, 500);
   }
 }
+  </script>
+    <script>
+function showDisclaimer() {
+  document.getElementById("disclaimer").classList.remove("hidden");
+}
+
+function acceptDisclaimer() {
+  document.getElementById("disclaimer").classList.add("hidden");
+  document.getElementById("mainContent").classList.remove("hidden");
+}
 </script>
+
