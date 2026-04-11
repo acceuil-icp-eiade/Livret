@@ -338,7 +338,7 @@ function acceptDisclaimer() {
   document.getElementById("loginPage").style.display = "none";
 }
 </script>
-</div>
+
 
 <!-- 🔓 CONTENU -->
 
