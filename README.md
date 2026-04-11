@@ -394,6 +394,7 @@ li {
   
 <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Vie pratique</h2>
+  
   <div class="content hidden">
     <ul>
     <li> à votre disposition</li>
@@ -441,7 +442,8 @@ li {
   
   <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Organigramme du service</h2>
-    <div class="card clickable" 
+
+      <div class="content hidden">
     <ul>
       <li><strong>bloc opératoire :</strong></li>
       <li>Chirurgie cardiaque: Professeur Vincentelli </li>
@@ -457,7 +459,8 @@ li {
 
   <div class="card clickable" onclick="toggleItem(this)">
     <h2> Référents</h2>
-    <div class="card clickable" 
+    
+    <div class="content hidden">
     <ul>
       <li><strong>cadre sup:</strong> Mme Reumaux Laurence </li>
     <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li>
