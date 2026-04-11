@@ -758,19 +758,28 @@ function toggleUrgences() {
 <script>
   function checkPassword() {
   const password = document.getElementById("password").value;
-  const correctPassword = "iadeicp543";
 
-  if (password === correctPassword) {
-    document.getElementById("loginPage").classList.add("hidden");
+  if (password === "iadeicp543") {
+    
+    const login = document.getElementById("loginPage");
+    const disclaimer = document.getElementById("disclaimer");
 
-    // ⚠️ montrer disclaimer ici
-    document.getElementById("disclaimer").classList.add("show");
+    // 🔥 fade out login
+    login.classList.add("hide");
+
+    // attendre la fin de l'animation
+    setTimeout(() => {
+      login.classList.add("hidden");
+
+      // 🔥 afficher disclaimer avec animation
+      disclaimer.classList.add("show");
+    }, 400);
 
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
-
-}
+  }
+  
 
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
@@ -801,7 +810,17 @@ function toggleVideo() {
 function showDisclaimer() {
   document.getElementById("disclaimer").classList.add("show");
 }
+function acceptDisclaimer() {
+  const disclaimer = document.getElementById("disclaimer");
+  const content = document.getElementById("content");
 
+  // fade out disclaimer
+  disclaimer.classList.remove("show");
+
+  setTimeout(() => {
+    content.classList.remove("hidden");
+  }, 300);
+}
   function acceptDisclaimer() {
   const disclaimer = document.getElementById("disclaimer");
   const content = document.getElementById("content");
