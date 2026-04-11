@@ -462,6 +462,7 @@ function toggleItem(element) {
     </ul>
   </div>
   </div>
+</div>
   
   <div class="card clickable" onclick="toggleItem(this)">
     <h2> Référents</h2>
@@ -474,6 +475,7 @@ function toggleItem(element) {
       </ul>
   </div>
   </div>
+  
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
   ☎️ Telephones 
@@ -500,7 +502,7 @@ href="pdf/POUMON.pdf" target="_blank">
 🩻 thoracique</a>
       
   </div>
-  
+  </div>
     <style>
 .hidden {
   display: none;
