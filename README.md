@@ -683,9 +683,6 @@ function checkPassword() {
   }
 }
 
-// Au lieu d'afficher directement le site :
-showDisclaimer();
-
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
