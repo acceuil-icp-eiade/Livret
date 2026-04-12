@@ -716,6 +716,14 @@ function toggleSpecialites() {
       🫁 Détresse respiratoire
     </a>
   </div>
+  
+  <div class="fiche">
+    <a 
+      href="pdf/HYPERTHERMIE.pdf" target="_blank">
+      🌡hyperthermie maligne 
+    </a>
+  </div>
+  
   <script>
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
