@@ -408,7 +408,7 @@ border-radius: 16px;
     </p>
 
     <p>
-      Ce site est non officiel et n’engage pas le CHU de lille.</p>
+      Ce site est non officiel et n’engage pas le CHU de Lille.</p>
       <p>
       En cliquant sur Continuer, vous reconnaissez avoir pris connaissance de cet avertissement.
     </p>
