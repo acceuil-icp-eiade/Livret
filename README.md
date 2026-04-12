@@ -719,7 +719,7 @@ function toggleSpecialites() {
   
   <div class="fiche">
     <a 
-      href="pdf/HYPERTHERMIE.pdf" target="_blank">
+      href="pdf/hyperthermie_maligne.pdf" target="_blank">
       🌡hyperthermie maligne 
     </a>
   </div>
