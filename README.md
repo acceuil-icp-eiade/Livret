@@ -562,8 +562,7 @@ border-radius: 16px;
     
     ✅ présentation des chirurgies
   </div>
-<div class="menu-item">Accès rapide aux documents</div>
-<div class="menu-item">Anesthésie par spécialité</div>
+
   <div id="chirMenu" class="hidden">  
     <a class="btn" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
     <a class="btn" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
