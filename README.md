@@ -603,6 +603,11 @@ border-radius: 16px;
   background: linear-gradient(135deg, #34d058, #19692c);
   transform: scale(1.05);
 }
+  
+.hidden {
+  display: none;
+}
+
 </style>
 
 </head>
@@ -787,7 +792,7 @@ border-radius: 16px;
     
     ✅ présentation des chirurgies
   </div>
-  </div>
+  
 
   <div id="chirMenu" class="hidden">  
     <a class="btn" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
@@ -802,12 +807,7 @@ href="pdf/POUMON.pdf" target="_blank">
       
   </div>
 
-    <style>
-.hidden {
-  display: none;
-}
-</style>
-
+    
 <script>
 function toggleChir() {
   var menu = document.getElementById("chirMenu");
