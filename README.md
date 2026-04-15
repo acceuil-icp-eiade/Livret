@@ -614,16 +614,13 @@ border-radius: 16px;
 
 .cards-row .card {
   flex: 1;
-  min-width: 250px;
+  min-width: 0;
 }
     .cards-row {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
-.cards-row .card {
-  flex: 1;
-}
     
 </style>
 
