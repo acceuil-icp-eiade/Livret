@@ -829,18 +829,22 @@ border-radius: 16px;
   </div>
   </div>
   
+<!-- Carte -->
+<div class="card clickable" onclick="openPopup('Référent')">
+  <h2>♻️ Référents</h2>
+</div>
 
-  <div class="card clickable" onclick="toggleItem(this)">
+<!-- Popup -->
+<div id="popupRéférent" class="popup">
+  <div class="popup-content" onclick="closePopup('popupŔéférent')">
+  
     <h2> ♻️ Référents</h2>
-    
-    <div class="content hidden">
     <ul>
       <li><strong>cadre sup:</strong> Mme Reumaux Laurence </li>
     <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li>
     <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
-  </div>
   </div>
   </div>
   
