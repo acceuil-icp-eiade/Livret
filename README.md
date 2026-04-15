@@ -950,6 +950,7 @@ function toggleChir() {
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
+  }
   
 window.addEventListener("load", () => {
   setTimeout(() => {
@@ -1019,7 +1020,7 @@ function toggleItem(element) {
     }
   }, 800);
 });
-  }
+  
 </script>
 </body>
 
