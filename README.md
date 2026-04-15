@@ -804,11 +804,16 @@ border-radius: 16px;
   allowfullscreen>
 </iframe>
   </div>
-  
-  <div class="card clickable" onclick="toggleItem(this)">
+  <!-- Carte -->
+<div class="card clickable" onclick="openPopup('organigramme')">
+  <h2>🏥 Organigramme du service</h2>
+</div>
+
+<!-- Popup -->
+<div id="popupVie" class="popup">
+  <div class="popup-content" onclick="closePopup('organigramme')">
     <h2>🏥 Organigramme du service</h2>
 
-      <div class="content hidden">
     <ul>
       <li><strong>bloc opératoire :</strong></li>
       <li>Chirurgie cardiaque: Professeur Vincentelli </li>
@@ -869,12 +874,7 @@ href="pdf/POUMON.pdf" target="_blank">
   </div>
 </div>
     
-<script>
-function toggleChir() {
-  var menu = document.getElementById("chirMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+
     
   <div class="btn" onclick="toggleSpecialites()">
   📂 Anesthésie par spécialité
@@ -980,6 +980,10 @@ function toggleChir() {
 
 <script>
 
+function toggleChir() {
+  var menu = document.getElementById("chirMenu");
+  menu.classList.toggle("hidden");
+}
 function openPopup(id) {
   document.getElementById(id).style.display = "flex";
 }
