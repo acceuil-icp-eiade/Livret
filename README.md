@@ -804,13 +804,14 @@ border-radius: 16px;
   allowfullscreen>
 </iframe>
   </div>
+  
   <!-- Carte -->
-<div class="card clickable" onclick="openPopup('organigramme')">
+<div class="card clickable" onclick="openPopup('popuporganigramme')">
   <h2>🏥 Organigramme du service</h2>
 </div>
 
 <!-- Popup -->
-<div id="popupVie" class="popup">
+<div id="popuporganigramme" class="popup">
   <div class="popup-content" onclick="closePopup('organigramme')">
     <h2>🏥 Organigramme du service</h2>
 
