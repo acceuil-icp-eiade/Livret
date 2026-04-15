@@ -726,7 +726,9 @@ border-radius: 16px;
   </div>
   
   <div class="cards-row">
+    
   <div class="card clickable" onclick="openpopup('popupJour')">
+  <h2>📍 Votre premier jour</h2>
     
     <!-- Popup Votre premier jour -->
     
@@ -746,13 +748,16 @@ border-radius: 16px;
     </ul>
   </div>
 </div>
+<!-- Carte -->
+<div class="card clickable" onclick="openPopup('popupVie')">
+  <h2>🏥 Vie pratique</h2>
+</div>
 
-  
-<div class="card clickable" onclick="openpopup(vie)">
-  <!-- Popup Vie pratique -->
+<!-- Popup -->
 <div id="popupVie" class="popup">
   <div class="popup-content" onclick="closePopup('popupVie')">
     <h2>🏥 Vie pratique</h2>
+    
   
   <div class="content hidden">
     <ul>
@@ -774,9 +779,6 @@ border-radius: 16px;
     </ul>
 </div>
 </div>
-</div>
-
-
 
 <div class="fiche fiche-plan" id="plan">
   
