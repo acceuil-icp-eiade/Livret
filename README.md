@@ -1016,6 +1016,14 @@ function toggleItem(element) {
     document.querySelector(".icons")?.classList.add("show");
   }, 800);
 });
+  window.addEventListener("load", () => {
+  setTimeout(() => {
+    const icons = document.querySelector(".icons");
+    if (icons) {
+      icons.classList.add("show");
+    }
+  }, 800);
+});
 </script>
 
 
