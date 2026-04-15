@@ -606,6 +606,16 @@ border-radius: 16px;
 .hidden {
   display: none;
 }
+    .cards-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* pour mobile */
+}
+
+.cards-row .card {
+  flex: 1;
+  min-width: 250px;
+}
     
 </style>
 
@@ -695,7 +705,7 @@ border-radius: 16px;
     </ul>
   </div>
 </div>
-  
+  <div class="cards-row">
 <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Vie pratique</h2>
   
@@ -745,7 +755,7 @@ border-radius: 16px;
 </iframe>
   </div>
   
-  
+  <div class="cards-row">
   <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Organigramme du service</h2>
 
@@ -763,6 +773,7 @@ border-radius: 16px;
     </ul>
   </div>
   </div>
+  
 
   <div class="card clickable" onclick="toggleItem(this)">
     <h2> ♻️ Référents</h2>
