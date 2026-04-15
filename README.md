@@ -540,6 +540,72 @@ border-radius: 16px;
   border-radius: 10px;
   margin-bottom: 10px;
     }
+    .hidden {
+  display: none;
+    }
+.fiche-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+  
+.fiche-container .fiche {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.fiche a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.fiche:hover {
+  background: #e6f2ff;
+  transform: translateY(-2px);
+}
+  .fiche-plan {
+  background: white;
+  }
+  .btn.urgence {
+  background: linear-gradient(135deg, #ff3b3b, #b30000);
+  color: white;
+  animation: pulseUrgence 1.8s infinite;
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+}
+
+@keyframes pulseUrgence {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+}
+
+.btn.urgence:hover {
+  background: linear-gradient(135deg, #ff1a1a, #800000);
+  transform: scale(1.08);
+}
+.btn.bilan {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.btn.bilan:hover {
+  background: linear-gradient(135deg, #34d058, #19692c);
+  transform: scale(1.05);
+}
+
 </style>
 
 </head>
@@ -709,7 +775,6 @@ border-radius: 16px;
       </ul>
   </div>
   </div>
-  </div>
   
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
@@ -738,18 +803,7 @@ href="pdf/POUMON.pdf" target="_blank">
       
   </div>
 
-    <style>
-.hidden {
-  display: none;
-}
-</style>
-
-<script>
-function toggleChir() {
-  var menu = document.getElementById("chirMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+    
 </div>
     
   <div class="btn" onclick="toggleSpecialites()">
@@ -783,78 +837,14 @@ function toggleChir() {
   </div>
 
 </div>
-  
+  </div>
 </div>
+
+
+
 <script>
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
-<style>
-.fiche-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 20px;
-}
-  
-.fiche-container .fiche {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
-}
 
-.fiche a {
-  text-decoration: none;
-  color: #333;
-  display: block;
-}
 
-.fiche:hover {
-  background: #e6f2ff;
-  transform: translateY(-2px);
-}
-  .fiche-plan {
-  background: white;
-  }
-  .btn.urgence {
-  background: linear-gradient(135deg, #ff3b3b, #b30000);
-  color: white;
-  animation: pulseUrgence 1.8s infinite;
-  box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
-}
-
-@keyframes pulseUrgence {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
-  }
-}
-
-.btn.urgence:hover {
-  background: linear-gradient(135deg, #ff1a1a, #800000);
-  transform: scale(1.08);
-}
-.btn.bilan {
-  background: linear-gradient(135deg, #28a745, #1e7e34);
-  color: white;
-}
-
-.btn.bilan:hover {
-  background: linear-gradient(135deg, #34d058, #19692c);
-  transform: scale(1.05);
-}
-</style>
 
   <div class="btn urgence" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
@@ -933,6 +923,17 @@ function toggleUrgences() {
 </footer>
 
 <script>
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+  menu.classList.toggle("hidden");
+}
+
+
+function toggleChir() {
+  var menu = document.getElementById("chirMenu");
+  menu.classList.toggle("hidden");
+}
+
   function checkPassword() {
   const password = document.getElementById("password").value;
 
