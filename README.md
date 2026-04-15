@@ -15,40 +15,97 @@
       background-color: #f7f9fb;
       color: #2c3e50;
     }
-
-    header {
-      background: linear-gradient(135deg, #5dade2, #48c9b0);
-      color: white;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
+    body {
+  max-width: 500px;
+  margin: auto;
     }
+header {
+  background: linear-gradient(135deg, #5dade2, #48c9b0);
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 22px;
-    }
+header h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+    
 
     /* 🔐 LOGIN */
     .login {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-    }
-    .login-container {
-  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  animation: fadeIn 0.6s ease;
 }
-    input {
-      padding: 12px;
-      margin: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      width: 220px;
-      text-align: center;
-    }
 
+.login h2 {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 14px;
+  margin: 8px;
+  border-radius: 12px;
+  border: none;
+  width: 240px;
+  text-align: center;
+  font-size: 16px;
+  background: #eef2f7;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3498db, #5dade2);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+    button:hover {
+  filter: brightness(1.1);
+    }
+    
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .card {
+  background: linear-gradient(135deg, #5dade2, #48c9b0);
+  color: white;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  color: white;
+}
     button {
       padding: 12px 20px;
       border: none;
