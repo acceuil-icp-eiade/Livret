@@ -289,6 +289,21 @@ button:active {
   box-shadow: 0 3px 10px rgba(0,0,0,0.06);
   margin-bottom: 15px;
 }
+    .icons {
+  font-size: 28px;
+  margin-top: 5px;
+    }
+    .icons {
+  font-size: 28px;
+  margin-top: 5px;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
 body {
   padding-bottom: 70px;
 }
@@ -473,7 +488,8 @@ border-radius: 16px;
 <body>
 
 <header>
-  <h1>Bienvenue à l’ICP   🫀🫁</h1>
+  <h1>Bienvenue à l’ICP</h1>
+<div class="icons">🫀 🫁</div>
   <p>Bloc opératoire – Accueil des étudiants IADE</p>
 </header>
 
