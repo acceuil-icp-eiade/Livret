@@ -68,14 +68,27 @@ header p {
   margin-top: 5px;
 
   opacity: 0;
-  transform: scale(0.5);
+  transform: scale(0.8);
 
-  animation: popIcons 0.5s ease forwards,
-             float 2s ease-in-out infinite;
-
-  animation-delay: 0.4s, 1s; /* 👈 effet décalé */
+  animation: popIcons 0.5s ease forwards;
+  animation-delay: 0.4s;
 }
 
+@keyframes popIcons {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+    .icons.show {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
 @keyframes popIcons {
   to {
     opacity: 1;
@@ -946,7 +959,13 @@ function toggleUrgences() {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
   }
-  
+  <script>
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector(".icons").classList.add("show");
+  }, 800);
+});
+</script>
 
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
