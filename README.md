@@ -787,6 +787,7 @@ border-radius: 16px;
     
     ✅ présentation des chirurgies
   </div>
+  </div>
 
   <div id="chirMenu" class="hidden">  
     <a class="btn" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
