@@ -75,7 +75,10 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
-
+.card {
+  padding: 20px; /* au lieu de 40px ou plus */
+  margin-bottom: 20px; /* réduit l’espace en dessous */
+}
     h2 {
       color: #3498db;
       font-size: 18px;
