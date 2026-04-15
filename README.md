@@ -830,7 +830,7 @@ border-radius: 16px;
   </div>
   
 <!-- Carte -->
-<div class="card clickable" onclick="openPopup('Referents')">
+<div class="card clickable" onclick="openPopup('popupReferents')">
   <h2>♻️ Référents</h2>
 </div>
 
