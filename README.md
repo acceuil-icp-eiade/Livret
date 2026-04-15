@@ -515,7 +515,16 @@ border-radius: 16px;
   background-color: #f5f5f5;
   transform: scale(1.01);
 }
+.container {
+  display: flex;
+  gap: 20px; /* espace entre les deux */
+  flex-wrap: wrap; /* optionnel : passe en colonne sur petit écran */
+}
 
+.card {
+  flex: 1; /* prend la même largeur */
+  min-width: 250px; /* évite que ça devienne trop écrasé */
+}
 .content {
   margin-top: 15px;
 }
