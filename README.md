@@ -863,17 +863,7 @@ function toggleChir() {
       💉 Cardiologie interventionnelle
     </a>
   </div>
-
 </div>
-  
-</div>
-<script>
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
-
 
   <div class="btn urgence" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
@@ -912,12 +902,7 @@ function toggleSpecialites() {
     </a>
   </div>
   
-  <script>
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+
 </div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
@@ -952,6 +937,17 @@ function toggleUrgences() {
 </footer>
 
 <script>
+  
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
+  
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+  menu.classList.toggle("hidden");
+}
+  
   function checkPassword() {
   const password = document.getElementById("password").value;
 
