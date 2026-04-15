@@ -521,7 +521,9 @@ border-radius: 16px;
   margin-top: 15px;
 }
 
-
+.hidden {
+  display: none;
+}
     #loginPage {
   opacity: 1;
   transition: opacity 0.4s ease;
@@ -538,72 +540,6 @@ border-radius: 16px;
   border-radius: 10px;
   margin-bottom: 10px;
     }
-    .hidden {
-  display: none;
-    }
-.fiche-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 20px;
-}
-  
-.fiche-container .fiche {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
-}
-
-.fiche a {
-  text-decoration: none;
-  color: #333;
-  display: block;
-}
-
-.fiche:hover {
-  background: #e6f2ff;
-  transform: translateY(-2px);
-}
-  .fiche-plan {
-  background: white;
-  }
-  .btn.urgence {
-  background: linear-gradient(135deg, #ff3b3b, #b30000);
-  color: white;
-  animation: pulseUrgence 1.8s infinite;
-  box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
-}
-
-@keyframes pulseUrgence {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
-  }
-}
-
-.btn.urgence:hover {
-  background: linear-gradient(135deg, #ff1a1a, #800000);
-  transform: scale(1.08);
-}
-.btn.bilan {
-  background: linear-gradient(135deg, #28a745, #1e7e34);
-  color: white;
-}
-
-.btn.bilan:hover {
-  background: linear-gradient(135deg, #34d058, #19692c);
-  transform: scale(1.05);
-}
-
 </style>
 
 </head>
@@ -648,7 +584,8 @@ border-radius: 16px;
 
     <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
-<main>
+</div>
+
 <!-- 🔓 CONTENU -->
 
 <div class="bottom-menu">
@@ -772,6 +709,7 @@ border-radius: 16px;
       </ul>
   </div>
   </div>
+  </div>
   
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
@@ -800,7 +738,18 @@ href="pdf/POUMON.pdf" target="_blank">
       
   </div>
 
-    
+    <style>
+.hidden {
+  display: none;
+}
+</style>
+
+<script>
+function toggleChir() {
+  var menu = document.getElementById("chirMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 </div>
     
   <div class="btn" onclick="toggleSpecialites()">
@@ -832,8 +781,80 @@ href="pdf/POUMON.pdf" target="_blank">
       💉 Cardiologie interventionnelle
     </a>
   </div>
+
 </div>
   
+</div>
+<script>
+function toggleSpecialites() {
+  const menu = document.getElementById("specialitesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
+<style>
+.fiche-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+  
+.fiche-container .fiche {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.fiche a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.fiche:hover {
+  background: #e6f2ff;
+  transform: translateY(-2px);
+}
+  .fiche-plan {
+  background: white;
+  }
+  .btn.urgence {
+  background: linear-gradient(135deg, #ff3b3b, #b30000);
+  color: white;
+  animation: pulseUrgence 1.8s infinite;
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+}
+
+@keyframes pulseUrgence {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+}
+
+.btn.urgence:hover {
+  background: linear-gradient(135deg, #ff1a1a, #800000);
+  transform: scale(1.08);
+}
+.btn.bilan {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.btn.bilan:hover {
+  background: linear-gradient(135deg, #34d058, #19692c);
+  transform: scale(1.05);
+}
+</style>
 
   <div class="btn urgence" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
@@ -871,19 +892,22 @@ href="pdf/POUMON.pdf" target="_blank">
       🌡hyperthermie maligne 
     </a>
   </div>
-        </div>
-<div>
+  
+  <script>
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
+</div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
   target="_blank">
       💊 Antibioprophylaxie
 </a>
-</div>
-<div>
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
-</div>
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
     <p>
@@ -904,30 +928,11 @@ href="pdf/POUMON.pdf" target="_blank">
     📝 Donner mon avis
   </a>
 </div>
-
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
 
-</main>
-
 <script>
-    
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
-}
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("hidden");
-}
-
-
-function toggleChir() {
-  var menu = document.getElementById("chirMenu");
-  menu.classList.toggle("hidden");
-}
-
   function checkPassword() {
   const password = document.getElementById("password").value;
 
@@ -951,7 +956,6 @@ function toggleChir() {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
   }
-  
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.querySelector(".icons").classList.add("show");
@@ -1020,8 +1024,6 @@ function toggleItem(element) {
     }
   }, 800);
 });
-  
 </script>
-</body>
 
 
