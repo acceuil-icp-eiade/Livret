@@ -749,6 +749,7 @@ border-radius: 16px;
     </ul>
   </div>
 </div>
+</div>
 
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popupVie')">
@@ -779,7 +780,6 @@ border-radius: 16px;
     <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
-</div>
 </div>
 </div>
 </div>
