@@ -783,6 +783,8 @@ border-radius: 16px;
 </div>
 </div>
 </div>
+</div>
+
 
 <div class="fiche fiche-plan" id="plan">
   
