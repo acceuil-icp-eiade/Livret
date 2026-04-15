@@ -547,8 +547,9 @@ border-radius: 16px;
 <body>
 
 <header>
-  <h1 class="title">Bienvenue à l’ICP</h1>
-<div class="icons">🫀 🫁</div>
+  <h1 class="title">Bienvenue</h1>
+  <div class="icons">❤️ 🫁</div>
+<script src="script.js"></script>
   <p>Bloc opératoire – Accueil des étudiants IADE</p>
 </header>
 
