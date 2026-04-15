@@ -734,8 +734,9 @@ border-radius: 16px;
     <!-- Popup Votre premier jour -->
     
 <div id="popupJour" class="popup">
-  <div class="popup-content" onclick="closePopup('popupJour')">
+  <div class="popup-content" onclick="closepopup('popupJour')">
     <h2>📍 Votre premier jour</h2>
+    
     <ul>
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
