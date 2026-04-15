@@ -807,13 +807,13 @@ border-radius: 16px;
   
   <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popuporganigramme')">
-  <h2>🏥 Organigramme du service</h2>
+  <h2>🩺 Organigramme du service</h2>
 </div>
 
 <!-- Popup -->
 <div id="popuporganigramme" class="popup">
   <div class="popup-content" onclick="closePopup('popuporganigramme')">
-    <h2>🏥 Organigramme du service</h2>
+    <h2>🩺 Organigramme du service</h2>
 
     <ul>
       <li><strong>bloc opératoire :</strong></li>
