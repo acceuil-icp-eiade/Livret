@@ -805,6 +805,7 @@ border-radius: 16px;
   
     <div class="card" id="documents">
   <h2>📄 Accès rapide aux documents</h2>
+  </div>
 
   <div class="btn" onclick="toggleChir()">
     
@@ -824,7 +825,7 @@ href="pdf/POUMON.pdf" target="_blank">
 🩻 thoracique</a>
       
   </div>
-
+</div>
     
 <script>
 function toggleChir() {
