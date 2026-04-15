@@ -836,7 +836,7 @@ border-radius: 16px;
 
 <!-- Popup -->
 <div id="popupRéférent" class="popup">
-  <div class="popup-content" onclick="closePopup('popupŔéférent')">
+  <div class="popup-content" onclick="closePopup('popupRéférent')">
   
     <h2> ♻️ Référents</h2>
     <ul>
