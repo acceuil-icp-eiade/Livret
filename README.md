@@ -113,7 +113,7 @@ header p {
 
 input {
   padding: 14px;
-  margin: 8px;
+  margin: 5px;
   border-radius: 12px;
   border: none;
   width: 240px;
