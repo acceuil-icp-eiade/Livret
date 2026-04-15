@@ -882,14 +882,8 @@ href="pdf/POUMON.pdf" target="_blank">
       🌡hyperthermie maligne 
     </a>
   </div>
-  
-  <script>
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
-</div>
+        </div>
+
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
   target="_blank">
@@ -923,6 +917,11 @@ function toggleUrgences() {
 </footer>
 
 <script>
+    
+function toggleUrgences() {
+  const menu = document.getElementById("urgencesMenu");
+  menu.classList.toggle("hidden");
+}
 function toggleSpecialites() {
   const menu = document.getElementById("specialitesMenu");
   menu.classList.toggle("hidden");
