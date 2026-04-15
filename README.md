@@ -804,7 +804,7 @@ border-radius: 16px;
   allowfullscreen>
 </iframe>
   </div>
-    <div class="cards-row">
+  
   <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popuporganigramme')">
   <h2>🩺 Organigramme du service</h2>
@@ -847,7 +847,7 @@ border-radius: 16px;
       </ul>
   </div>
   </div>
-  </div>
+  
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
   ☎️ Telephones 
