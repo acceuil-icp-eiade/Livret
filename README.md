@@ -74,7 +74,6 @@ header p {
   animation-delay: 0.4s;
 }
 
-/* quand JS ajoute show → on change juste l’état, pas l’animation */
 .icons.show {
   opacity: 1;
   transform: scale(1);
