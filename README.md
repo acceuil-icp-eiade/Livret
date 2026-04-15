@@ -736,9 +736,7 @@ border-radius: 16px;
 <div id="popupJour" class="popup">
   <div class="popup-content" onclick="closePopup('popupJour')">
     <h2>📍 Votre premier jour</h2>
-  
 
-  <div class="content hidden">
     <ul>
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
@@ -748,7 +746,6 @@ border-radius: 16px;
       <li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
     </ul>
   </div>
-</div>
 </div>
 
 <!-- Carte -->
@@ -761,8 +758,6 @@ border-radius: 16px;
   <div class="popup-content" onclick="closePopup('popupVie')">
     <h2>🏥 Vie pratique</h2>
     
-  
-  <div class="content hidden">
     <ul>
     <li> à votre disposition</li>
     <h3>👕 Vestiaires</h3>
@@ -780,7 +775,6 @@ border-radius: 16px;
     <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
-</div>
 </div>
 </div>
 </div>
