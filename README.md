@@ -1019,6 +1019,7 @@ function toggleItem(element) {
     }
   }, 800);
 });
+  }
 </script>
 </body>
 
