@@ -95,17 +95,21 @@ button:active {
   }
 }
     .card {
-  background: linear-gradient(135deg, #5dade2, #48c9b0);
-  color: white;
-  padding: 20px;
-  border-radius: 18px;
-  margin-bottom: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+.card {
+  padding: 20px; /* au lieu de 40px ou plus */
+  margin-bottom: 20px; /* réduit l’espace en dessous */
 }
+    h2 {
+      color: #3498db;
+      font-size: 18px;
+    }
 
-.card h2 {
-  color: white;
-}
     button {
       padding: 12px 20px;
       border: none;
