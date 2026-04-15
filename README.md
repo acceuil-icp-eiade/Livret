@@ -11,7 +11,7 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 10px;
+      padding: 5px;
       background-color: #f7f9fb;
       color: #2c3e50;
     }
