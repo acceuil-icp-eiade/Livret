@@ -691,6 +691,7 @@ border-radius: 16px;
     <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
   </div>
   
+  <div class="cards-row">
   <div class="card clickable" onclick="toggleItem(this)">
   <h2>📍 Votre premier jour</h2>
 
@@ -705,7 +706,7 @@ border-radius: 16px;
     </ul>
   </div>
 </div>
-  <div class="cards-row">
+  
 <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Vie pratique</h2>
   
@@ -727,6 +728,7 @@ border-radius: 16px;
     <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
+</div>
 </div>
 </div>
 
@@ -756,7 +758,6 @@ border-radius: 16px;
 </iframe>
   </div>
   
-  <div class="cards-row">
   <div class="card clickable" onclick="toggleItem(this)">
     <h2>🏥 Organigramme du service</h2>
 
@@ -772,7 +773,6 @@ border-radius: 16px;
   
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
-  </div>
   </div>
   </div>
   
@@ -796,6 +796,7 @@ border-radius: 16px;
   ☎️ Telephones 
 </a>
   </div>
+  
   
     <div class="card" id="documents">
   <h2>📄 Accès rapide aux documents</h2>
