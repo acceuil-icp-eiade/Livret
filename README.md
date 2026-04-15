@@ -74,21 +74,13 @@ header p {
   animation-delay: 0.4s;
 }
 
-@keyframes popIcons {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-    .icons.show {
+/* quand JS ajoute show → on change juste l’état, pas l’animation */
+.icons.show {
+  opacity: 1;
+  transform: scale(1);
   animation: float 2s ease-in-out infinite;
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-  100% { transform: translateY(0); }
-}
 @keyframes popIcons {
   to {
     opacity: 1;
@@ -101,9 +93,10 @@ header p {
   50% { transform: translateY(-4px); }
   100% { transform: translateY(0); }
 }
-    .icons {
+
+.icons {
   will-change: transform, opacity;
-    }
+}
 
     /* 🔐 LOGIN */
     .login {
@@ -1019,7 +1012,11 @@ disclaimer.classList.remove("show");
 function toggleItem(element) {
   const content = element.querySelector(".content");
   content.classList.toggle("hidden");
-}
+}window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector(".icons")?.classList.add("show");
+  }, 800);
+});
 </script>
 
 
