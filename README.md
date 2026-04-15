@@ -812,7 +812,7 @@ border-radius: 16px;
 
 <!-- Popup -->
 <div id="popuporganigramme" class="popup">
-  <div class="popup-content" onclick="closePopup('organigramme')">
+  <div class="popup-content" onclick="closePopup('popuporganigramme')">
     <h2>🏥 Organigramme du service</h2>
 
     <ul>
