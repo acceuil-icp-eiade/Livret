@@ -101,6 +101,9 @@ header p {
   50% { transform: translateY(-4px); }
   100% { transform: translateY(0); }
 }
+    .icons {
+  will-change: transform, opacity;
+    }
 
     /* 🔐 LOGIN */
     .login {
