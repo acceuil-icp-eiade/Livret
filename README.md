@@ -607,6 +607,16 @@ border-radius: 16px;
 .hidden {
   display: none;
 }
+    .container {
+  display: flex;
+  gap: 20px; /* espace entre les deux */
+  flex-wrap: wrap; /* optionnel : passe en colonne sur petit écran */
+}
+
+.card {
+  flex: 1; /* prend la même largeur */
+  min-width: 250px; /* évite que ça devienne trop écrasé */
+}
 
 </style>
 
