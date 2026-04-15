@@ -521,9 +521,7 @@ border-radius: 16px;
   margin-top: 15px;
 }
 
-.hidden {
-  display: none;
-}
+
     #loginPage {
   opacity: 1;
   transition: opacity 0.4s ease;
@@ -650,7 +648,6 @@ border-radius: 16px;
 
     <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
-</div>
 
 <!-- 🔓 CONTENU -->
 
