@@ -833,7 +833,6 @@ function toggleChir() {
   menu.classList.toggle("hidden");
 }
 </script>
-</div>
     
   <div class="btn" onclick="toggleSpecialites()">
   📂 Anesthésie par spécialité
