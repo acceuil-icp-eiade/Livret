@@ -950,7 +950,7 @@ function toggleChir() {
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
-  }
+  
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.querySelector(".icons").classList.add("show");
