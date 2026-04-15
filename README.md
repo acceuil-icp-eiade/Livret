@@ -37,7 +37,57 @@ header p {
   font-size: 13px;
   opacity: 0.9;
 }
-    
+    header {
+  animation: fadeInHeader 0.8s ease;
+}
+
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .title {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeTitle 0.6s ease forwards;
+}
+
+@keyframes fadeTitle {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .icons {
+  font-size: 28px;
+  margin-top: 5px;
+
+  opacity: 0;
+  transform: scale(0.5);
+
+  animation: popIcons 0.5s ease forwards,
+             float 2s ease-in-out infinite;
+
+  animation-delay: 0.4s, 1s; /* 👈 effet décalé */
+}
+
+@keyframes popIcons {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
 
     /* 🔐 LOGIN */
     .login {
@@ -488,7 +538,7 @@ border-radius: 16px;
 <body>
 
 <header>
-  <h1>Bienvenue à l’ICP</h1>
+  <h1 class="title">Bienvenue à l’ICP</h1>
 <div class="icons">🫀 🫁</div>
   <p>Bloc opératoire – Accueil des étudiants IADE</p>
 </header>
