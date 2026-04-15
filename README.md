@@ -956,7 +956,6 @@ function toggleUrgences() {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
   }
-  <script>
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.querySelector(".icons").classList.add("show");
