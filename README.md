@@ -620,7 +620,36 @@ border-radius: 16px;
   display: flex;
   gap: 10px;
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  text-align: left;
+}
+
+/* Petit effet bouton */
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable:active {
+  transform: scale(0.98);
+}
     
 </style>
 
@@ -697,8 +726,14 @@ border-radius: 16px;
   </div>
   
   <div class="cards-row">
-  <div class="card clickable" onclick="toggleItem(this)">
-  <h2>📍 Votre premier jour</h2>
+  <div class="card clickable" onclick="openpopup('popupJour')">
+    
+    <!-- Popup Votre premier jour -->
+    
+<div id="popupJour" class="popup">
+  <div class="popup-content" onclick="closePopup('popupJour')">
+    <h2>📍 Votre premier jour</h2>
+  
 
   <div class="content hidden">
     <ul>
@@ -711,8 +746,12 @@ border-radius: 16px;
     </ul>
   </div>
 </div>
+
   
-<div class="card clickable" onclick="toggleItem(this)">
+<div class="card clickable" onclick="openpopup(vie)">
+  <!-- Popup Vie pratique -->
+<div id="popupVie" class="popup">
+  <div class="popup-content" onclick="closePopup('popupVie')">
     <h2>🏥 Vie pratique</h2>
   
   <div class="content hidden">
@@ -736,6 +775,7 @@ border-radius: 16px;
 </div>
 </div>
 </div>
+
 
 
 <div class="fiche fiche-plan" id="plan">
@@ -937,6 +977,14 @@ function toggleChir() {
 </footer>
 
 <script>
+
+function openPopup(id) {
+  document.getElementById(id).style.display = "flex";
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = "none";
+}
   
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
