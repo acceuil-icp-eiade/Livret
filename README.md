@@ -729,6 +729,7 @@ border-radius: 16px;
     
   <div class="card clickable" onclick="openpopup('popupJour')">
   <h2>📍 Votre premier jour</h2>
+  </div>
     
     <!-- Popup Votre premier jour -->
     
@@ -748,6 +749,7 @@ border-radius: 16px;
     </ul>
   </div>
 </div>
+
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popupVie')">
   <h2>🏥 Vie pratique</h2>
@@ -777,6 +779,8 @@ border-radius: 16px;
     <li>👉 Possibilité de réchauffer vos repas sur place.
     </li>
     </ul>
+</div>
+</div>
 </div>
 </div>
 
