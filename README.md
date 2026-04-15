@@ -648,7 +648,7 @@ border-radius: 16px;
 
     <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
-
+<main>
 <!-- 🔓 CONTENU -->
 
 <div class="bottom-menu">
@@ -832,16 +832,8 @@ href="pdf/POUMON.pdf" target="_blank">
       💉 Cardiologie interventionnelle
     </a>
   </div>
-
 </div>
-  </div>
-</div>
-
-
-
-<script>
-
-
+  
 
   <div class="btn urgence" onclick="toggleUrgences()">
   🚨 Protocoles d'urgence
@@ -880,15 +872,18 @@ href="pdf/POUMON.pdf" target="_blank">
     </a>
   </div>
         </div>
-
+<div>
 <a class="btn"
   href="pdf/Antibioprophylaxie_ICP.pdf"
   target="_blank">
       💊 Antibioprophylaxie
 </a>
+</div>
+<div>
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
       📘 bilan de demi-stage
     </a>
+</div>
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
     <p>
@@ -909,9 +904,12 @@ href="pdf/POUMON.pdf" target="_blank">
     📝 Donner mon avis
   </a>
 </div>
+
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
+
+</main>
 
 <script>
     
@@ -1022,5 +1020,6 @@ function toggleItem(element) {
   }, 800);
 });
 </script>
+</body>
 
 
