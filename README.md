@@ -730,6 +730,7 @@ border-radius: 16px;
 </div>
 </div>
 
+
 <div class="fiche fiche-plan" id="plan">
   
   <h3>🗺️ Plan du bloc opératoire</h3>
@@ -771,6 +772,7 @@ border-radius: 16px;
   
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
+  </div>
   </div>
   </div>
   
