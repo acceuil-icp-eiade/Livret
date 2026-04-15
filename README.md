@@ -616,6 +616,14 @@ border-radius: 16px;
   flex: 1;
   min-width: 250px;
 }
+    .cards-row {
+  display: flex;
+  gap: 15px;
+}
+
+.cards-row .card {
+  flex: 1;
+}
     
 </style>
 
