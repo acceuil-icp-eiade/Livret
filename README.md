@@ -961,7 +961,6 @@ window.addEventListener("load", () => {
     document.querySelector(".icons").classList.add("show");
   }, 800);
 });
-</script>
 
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
