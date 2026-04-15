@@ -109,6 +109,18 @@ button:active {
       color: #3498db;
       font-size: 18px;
     }
+    .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
 
     button {
       padding: 12px 20px;
@@ -118,7 +130,15 @@ button:active {
       color: white;
       font-weight: bold;
     }
+   button {
+  background: linear-gradient(135deg, #3498db, #5dade2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
 
+button:active {
+  transform: scale(0.97);
+}
     .hidden {
       display: none;
     }
