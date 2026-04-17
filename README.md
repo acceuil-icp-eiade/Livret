@@ -720,7 +720,7 @@ border-radius: 16px;
       Nous savons que les débuts peuvent être impressionnants — ici, vous êtes là pour apprendre, progresser et poser toutes vos questions...
     </p>
     <p>
-      votre bien être, votre épanouissement professionnel et votre autonomisation sont au cœur de notre accompagnement.
+      Votre bien être, votre épanouissement professionnel et votre autonomisation sont au cœur de notre accompagnement.
     </p>
     <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
   </div>
@@ -822,7 +822,7 @@ border-radius: 16px;
       <li><strong>BLOC OPÉRATOIRE:</strong></li>
       <p>Chirurgie cardiaque: Professeur Vincentelli </p>
       <p>Chirurgie thoracique: Professeur Venissac</p>   
-      <p>pneumologie: Dr Fournier </p>
+      <p>Pneumologie: Dr Fournier </p>
       <li><strong>PTI:</strong></li>
       <p>Cardiologie: Professeur Lemesle</p>
       <p>Radiologie: Dr </p>
