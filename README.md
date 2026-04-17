@@ -40,6 +40,11 @@ header p {
     header {
   animation: fadeInHeader 0.8s ease;
 }
+    header {
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
 
 @keyframes fadeInHeader {
   from {
@@ -121,7 +126,24 @@ input {
   background: #eef2f7;
   box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
 }
+.btn {
+  border-radius: 14px;
+  padding: 15px;
+  font-weight: 600;
 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+    .bottom-menu {
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px 20px 0 0;
+    }
 button {
   padding: 14px 20px;
   border: none;
@@ -151,6 +173,23 @@ button:active {
     opacity: 1;
     transform: translateY(0);
   }
+}
+    .card {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 15px;
+
+  box-shadow: 
+    0 4px 10px rgba(0,0,0,0.06),
+    0 1px 3px rgba(0,0,0,0.05);
+
+  transition: 0.25s ease;
+}
+
+.card:active {
+  transform: scale(0.97);
 }
     .card {
       background: white;
@@ -650,7 +689,9 @@ border-radius: 16px;
 .clickable:active {
   transform: scale(0.98);
 }
-    
+    .clickable:active {
+  transform: scale(0.96);
+    }
 </style>
 
 </head>
