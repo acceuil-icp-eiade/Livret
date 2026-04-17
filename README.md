@@ -656,7 +656,7 @@ border-radius: 16px;
 </head>
 
 <body>
-
+<div class="wrapper">
 <header>
   <h1 class="title">Bienvenue à l'ICP</h1>
   <div class="icons">❤️ 🫁</div>
@@ -696,7 +696,7 @@ border-radius: 16px;
     <button onclick="acceptDisclaimer()">✅ Continuer</button>
   </div>
 </div>
-
+</div>
 <!-- 🔓 CONTENU -->
 
 <div class="bottom-menu">
