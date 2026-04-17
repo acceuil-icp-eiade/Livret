@@ -1,5 +1,4 @@
 
-
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -258,7 +257,7 @@ h2 {
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
-
+</div>
 
 <div id="content" class="hidden">
 
@@ -544,7 +543,6 @@ href="pdf/POUMON.pdf" target="_blank">
   Institut Cœur Poumon – Bloc opératoire
 </footer>
 </div>
-
 
 <script>
 
