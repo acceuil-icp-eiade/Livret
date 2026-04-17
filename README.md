@@ -817,7 +817,7 @@ border-radius: 16px;
 
     <ul>
     <li><strong>ANESTHÉSIE:</strong></li>
-      <li>Chef de service:Dr Desbordes</li>
+      <p>Chef de service:Dr Desbordes</p>
       <li><strong>Réanimation:</strong></li>
       <li>Professeur Moussa</li>
       <li><strong>BLOC OPÉRATOIRE:</strong></li>
