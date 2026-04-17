@@ -817,19 +817,16 @@ border-radius: 16px;
 
     <ul>
     <li><strong>ANESTHÉSIE:</strong></li>
-      <p>Chef de service:Dr Desbordes</p>
-      <li><strong>Réanimation:</strong></li>
-      <li>Professeur Moussa</li>
+      <p>Chef de service: Dr Desbordes</p>
+      <p>Réanimation: Professeur Moussa</p>
       <li><strong>BLOC OPÉRATOIRE:</strong></li>
-      <li>Chirurgie cardiaque: Professeur Vincentelli </li>
-      <li>Chirurgie thoracique: Professeur Venissac</li>   
-      <li>pneumologie:</li>
-      <li>Dr Fournier </li>
+      <p>Chirurgie cardiaque: Professeur Vincentelli </p>
+      <p>Chirurgie thoracique: Professeur Venissac</p>   
+      <p>pneumologie: Dr Fournier </p>
       <li><strong>PTI:</strong></li>
-      <LI>Cardiologie: Professeur Lemesle</LI>
-      <li>Radiologie: Dr </li>
+      <p>Cardiologie: Professeur Lemesle</p>
+      <p>Radiologie: Dr </p>
     
-  
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
   </div>
