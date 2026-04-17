@@ -789,6 +789,7 @@ border-radius: 16px;
     📄 Télécharger le plan
   </a>
 </div>
+<div>
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
@@ -803,6 +804,8 @@ border-radius: 16px;
   allow="fullscreen; autoplay"
   allowfullscreen>
 </iframe>
+  </div>
+  </div>
   </div>
   <div>
   <!-- Carte -->
@@ -851,7 +854,7 @@ border-radius: 16px;
       </ul>
   </div>
   </div>
- </div> 
+ 
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
   ☎️ Telephones 
