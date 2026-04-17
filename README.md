@@ -804,7 +804,7 @@ border-radius: 16px;
   allowfullscreen>
 </iframe>
   </div>
-  
+  <div>
   <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popuporganigramme')">
   <h2>🩺 Organigramme du service</h2>
@@ -831,7 +831,8 @@ border-radius: 16px;
     </ul>
   </div>
   </div>
-  
+  </div>
+ <div>
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popupReferents')">
   <h2>♻️ Référents</h2>
@@ -850,7 +851,7 @@ border-radius: 16px;
       </ul>
   </div>
   </div>
-  
+ </div> 
 <div>
 <a class="btn" href="pdf/telephones.pdf" target="_blank">
   ☎️ Telephones 
@@ -861,7 +862,7 @@ border-radius: 16px;
     <div class="card" id="documents">
   <h2>📄 Accès rapide aux documents</h2>
   </div>
-
+<div>
   <div class="btn" onclick="toggleChir()">
     
     ✅ présentation des chirurgies
@@ -881,7 +882,7 @@ href="pdf/POUMON.pdf" target="_blank">
       
   </div>
 </div>
-    
+   </div> 
 
     
   <div class="btn" onclick="toggleSpecialites()">
