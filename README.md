@@ -790,6 +790,7 @@ border-radius: 16px;
     📄 Télécharger le plan
   </a>
 </div>
+<div>
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
@@ -805,7 +806,8 @@ border-radius: 16px;
   allowfullscreen>
 </iframe>
   </div>
-  
+  </div>
+
   <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popuporganigramme')">
   <h2>🩺 Organigramme du service</h2>
@@ -830,6 +832,7 @@ border-radius: 16px;
     
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
+  </div>
   </div>
   </div>
   
