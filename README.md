@@ -857,9 +857,10 @@ border-radius: 16px;
   
     <h2> ♻️ Référents</h2>
     <ul>
-      <li><strong>cadre sup:</strong> Mme Reumaux Laurence </li>
-    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li>
-    <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
+      <li><strong>cadre supérieur:</strong> Mme Reumaux Laurence </li><p></p>
+    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li><p></p>
+    <li><strong>Référents IADE :</strong></li>
+    <p>Tosolini Karen</p><p>Carrier Sabah</p><p>Lavergne Sebastien</p><p>Molinaro Camille</p>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
   </div>
