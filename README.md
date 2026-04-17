@@ -867,7 +867,7 @@ border-radius: 16px;
   <h2>📄 Accès rapide aux documents</h2>
   </div>
   </div>
-<div>
+
   <div class="btn" onclick="toggleChir()">
     
     ✅ présentation des chirurgies
@@ -887,7 +887,7 @@ href="pdf/POUMON.pdf" target="_blank">
       
   </div>
 </div>
-    </div>
+  
 
     
   <div class="btn" onclick="toggleSpecialites()">
