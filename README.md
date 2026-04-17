@@ -4,83 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil IADE - ICP</title>
-<style>
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  background-color: #f7f9fb;
-  color: #2c3e50;
-}
-/* CONTENEUR GLOBAL */
-.wrapper {
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 5px;
+      background-color: #f7f9fb;
+      color: #2c3e50;
+    }
+    body {
   max-width: 500px;
-  margin: 0 auto;
-  padding: 10px 10px 70px; /* espace pour menu bas */
-}
-/* HEADER */
+  margin: auto;
+    }
 header {
   background: linear-gradient(135deg, #5dade2, #48c9b0);
   color: white;
-  padding: 15px;
+  padding: 15px 10px;
   text-align: center;
   border-radius: 16px;
-  margin-bottom: 15px;
-  animation: fadeInHeader 0.8s ease;
+  margin-bottom: 10px;
 }
+
 header h1 {
   font-size: 20px;
   margin-bottom: 5px;
 }
+
 header p {
   font-size: 13px;
   opacity: 0.9;
 }
-/* ANIMATIONS */
-@keyframes fadeInHeader {
-  from { opacity: 0; transform: translateY(-15px); }
-  to { opacity: 1; transform: translateY(0); }
+    header {
+  animation: fadeInHeader 0.8s ease;
 }
-.title {
+
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .title {
   opacity: 0;
   transform: translateY(-10px);
   animation: fadeTitle 0.6s ease forwards;
 }
+
 @keyframes fadeTitle {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-/* ICONES */
-.icons {
+    .icons {
   font-size: 28px;
   margin-top: 5px;
+
   opacity: 0;
   transform: scale(0.8);
+
   animation: popIcons 0.5s ease forwards;
   animation-delay: 0.4s;
 }
+
 .icons.show {
   opacity: 1;
   transform: scale(1);
-  animation: float 2s infinite ease-in-out;
+  animation: float 2s ease-in-out infinite;
 }
+
 @keyframes popIcons {
-  to { opacity: 1; transform: scale(1); }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
+
 @keyframes float {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+  50% { transform: translateY(-4px); }
   100% { transform: translateY(0); }
 }
-/* LOGIN */
-.login {
+
+.icons {
+  will-change: transform, opacity;
+}
+
+    /* 🔐 LOGIN */
+    .login {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
   animation: fadeIn 0.6s ease;
 }
+
+.login h2 {
+  margin-bottom: 10px;
+}
+
 input {
   padding: 14px;
   margin: 5px;
@@ -90,77 +119,174 @@ input {
   text-align: center;
   font-size: 16px;
   background: #eef2f7;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
 }
+
 button {
-  padding: 14px;
+  padding: 14px 20px;
   border: none;
   border-radius: 12px;
   background: linear-gradient(135deg, #3498db, #5dade2);
   color: white;
   font-weight: bold;
+  font-size: 16px;
   margin-top: 10px;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
 button:active {
   transform: scale(0.97);
 }
-/* CARTES */
+    button:hover {
+  filter: brightness(1.1);
+    }
+    
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
 .card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: 0.2s;
+  padding: 20px; /* au lieu de 40px ou plus */
+  margin-bottom: 20px; /* réduit l’espace en dessous */
 }
-.card:hover {
-  transform: translateY(-2px);
+    h2 {
+      color: #3498db;
+      font-size: 18px;
+    }
+    .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .card:active {
   transform: scale(0.98);
 }
-h2 {
-  color: #3498db;
-  font-size: 18px;
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
-/* BOUTONS */
-.btn {
-  display: block;
-  background: #3498db;
-  color: white;
-  text-decoration: none;
-  padding: 14px;
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      font-weight: bold;
+    }
+   button {
+  background: linear-gradient(135deg, #3498db, #5dade2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+    .hidden {
+      display: none;
+    }
+
+    .container {
+      padding: 10px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+.card {
+  padding: 20px; /* au lieu de 40px ou plus */
+  margin-bottom: 20px; /* réduit l’espace en dessous */
+}
+    h2 {
+      color: #3498db;
+      font-size: 18px;
+    }
+
+    /* 🔥 BOUTONS PDF */
+    .btn {
+      display: block;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      padding: 16px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .btn:active {
+      background: #2c80b4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #7f8c8d;
+      font-size: 12px;
+    }
+    .info {
+  background: #f9fbfc;
+  padding: 12px;
+  border-radius: 10px;
   margin-bottom: 10px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: bold;
+  border-left: 5px solid #48c9b0;
 }
-/* GRID CARTES */
-.cards-row {
-  display: flex;
-  gap: 10px;
+
+.info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
 }
-.cards-row .card {
-  flex: 1;
+    .info {
+  background: #f9fbfc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #48c9b0;
 }
-/* POPUP */
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
+
+.info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+    .video-btn {
   width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-.popup-content {
-  background: white;
-  padding: 20px;
+  padding: 14px;
+  border: none;
   border-radius: 12px;
-  max-width: 90%;
+  background: linear-gradient(135deg, #48c9b0, #5dade2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
 }
-/* VIDEO */
+
+.video-btn:active {
+  transform: scale(0.98);
+}
+
 .video {
   margin-top: 15px;
   position: relative;
@@ -170,16 +296,33 @@ h2 {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
+
 .video iframe {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 12px;
 }
+
 .video.show {
   opacity: 1;
 }
-/* MENU BAS */
+.btn-pdf {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2c7be5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-pdf:hover {
+  background-color: #1a5fd0;
+}
+
 .bottom-menu {
   position: fixed;
   bottom: 0;
@@ -190,28 +333,334 @@ h2 {
   justify-content: space-around;
   padding: 10px 0;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
+
 .bottom-menu a {
-  font-size: 22px;
   text-decoration: none;
+  font-size: 22px;
 }
-/* UTILITAIRE */
+.fiche {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  margin-bottom: 15px;
+}
+    .icons {
+  font-size: 28px;
+  margin-top: 5px;
+    }
+    .icons {
+  font-size: 28px;
+  margin-top: 5px;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+body {
+  padding-bottom: 70px;
+}
+.fiche:last-child {
+  margin-bottom: 25px;
+}
+ ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.card ul {
+  margin-top: 10px;
+}
+    #chirMenu {
+  background-color: #ff4fa3;
+  color: white;
+    }
+    .btn.chirurgie {
+  background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+#chirMenu {
+  background-color: #ff4fa3; /* rose */
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  }
+    .disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  /* 🔥 effet flou */
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* 🎬 animation */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.disclaimer-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+.disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.disclaimer-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+    .disclaimer-box {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+
+  /* 👇 animation */
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.disclaimer-overlay.show .disclaimer-box {
+  transform: scale(1);
+  opacity: 1;
+}
+.disclaimer-box {
+  background: rgba(255,255,255,0.85);
+backdrop-filter: blur(6px);
+border-radius: 16px;
+  color: #000;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.disclaimer-box h2 {
+  margin-bottom: 15px;
+}
+
+.disclaimer-box p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.disclaimer-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.disclaimer-box button:hover {
+  background: #218838;
+}
+    .hidden {
+  display: none !important;
+    }
+    .clickable {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clickable:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.01);
+}
+
+.content {
+  margin-top: 15px;
+}
+
 .hidden {
   display: none;
 }
+    #loginPage {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#loginPage.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+    .menu-item {
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+    }
+    
+.fiche-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+  
+.fiche-container .fiche {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.fiche a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.fiche:hover {
+  background: #e6f2ff;
+  transform: translateY(-2px);
+}
+  .fiche-plan {
+  background: white;
+  }
+  .btn.urgence {
+  background: linear-gradient(135deg, #ff3b3b, #b30000);
+  color: white;
+  animation: pulseUrgence 1.8s infinite;
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+}
+
+@keyframes pulseUrgence {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+}
+
+.btn.urgence:hover {
+  background: linear-gradient(135deg, #ff1a1a, #800000);
+  transform: scale(1.08);
+}
+.btn.bilan {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.btn.bilan:hover {
+  background: linear-gradient(135deg, #34d058, #19692c);
+  transform: scale(1.05);
+}
+  
+.hidden {
+  display: none;
+}
+    .cards-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* pour mobile */
+}
+
+.cards-row .card {
+  flex: 1;
+  min-width: 0;
+}
+    .cards-row {
+  display: flex;
+  gap: 10px;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  text-align: left;
+}
+
+/* Petit effet bouton */
 .clickable {
   cursor: pointer;
+  transition: transform 0.2s;
 }
+
+.clickable:active {
+  transform: scale(0.98);
+}
+    
 </style>
+
 </head>
 
-
-  
 <body>
-<div class="wrapper">
+
 <header>
   <h1 class="title">Bienvenue à l'ICP</h1>
   <div class="icons">❤️ 🫁</div>
+<script src="script.js"></script>
   <p>Bloc opératoire – Accueil des étudiants IADE</p>
 </header>
 
@@ -256,7 +705,6 @@ h2 {
   <a href="#visite">🎥</a>
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
-</div>
 </div>
 
 <div id="content" class="hidden">
@@ -341,7 +789,6 @@ h2 {
     📄 Télécharger le plan
   </a>
 </div>
-<div>
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
 
@@ -357,8 +804,7 @@ h2 {
   allowfullscreen>
 </iframe>
   </div>
-  </div>
-
+  
   <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popuporganigramme')">
   <h2>🩺 Organigramme du service</h2>
@@ -385,7 +831,6 @@ h2 {
     </ul>
   </div>
   </div>
-  </div>
   
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popupReferents')">
@@ -398,10 +843,9 @@ h2 {
   
     <h2> ♻️ Référents</h2>
     <ul>
-      <li><strong>cadre supérieur:</strong> Mme Reumaux Laurence </li><p></p>
-    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li><p></p>
-    <li><strong>Référents IADE :</strong> </li><p>Tosolini Karen</p>
-    <p>Carrier Sabah</p> <p>Lavergne Sebastien</p><p>Molinaro Camille</p>
+      <li><strong>cadre sup:</strong> Mme Reumaux Laurence </li>
+    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li>
+    <li><strong>Référents IADE :</strong> Tosolini Karen, Carrier Sabah, Lavergne Sebastien, Molinaro Camille</li>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
   </div>
@@ -413,10 +857,9 @@ h2 {
 </a>
   </div>
   
-  <div>
+  
     <div class="card" id="documents">
   <h2>📄 Accès rapide aux documents</h2>
-  </div>
   </div>
 
   <div class="btn" onclick="toggleChir()">
@@ -438,7 +881,7 @@ href="pdf/POUMON.pdf" target="_blank">
       
   </div>
 </div>
-  
+    
 
     
   <div class="btn" onclick="toggleSpecialites()">
@@ -542,7 +985,6 @@ href="pdf/POUMON.pdf" target="_blank">
 <footer>
   Institut Cœur Poumon – Bloc opératoire
 </footer>
-</div>
 
 <script>
 
@@ -660,6 +1102,5 @@ function toggleItem(element) {
   }, 800);
 });
 </script>
-</body>
 
 
