@@ -620,6 +620,16 @@ border-radius: 16px;
   display: flex;
   gap: 10px;
 }
+    .popup-content {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.popup.show .popup-content {
+  transform: scale(1);
+  opacity: 1;
+}
 .popup {
   position: fixed;
   top: 0;
@@ -996,13 +1006,18 @@ function toggleChir() {
   var menu = document.getElementById("chirMenu");
   menu.classList.toggle("hidden");
 }
-function openPopup(id) {
-  document.getElementById(id).style.display = "flex";
+  function openPopup(id) {
+  const popup = document.getElementById(id);
+  popup.style.display = "flex";
+  setTimeout(() => popup.classList.add("show"), 10);
 }
 
 function closePopup(id) {
-  document.getElementById(id).style.display = "none";
+  const popup = document.getElementById(id);
+  popup.classList.remove("show");
+  setTimeout(() => popup.style.display = "none", 300);
 }
+
   
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
