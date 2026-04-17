@@ -816,13 +816,19 @@ border-radius: 16px;
     <h2>🩺 Organigramme du service</h2>
 
     <ul>
-      <li><strong>bloc opératoire :</strong></li>
+    <li><strong>ANESTHÉSIE:</strong></li>
+      <li>Chef de service:Dr Desbordes</li>
+      <li><strong>Réanimation:</strong></li>
+      <li>Professeur Moussa</li>
+      <li><strong>BLOC OPÉRATOIRE:</strong></li>
       <li>Chirurgie cardiaque: Professeur Vincentelli </li>
-      <li>Chirurgie thoracique: Professeur Venissac</li>      
+      <li>Chirurgie thoracique: Professeur Venissac</li>   
+      <li>pneumologie:</li>
+      <li>Dr Fournier </li>
       <li><strong>PTI:</strong></li>
       <LI>Cardiologie: Professeur Lemesle</LI>
-      <li><strong>Anesthésie:</strong></li>
-      <li>Chef de service:Dr Desbordes</li>
+      <li>Radiologie: Dr </li>
+    
   
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
