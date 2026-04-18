@@ -651,9 +651,7 @@ border-radius: 16px;
   text-align: left;
 }
 
-.popup-content {
-  position: relative;
-}
+
 
 .close-btn {
   position: sticky;
