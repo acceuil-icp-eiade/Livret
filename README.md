@@ -152,11 +152,9 @@ button:hover {
   text-align: center;
   font-weight: bold;
 }
-
 /* =========================
-   7. POPUP
+   POPUP BASE
 ========================= */
-/* 🔳 overlay */
 .popup {
   position: fixed;
   inset: 0;
@@ -169,17 +167,22 @@ button:hover {
   z-index: 1000;
 
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.25s ease;
+
+  transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 /* état ouvert */
 .popup.show {
   opacity: 1;
+  visibility: visible;
   pointer-events: all;
 }
 
-/* 📦 contenu modal */
+/* =========================
+   POPUP CONTENT (clean)
+========================= */
 .popup-content {
   background: white;
   padding: 20px;
@@ -189,19 +192,46 @@ button:hover {
   max-width: 500px;
 
   position: relative;
-}
-  .popup-content {
-  transform: translateY(40px) scale(0.96);
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
-  /* animation iOS */
-  transform: translateY(40px) scale(0.96);
-  opacity: 0;
 
-  transition: all 0.3s ease;
+  transform: translateY(40px) scale(0.96);
 }
-/* 🎯 micro bounce iOS */
+
+/* animation ouverture */
+.popup.show .popup-content {
+  animation: iosBounce 0.45s ease-out forwards;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  border: none;
+  background: rgba(0,0,0,0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* =========================
+   ANIMATION IOS
+========================= */
 @keyframes iosBounce {
   0% {
     transform: translateY(40px) scale(0.96);
@@ -218,34 +248,8 @@ button:hover {
     transform: translateY(0) scale(1);
   }
 }
-/* ouverture animée */
-    .popup.show .popup-content {
-  animation: iosBounce 0.45s ease-out;
-    }
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
 
-  width: 32px;
-  height: 32px;
 
-  border-radius: 50%;
-  border: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 18px;
-  background: rgba(0,0,0,0.05);
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
-}
 /* =========================
    8. DISCLAIMER
 ========================= */
