@@ -650,7 +650,26 @@ border-radius: 16px;
   max-width: 90%;
   text-align: left;
 }
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
 
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+}
 /* Petit effet bouton */
 .clickable {
   cursor: pointer;
@@ -744,9 +763,10 @@ border-radius: 16px;
     <!-- Popup Votre premier jour -->
     
 <div id="popupJour" class="popup">
-  <div class="popup-content" onclick="closePopup('popupJour')">
-    <h2>📍 Votre premier jour ▶️ </h2>
-    
+  <div class="popup-content">
+    <button class="close-btn" onclick="closePopup('popupJour')">✖</button>
+
+    <h2>📍 Votre premier jour ▶️</h2>    
     <ul>
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
@@ -1002,6 +1022,14 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
+
+function openPopup(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closePopup(id) {
+  document.getElementById(id).style.display = "none";
+}
 
 function toggleChir() {
   var menu = document.getElementById("chirMenu");
