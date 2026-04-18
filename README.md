@@ -188,7 +188,30 @@ button:hover {
   transform: scale(1);
   opacity: 1;
 }
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  background: rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 /* =========================
    8. DISCLAIMER
 ========================= */
