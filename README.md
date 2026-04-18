@@ -660,7 +660,24 @@ border-radius: 16px;
 .clickable:active {
   transform: scale(0.98);
 }
-    
+    .page {
+  transition: all 0.4s ease;
+}
+
+.slide-out {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.slide-in.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 </style>
 
 </head>
@@ -675,7 +692,8 @@ border-radius: 16px;
 </header>
 
 <!-- 🔐 PAGE DE CONNEXION -->
-<div id="loginPage" class="login">
+<div id="loginPage" class="login page">
+
   <h2>Accès réservé</h2>
   <input type="password" id="password" placeholder="Mot de passe">
   <button onclick="checkPassword()">Entrer</button>
@@ -716,8 +734,7 @@ border-radius: 16px;
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
-
-<div id="content" class="hidden">
+<div id="content" class="hidden page slide-in">
 
 <div class="container">
 
@@ -1099,11 +1116,22 @@ function acceptDisclaimer() {
     content.classList.remove("hidden");
   }, 300);
 }
+
   function acceptDisclaimer() {
   const disclaimer = document.getElementById("disclaimer");
   const content = document.getElementById("content");
-disclaimer.classList.remove("show");
-  content.classList.remove("hidden");
+
+  disclaimer.classList.remove("show");
+
+  setTimeout(() => {
+    content.classList.remove("hidden");
+
+    // petite animation entrée
+    setTimeout(() => {
+      content.classList.add("show");
+    }, 10);
+
+  }, 300);
   }
 function toggleItem(element) {
   const content = element.querySelector(".content");
