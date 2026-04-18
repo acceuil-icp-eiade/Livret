@@ -774,7 +774,7 @@ border-radius: 16px;
     
 <div id="popupJour" class="popup">
   <div class="popup-content">
-    <button class="close-btn" onclick="closePopup('popupJour')">✖</button>
+    <button class="close-btn" onclick="closePopup('popupJour')">✖️</button>
 
     <h2>📍 Votre premier jour ▶️</h2>    
     <ul>
