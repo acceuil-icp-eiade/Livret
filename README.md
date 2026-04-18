@@ -651,8 +651,7 @@ border-radius: 16px;
 
   margin: auto;
   position: relative;
-max-height: 75vh;
-overflow-y: auto;
+
   text-align: left;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
