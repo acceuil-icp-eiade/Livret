@@ -620,11 +620,6 @@ border-radius: 16px;
   display: flex;
   gap: 10px;
 }
-    .popup-content {
-  transform: scale(0.9);
-  opacity: 0;
-  transition: 0.3s ease;
-}
 
 .popup.show .popup-content {
   transform: scale(1);
@@ -661,9 +656,7 @@ border-radius: 16px;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
-.popup {
-  padding: 20px; /* évite que ça colle aux bords sur mobile */
-}
+
     
 /* Petit effet bouton */
 .clickable {
