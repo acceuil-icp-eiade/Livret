@@ -679,6 +679,10 @@ border-radius: 16px;
   font-size: 20px;
   cursor: pointer;
 }
+  .close-btn {
+  color: black;
+  }
+
     
 /* Petit effet bouton */
 .clickable {
