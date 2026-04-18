@@ -678,7 +678,7 @@ border-radius: 16px;
   right: 10px;
   font-size: 22px;
   border: none;
-  background: transparent;
+  background: none;
   cursor: pointer;
   color: #333;
   z-index: 10;
