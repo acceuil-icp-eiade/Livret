@@ -620,6 +620,11 @@ border-radius: 16px;
   display: flex;
   gap: 10px;
 }
+ .popup-content {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: 0.3s ease;
+}
 
 .popup.show .popup-content {
   transform: scale(1);
@@ -637,22 +642,14 @@ border-radius: 16px;
   align-items: center;
   z-index: 1000;
 }
-    .popup-content {
+
+.popup-content {
   background: white;
   padding: 20px;
-  border-radius: 20px;
-
-  width: 95%;
-  max-width: 500px;
-  max-height: 90vh;
-
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-
+  border-radius: 12px;
+  max-width: 90%;
   text-align: left;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-.popup-content {
+}
 
 
 
