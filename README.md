@@ -420,7 +420,7 @@ html, body {
 </div>
 
 </div>
-
+<div>
 <div class="fiche fiche-plan" id="plan">
   
   <h3>🗺️ Plan du bloc opératoire</h3>
@@ -429,6 +429,7 @@ html, body {
   <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
     📄 Télécharger le plan
   </a>
+</div>
 </div>
 <div>
 <div class="card" id="visite">
