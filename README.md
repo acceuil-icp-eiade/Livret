@@ -1,36 +1,27 @@
 
+
+
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil IADE-ICP</title>
-  
-  <style>
-/* =========================
-   1. RESET
-========================= */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <title>Accueil IADE - ICP</title>
 
-/* =========================
-   2. BASE
-========================= */
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f7f9fb;
-  color: #2c3e50;
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 5px;
+      background-color: #f7f9fb;
+      color: #2c3e50;
+    }
+    body {
   max-width: 500px;
   margin: auto;
-  padding: 5px;
-  padding-bottom: 70px;
-}
-
-/* =========================
-   3. HEADER
-========================= */
+    }
 header {
   background: linear-gradient(135deg, #5dade2, #48c9b0);
   color: white;
@@ -38,29 +29,50 @@ header {
   text-align: center;
   border-radius: 16px;
   margin-bottom: 10px;
-  animation: fadeInHeader 0.8s ease;
 }
 
 header h1 {
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 header p {
   font-size: 13px;
   opacity: 0.9;
 }
+    header {
+  animation: fadeInHeader 0.8s ease;
+}
 
-.title {
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .title {
   opacity: 0;
   transform: translateY(-10px);
   animation: fadeTitle 0.6s ease forwards;
 }
 
-.icons {
+@keyframes fadeTitle {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .icons {
   font-size: 28px;
   margin-top: 5px;
+
   opacity: 0;
   transform: scale(0.8);
+
   animation: popIcons 0.5s ease forwards;
   animation-delay: 0.4s;
 }
@@ -68,18 +80,37 @@ header p {
 .icons.show {
   opacity: 1;
   transform: scale(1);
-  animation: float 2s infinite ease-in-out;
+  animation: float 2s ease-in-out infinite;
 }
 
-/* =========================
-   4. LOGIN
-========================= */
-.login {
+@keyframes popIcons {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+.icons {
+  will-change: transform, opacity;
+}
+
+    /* 🔐 LOGIN */
+    .login {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
   animation: fadeIn 0.6s ease;
+}
+
+.login h2 {
+  margin-bottom: 10px;
 }
 
 input {
@@ -91,6 +122,7 @@ input {
   text-align: center;
   font-size: 16px;
   background: #eef2f7;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
 }
 
 button {
@@ -103,161 +135,569 @@ button {
   font-size: 16px;
   margin-top: 10px;
   transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 button:active {
   transform: scale(0.97);
 }
-
-button:hover {
+    button:hover {
   filter: brightness(1.1);
+    }
+    
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+.card {
+  padding: 20px; /* au lieu de 40px ou plus */
+  margin-bottom: 20px; /* réduit l’espace en dessous */
+}
+    h2 {
+      color: #3498db;
+      font-size: 18px;
+    }
+    .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* =========================
-   5. CARDS
-========================= */
-.card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: 0.2s;
+.card:active {
+  transform: scale(0.98);
 }
 
 .card:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
 
-/* =========================
-   6. BUTTONS
-========================= */
-.btn {
-  display: block;
-  background: #3498db;
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      font-weight: bold;
+    }
+   button {
+  background: linear-gradient(135deg, #3498db, #5dade2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+    .hidden {
+      display: none;
+    }
+
+    .container {
+      padding: 10px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+.card {
+  padding: 20px; /* au lieu de 40px ou plus */
+  margin-bottom: 20px; /* réduit l’espace en dessous */
+}
+    h2 {
+      color: #3498db;
+      font-size: 18px;
+    }
+
+    /* 🔥 BOUTONS PDF */
+    .btn {
+      display: block;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      padding: 16px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .btn:active {
+      background: #2c80b4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #7f8c8d;
+      font-size: 12px;
+    }
+    .info {
+  background: #f9fbfc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #48c9b0;
+}
+
+.info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+    .info {
+  background: #f9fbfc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #48c9b0;
+}
+
+.info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+    .video-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #48c9b0, #5dade2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.video-btn:active {
+  transform: scale(0.98);
+}
+
+.video {
+  margin-top: 15px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.video.show {
+  opacity: 1;
+}
+.btn-pdf {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2c7be5;
   color: white;
   text-decoration: none;
-  padding: 16px;
-  margin-bottom: 10px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
-/* =========================
-   7. POPUP
-========================= */
-.popup {
+.btn-pdf:hover {
+  background-color: #1a5fd0;
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.bottom-menu a {
+  text-decoration: none;
+  font-size: 22px;
+}
+.fiche {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  margin-bottom: 15px;
+}
+    .icons {
+  font-size: 28px;
+  margin-top: 5px;
+    }
+    .icons {
+  font-size: 28px;
+  margin-top: 5px;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+body {
+  padding-bottom: 70px;
+}
+.fiche:last-child {
+  margin-bottom: 25px;
+}
+ ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.card ul {
+  margin-top: 10px;
+}
+    #chirMenu {
+  background-color: #ff4fa3;
+  color: white;
+    }
+    .btn.chirurgie {
+  background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+#chirMenu {
+  background-color: #ff4fa3; /* rose */
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  }
+    .disclaimer-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
 
-.popup.show {
-  display: flex;
-}
-
-.popup-content {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 500px;
-  width: 100%;
-  transform: scale(0.9);
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.popup.show .popup-content {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* =========================
-   8. DISCLAIMER
-========================= */
-.disclaimer-overlay {
-  position: fixed;
-  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.4);
+  z-index: 9999;
+
+  /* 🔥 effet flou */
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* 🎬 animation */
   opacity: 0;
   pointer-events: none;
-  transition: 0.4s;
-  z-index: 9999;
+  transition: opacity 0.4s ease;
 }
 
 .disclaimer-overlay.show {
   opacity: 1;
   pointer-events: all;
 }
-
-.disclaimer-box {
-  background: white;
-  padding: 25px;
-  border-radius: 16px;
-  text-align: center;
-  max-width: 500px;
-}
-
-/* =========================
-   9. UTILITIES
-========================= */
-.hidden {
-  display: none !important;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-/* =========================
-   10. MENU BAS
-========================= */
-.bottom-menu {
+.disclaimer-overlay {
   position: fixed;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.disclaimer-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+    .disclaimer-box {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+
+  /* 👇 animation */
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.disclaimer-overlay.show .disclaimer-box {
+  transform: scale(1);
+  opacity: 1;
+}
+.disclaimer-box {
+  background: rgba(255,255,255,0.85);
+backdrop-filter: blur(6px);
+border-radius: 16px;
+  color: #000;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.disclaimer-box h2 {
+  margin-bottom: 15px;
+}
+
+.disclaimer-box p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.disclaimer-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.disclaimer-box button:hover {
+  background: #218838;
+}
+    .hidden {
+  display: none !important;
+    }
+    .clickable {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clickable:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.01);
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+    #loginPage {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#loginPage.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+    .menu-item {
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+    }
+    
+.fiche-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+  
+.fiche-container .fiche {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.fiche a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.fiche:hover {
+  background: #e6f2ff;
+  transform: translateY(-2px);
+}
+  .fiche-plan {
+  background: white;
+  }
+  .btn.urgence {
+  background: linear-gradient(135deg, #ff3b3b, #b30000);
+  color: white;
+  animation: pulseUrgence 1.8s infinite;
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+}
+
+@keyframes pulseUrgence {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+}
+
+.btn.urgence:hover {
+  background: linear-gradient(135deg, #ff1a1a, #800000);
+  transform: scale(1.08);
+}
+.btn.bilan {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.btn.bilan:hover {
+  background: linear-gradient(135deg, #34d058, #19692c);
+  transform: scale(1.05);
+}
+  
+.hidden {
+  display: none;
+}
+    .cards-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* pour mobile */
+}
+
+.cards-row .card {
+  flex: 1;
+  min-width: 0;
+}
+    .cards-row {
+  display: flex;
+  gap: 10px;
+}
+    .popup-content {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.popup.show .popup-content {
+  transform: scale(1);
+  opacity: 1;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 100%;
+  text-align: left;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
   width: 100%;
   max-width: 500px;
-  background: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
 }
 
-/* =========================
-   11. ANIMATIONS
-========================= */
-@keyframes fadeInHeader {
-  from { opacity: 0; transform: translateY(-15px); }
+
+    .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 10;
+    }
+/* Petit effet bouton */
+.clickable {
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-@keyframes fadeTitle {
-  to { opacity: 1; transform: translateY(0); }
+.clickable:active {
+  transform: scale(0.98);
 }
-
-@keyframes popIcons {
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes float {
-  50% { transform: translateY(-4px); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-}
+    
 </style>
+
 </head>
 
 <body>
@@ -603,16 +1043,6 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
-  
-function acceptDisclaimer() {
-  const overlay = document.getElementById("disclaimerOverlay");
-
-  overlay.classList.add("hide");
-
-  setTimeout(() => {
-    overlay.style.display = "none";
-  }, 500); // doit correspondre au CSS
-}
 
 function openPopup(id) {
   document.getElementById(id).style.display = "block";
@@ -707,7 +1137,17 @@ function toggleVideo() {
 function showDisclaimer() {
   document.getElementById("disclaimer").classList.add("show");
 }
+function acceptDisclaimer() {
+  const disclaimer = document.getElementById("disclaimer");
+  const content = document.getElementById("content");
 
+  // fade out disclaimer
+  disclaimer.classList.remove("show");
+
+  setTimeout(() => {
+    content.classList.remove("hidden");
+  }, 300);
+}
   function acceptDisclaimer() {
   const disclaimer = document.getElementById("disclaimer");
   const content = document.getElementById("content");
