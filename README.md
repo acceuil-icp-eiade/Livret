@@ -713,7 +713,8 @@ html, body {
     <p>Mme Hennache Audrey </p><p></p>
     <li><strong>Référents IADE :</strong></li>
     <p>Tosolini Karen</p><p>Carrier Sabah</p><p>Lavergne Sebastien</p><p>Molinaro Camille</p>
-      <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
+      <li><strong>Référent SSPI:</strong></li>
+      <p>Bichelberger Eve</p>
       </ul>
   </div>
   </div>
