@@ -152,6 +152,11 @@ button:hover {
   text-align: center;
   font-weight: bold;
 }
+    .btn:active,
+.card:active {
+  transform: scale(0.97);
+  transition: 0.1s;
+}
 /* =========================
    POPUP BASE
 ========================= */
@@ -839,8 +844,17 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
-
-
+function softClick() {
+  // vibration mobile (si supporté)
+  if (navigator.vibrate) {
+    navigator.vibrate(10); // très léger = "soft click"
+  }
+}
+document.querySelectorAll(".btn, .card, .clickable").forEach(el => {
+  el.addEventListener("click", () => {
+    softClick();
+  });
+});
   function openPopup(id) {
   const popup = document.getElementById(id);
   popup.style.display = "flex";
