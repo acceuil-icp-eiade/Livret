@@ -421,7 +421,7 @@ html, body {
 
 </div>
 <div>
-<div class="fiche fiche-plan" id="plan">
+<div class="card" id="plan">
   
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
