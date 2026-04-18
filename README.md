@@ -397,6 +397,38 @@ html, body {
 .btn.menu:hover {
   background: #f0f6ff;
 }
+    /* 🔽 Menu animé */
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* 🔼 état ouvert */
+.submenu.open {
+  max-height: 500px; /* assez grand pour contenir */
+  opacity: 1;
+  transform: translateY(0);
+}
+    .submenu.open a {
+  animation: fadeItem 0.3s ease forwards;
+}
+
+@keyframes fadeItem {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
     </style>
 
 </head>
@@ -627,7 +659,7 @@ html, body {
   </div>
   
 
-  <div id="chirMenu" class="hidden">  
+  <div id="chirMenu" class="submenu">  
     <a class="btn menu" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
     <a class="btn menu" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
     <a class="btn menu" href="pdf/CARDIOLOGIE1.pdf" target="_blank">❤️ interventionnelle</a> 
@@ -647,7 +679,7 @@ href="pdf/POUMON.pdf" target="_blank">
   📂 Anesthésie par spécialité
 </div>
 
-<div id="specialitesMenu" class="hidden">
+<div id="specialitesMenu" class="submenu">
 
   <div class="fiche">
     <a href="pdf/CHIRURGIE_CARDIAQUE.pdf" target="_blank">
@@ -678,7 +710,7 @@ href="pdf/POUMON.pdf" target="_blank">
   🚨 Protocoles d'urgence
 </div>
 
-<div id="urgencesMenu" class="hidden">
+<div id="urgencesMenu" class="submenu">
 
   <div class="fiche">
     <a href="pdf/hemorragie.pdf" target="_blank">
@@ -754,10 +786,9 @@ function openPopup(id) {
 function closePopup(id) {
   document.getElementById(id).style.display = "none";
 }
-
 function toggleChir() {
-  var menu = document.getElementById("chirMenu");
-  menu.classList.toggle("hidden");
+  const menu = document.getElementById("chirMenu");
+  menu.classList.toggle("open");
 }
   function openPopup(id) {
   const popup = document.getElementById(id);
