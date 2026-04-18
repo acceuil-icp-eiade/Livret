@@ -290,6 +290,102 @@ html, body {
   transform: translateX(-50%);
   max-width: 500px;
 }
+    /* =========================
+   FICHES
+========================= */
+.fiche {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.fiche:hover {
+  transform: translateY(-2px);
+  background: #f0f6ff;
+}
+
+.fiche a {
+  text-decoration: none;
+  color: #2c3e50;
+  display: block;
+}
+
+/* version spéciale */
+.fiche-plan {
+  background: #ffffff;
+}
+
+/* =========================
+   BOUTONS VARIANTS
+========================= */
+
+/* bouton PDF */
+.btn-pdf {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2c7be5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-pdf:hover {
+  background-color: #1a5fd0;
+}
+
+/* bouton vidéo */
+.video-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #48c9b0, #5dade2);
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.video-btn:active {
+  transform: scale(0.98);
+}
+
+/* bouton urgence */
+.btn.urgence {
+  background: linear-gradient(135deg, #ff3b3b, #b30000);
+  animation: pulseUrgence 1.8s infinite;
+}
+
+.btn.urgence:hover {
+  transform: scale(1.05);
+}
+
+/* bouton bilan */
+.btn.bilan {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.btn.bilan:hover {
+  transform: scale(1.05);
+}
+
+/* bouton chirurgie (menu rose) */
+.btn.chirurgie {
+  background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
+}
+
+/* =========================
+   ANIMATION URGENCE
+========================= */
+@keyframes pulseUrgence {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
     </style>
 
 </head>
