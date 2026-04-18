@@ -687,7 +687,7 @@ html, body {
       <p>Pneumologie: Dr Fournier </p>
       <li><strong>PTI:</strong></li>
       <p>Cardiologie: Professeur Lemesle</p>
-      <p>Radiologie: Dr </p>
+      <p>Radiologie: Dr Pontana</p>
     
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
