@@ -189,7 +189,8 @@ button:hover {
   max-width: 500px;
 
   position: relative;
-  
+}
+  .popup-content {
   transform: translateY(40px) scale(0.96);
   opacity: 0;
   transition: opacity 0.25s ease;
