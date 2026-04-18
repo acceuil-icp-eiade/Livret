@@ -861,7 +861,7 @@ border-radius: 16px;
 
 <div id="popuporganigramme" class="popup">
   <div class="popup-content">
-    <button class="close-btn" onclick="closePopup('popuporganigramme)">✖️</button>
+    <button class="close-btn" onclick="closePopup('popuporganigramme')">✖️</button>
 
     <h2>🩺 Organigramme du service</h2>
 
@@ -891,7 +891,7 @@ border-radius: 16px;
 <!-- Popup -->
 <div id="popupReferents" class="popup">
   <div class="popup-content">
-    <button class="close-btn" onclick="closePopup('popupReferents)">✖️</button>
+    <button class="close-btn" onclick="closePopup('popupReferents')">✖️</button>
 
     <h2> ♻️ Référents</h2>
     <ul>
