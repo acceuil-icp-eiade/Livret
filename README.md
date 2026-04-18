@@ -386,6 +386,17 @@ html, body {
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+    /* bouton version menu (fond blanc) */
+.btn.menu {
+  background: white;
+  color: #2c3e50;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* petit effet au survol */
+.btn.menu:hover {
+  background: #f0f6ff;
+}
     </style>
 
 </head>
@@ -609,20 +620,20 @@ html, body {
   <h2>📄 Accès rapide aux documents</h2>
   </div>
 <div>
-  <div class="btn" onclick="toggleChir()">
+  <div class="btn menu" onclick="toggleChir()">
     
     ✅ présentation des chirurgies
   </div>
   
 
   <div id="chirMenu" class="hidden">  
-    <a class="btn" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
-    <a class="btn" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
+    <a class="btn menu" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
+    <a class="btn menu" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
     <a class="btn" href="pdf/CARDIOLOGIE1.pdf" target="_blank">❤️ interventionnelle</a> 
-    <a class="btn"
+    <a class="btn menu"
 href="pdf/VASCULAIRE.pdf" target="_blank">
 📕 vasculaire</a>    
-    <a class="btn"
+    <a class="btn menu"
 href="pdf/POUMON.pdf" target="_blank">
 🩻 thoracique</a>
       
