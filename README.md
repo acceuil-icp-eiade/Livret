@@ -517,9 +517,9 @@ html, body {
 
     <h2>📍 Votre premier jour </h2>    
     <ul>
-      <li><strong>Heure :</strong> 8h</li>
+      <li><strong>Heure :</strong> RDV à 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
-      <li><strong>Tenue :</strong> Pyjama de bloc, calot, masque, chaussures dédiées</li>
+      <li><strong>Tenue :</strong> Pyjama de bloc, calot jetable, masque, sabots dédiés</li>
       <li><strong>À prévoir :</strong> Badge, feuilles d'évaluation de stage</li>
       <li>une bannette <strong>"étudiants IADE "</strong> vous permettra de déposer vos fiches d'horaire ainsi que vos rapports de stage</li>
       <li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
@@ -539,7 +539,7 @@ html, body {
     <h2>🏥 Vie pratique  </h2>
     
     <ul>
-    <li> à votre disposition</li>
+    <li> À VOTRE DISPOSITION</li>
     <h3>👕 Vestiaires</h3>
     <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
     <li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
