@@ -619,6 +619,7 @@ html, body {
     <div class="card" id="documents">
   <h2>📄 Accès rapide aux documents</h2>
   </div>
+  
 <div>
   <div class="btn" onclick="toggleChir()">
     
@@ -626,7 +627,7 @@ html, body {
   </div>
   
 
-  <div id="chirmenu" class="hidden">  
+  <div id="chirMenu" class="hidden">  
     <a class="btn menu" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
     <a class="btn menu" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
     <a class="btn menu" href="pdf/CARDIOLOGIE1.pdf" target="_blank">❤️ interventionnelle</a> 
