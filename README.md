@@ -653,7 +653,7 @@ html, body {
   </div>
   
 <div>
-  <div class="btn" onclick="toggleChir()">
+  <div class="btn" onclick="toggleMenu('chirMenu')">
     
     ✅ présentation des chirurgies
   </div>
@@ -675,7 +675,7 @@ href="pdf/POUMON.pdf" target="_blank">
    </div> 
 
     
-  <div class="btn" onclick="toggleSpecialites()">
+  <div class="btn" onclick="toggleMenu('specialitesMenu')">
   📂 Anesthésie par spécialité
 </div>
 
@@ -706,7 +706,7 @@ href="pdf/POUMON.pdf" target="_blank">
   </div>
 </div>
 
-  <div class="btn urgence" onclick="toggleUrgences()">
+  <div class="btn urgence" onclick="toggleMenu('urgencesMenu')">
   🚨 Protocoles d'urgence
 </div>
 
@@ -786,10 +786,7 @@ function openPopup(id) {
 function closePopup(id) {
   document.getElementById(id).style.display = "none";
 }
-function toggleChir() {
-  const menu = document.getElementById("chirMenu");
-  menu.classList.toggle("open");
-}
+
   function openPopup(id) {
   const popup = document.getElementById(id);
   popup.style.display = "flex";
@@ -801,16 +798,16 @@ function closePopup(id) {
   popup.classList.remove("show");
   setTimeout(() => popup.style.display = "none", 300);
 }
+function toggleMenu(id) {
+  const menus = document.querySelectorAll(".submenu");
 
-  
-function toggleUrgences() {
-  const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("open");
-}
-  
-function toggleSpecialites() {
-  const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("open");
+  menus.forEach(menu => {
+    if (menu.id === id) {
+      menu.classList.toggle("open");
+    } else {
+      menu.classList.remove("open");
+    }
+  });
 }
   
   function checkPassword() {
