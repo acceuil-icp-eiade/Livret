@@ -651,7 +651,30 @@ border-radius: 16px;
   text-align: left;
 }
 
+.popup-content {
+  position: relative;
+}
 
+.close-btn {
+  position: sticky;
+  top: 0;
+  float: right;
+
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.close-btn:active {
+  transform: scale(0.9);
+}
 
     
 /* Petit effet bouton */
@@ -762,9 +785,9 @@ border-radius: 16px;
   </div>
     
     <!-- Popup Votre premier jour -->
-    
+  
 <div id="popupJour" class="popup">
-  <div class="popup-content" onclick="closePopup('popupJour')">
+  <div class="popup-content">  <span class="close-btn" onclick="closePopup('popupJour')">✕</span>
     <h2>📍 Votre premier jour ▶️ </h2>
     
     <ul>
