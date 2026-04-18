@@ -642,15 +642,23 @@ border-radius: 16px;
   align-items: center;
   z-index: 1000;
 }
-
 .popup-content {
   background: white;
   padding: 20px;
   border-radius: 12px;
   max-width: 90%;
+
+  max-height: 80vh;      /* 👈 limite la hauteur */
+  overflow-y: auto;      /* 👈 scroll à l’intérieur */
+
   text-align: left;
 }
-
+.popup {
+  padding: 20px; /* évite que ça colle aux bords sur mobile */
+}
+    .popup-content {
+  -webkit-overflow-scrolling: touch;
+    }
 /* Petit effet bouton */
 .clickable {
   cursor: pointer;
