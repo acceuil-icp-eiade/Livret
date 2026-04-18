@@ -647,7 +647,7 @@ border-radius: 16px;
   background: white;
   padding: 20px;
   border-radius: 12px;
-  max-width: 90%;
+  max-width: 100%;
   text-align: left;
 }
 .popup {
@@ -667,7 +667,7 @@ border-radius: 16px;
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -779,7 +779,7 @@ border-radius: 16px;
   <div class="popup-content">
     <button class="close-btn" onclick="closePopup('popupJour')">✖️</button>
 
-    <h2>📍 Votre premier jour ▶️</h2>    
+    <h2>📍 Votre premier jour </h2>    
     <ul>
       <li><strong>Heure :</strong> 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
