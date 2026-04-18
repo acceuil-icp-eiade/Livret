@@ -398,6 +398,33 @@ li {
   }
     .disclaimer-overlay {
   position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+
+.disclaimer-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+/* quand on accepte → slide vers le haut + disparition */
+.disclaimer-overlay.hide {
+  opacity: 0;
+  transform: translateY(-40px);
+  pointer-events: none;
+}
+    .disclaimer-overlay {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1040,6 +1067,16 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
+  
+function acceptDisclaimer() {
+  const overlay = document.getElementById("disclaimerOverlay");
+
+  overlay.classList.add("hide");
+
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 500); // doit correspondre au CSS
+}
 
 function openPopup(id) {
   document.getElementById(id).style.display = "block";
