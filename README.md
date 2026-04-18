@@ -858,8 +858,11 @@ border-radius: 16px;
 </div>
 
 <!-- Popup -->
+
 <div id="popuporganigramme" class="popup">
-  <div class="popup-content" onclick="closePopup('popuporganigramme')">
+  <div class="popup-content">
+    <button class="close-btn" onclick="closePopup('popuporganigramme)">✖️</button>
+
     <h2>🩺 Organigramme du service</h2>
 
     <ul>
@@ -887,8 +890,9 @@ border-radius: 16px;
 
 <!-- Popup -->
 <div id="popupReferents" class="popup">
-  <div class="popup-content" onclick="closePopup('popupReferents')">
-  
+  <div class="popup-content">
+    <button class="close-btn" onclick="closePopup('popupReferents)">✖️</button>
+
     <h2> ♻️ Référents</h2>
     <ul>
       <li><strong>cadre supérieur:</strong> Mme Reumaux Laurence </li><p></p>
