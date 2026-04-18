@@ -189,19 +189,38 @@ button:hover {
   max-width: 500px;
 
   position: relative;
-
+  
+  transform: translateY(40px) scale(0.96);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
   /* animation iOS */
   transform: translateY(40px) scale(0.96);
   opacity: 0;
 
   transition: all 0.3s ease;
 }
-
-/* ouverture animée */
-.popup.show .popup-content {
-  transform: translateY(0) scale(1);
-  opacity: 1;
+/* 🎯 micro bounce iOS */
+@keyframes iosBounce {
+  0% {
+    transform: translateY(40px) scale(0.96);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-6px) scale(1.01);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(2px) scale(0.99);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
+/* ouverture animée */
+    .popup.show .popup-content {
+  animation: iosBounce 0.45s ease-out;
+    }
 .close-btn {
   position: absolute;
   top: 10px;
