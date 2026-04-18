@@ -670,6 +670,16 @@ border-radius: 16px;
   width: 80%;
   max-width: 500px;
 }
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+    
 /* Petit effet bouton */
 .clickable {
   cursor: pointer;
