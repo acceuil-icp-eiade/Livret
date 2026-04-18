@@ -620,16 +620,16 @@ html, body {
   <h2>📄 Accès rapide aux documents</h2>
   </div>
 <div>
-  <div class="btn menu" onclick="toggleChir()">
+  <div class="btn" onclick="toggleChir()">
     
     ✅ présentation des chirurgies
   </div>
   
 
-  <div id="chirMenu" class="hidden">  
+  <div id="chirmenu" class="hidden">  
     <a class="btn menu" href="pdf/COEUR.pdf" target="_blank"> 🫀 À cœur ouvert</a> 
     <a class="btn menu" href="pdf/CEC.pdf" target="_blank"> 🔧 ⚙️La CEC</a>
-    <a class="btn" href="pdf/CARDIOLOGIE1.pdf" target="_blank">❤️ interventionnelle</a> 
+    <a class="btn menu" href="pdf/CARDIOLOGIE1.pdf" target="_blank">❤️ interventionnelle</a> 
     <a class="btn menu"
 href="pdf/VASCULAIRE.pdf" target="_blank">
 📕 vasculaire</a>    
