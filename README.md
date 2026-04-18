@@ -805,12 +805,12 @@ function closePopup(id) {
   
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
-  menu.classList.toggle("hidden");
+  menu.classList.toggle("open");
 }
   
 function toggleSpecialites() {
   const menu = document.getElementById("specialitesMenu");
-  menu.classList.toggle("hidden");
+  menu.classList.toggle("open");
 }
   
   function checkPassword() {
