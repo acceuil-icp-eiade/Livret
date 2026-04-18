@@ -863,7 +863,7 @@ border-radius: 16px;
   <div class="popup-content">
     <button class="close-btn" onclick="closePopup('popuporganigramme')">✖️</button>
 
-    <h2>🩺 Organigramme du service</h2>
+    <h2>🩺 Organigramme </h2>
 
     <ul>
     <li><strong>ANESTHÉSIE:</strong></li>
