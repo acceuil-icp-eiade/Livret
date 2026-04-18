@@ -645,20 +645,26 @@ border-radius: 16px;
 .popup-content {
   background: white;
   padding: 20px;
-  border-radius: 12px;
-  max-width: 90%;
+  border-radius: 20px;
 
-  max-height: 80vh;      /* 👈 limite la hauteur */
-  overflow-y: auto;      /* 👈 scroll à l’intérieur */
+  width: 90%;
+  max-width: 400px;
+  max-height: 75vh;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  margin: auto;
+  position: relative;
 
   text-align: left;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 .popup {
   padding: 20px; /* évite que ça colle aux bords sur mobile */
 }
-    .popup-content {
-  -webkit-overflow-scrolling: touch;
-    }
+    
 /* Petit effet bouton */
 .clickable {
   cursor: pointer;
