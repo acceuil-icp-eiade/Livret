@@ -826,7 +826,7 @@ href="pdf/POUMON.pdf" target="_blank">
 function closePopup(id) {
   const popup = document.getElementById(id);
   popup.classList.remove("show");
-  setTimeout(() => popup.style.display = "none", 250);
+  setTimeout(() => popup.style.display = "none", 300);
 }
 function toggleMenu(id) {
   const menus = document.querySelectorAll(".submenu");
