@@ -799,8 +799,9 @@ border-radius: 16px;
 
 <!-- Popup -->
 <div id="popupVie" class="popup">
-  <div class="popup-content" onclick="closePopup('popupVie')">
-    <h2>🏥 Vie pratique  ▶️ </h2>
+  <div class="popup-content">
+    <button class="close-btn" onclick="closePopup('popupVie)">✖️</button>
+    <h2>🏥 Vie pratique  </h2>
     
     <ul>
     <li> à votre disposition</li>
