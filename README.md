@@ -156,36 +156,50 @@ button:hover {
 /* =========================
    7. POPUP
 ========================= */
+/* 🔳 overlay */
 .popup {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.5);
-  display: none;
+
+  display: flex;
   justify-content: center;
   align-items: center;
+
   z-index: 1000;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
 }
 
+/* état ouvert */
 .popup.show {
-  display: flex;
+  opacity: 1;
+  pointer-events: all;
 }
 
+/* 📦 contenu modal */
 .popup-content {
   background: white;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 16px;
+
+  width: 90%;
   max-width: 500px;
-  width: 100%;
-  transform: scale(0.9);
+
+  position: relative;
+
+  /* animation iOS */
+  transform: translateY(40px) scale(0.96);
   opacity: 0;
-  transition: 0.3s;
+
+  transition: all 0.3s ease;
 }
 
+/* ouverture animée */
 .popup.show .popup-content {
-  transform: scale(1);
+  transform: translateY(0) scale(1);
   opacity: 1;
 }
 .close-btn {
@@ -802,13 +816,6 @@ href="pdf/POUMON.pdf" target="_blank">
 
 <script>
 
-function openPopup(id) {
-  document.getElementById(id).style.display = "block";
-}
-
-function closePopup(id) {
-  document.getElementById(id).style.display = "none";
-}
 
   function openPopup(id) {
   const popup = document.getElementById(id);
@@ -819,7 +826,7 @@ function closePopup(id) {
 function closePopup(id) {
   const popup = document.getElementById(id);
   popup.classList.remove("show");
-  setTimeout(() => popup.style.display = "none", 300);
+  setTimeout(() => popup.style.display = "none", 250);
 }
 function toggleMenu(id) {
   const menus = document.querySelectorAll(".submenu");
