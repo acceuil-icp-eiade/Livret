@@ -1031,18 +1031,18 @@ function toggleChir() {
   var menu = document.getElementById("chirMenu");
   menu.classList.toggle("hidden");
 }
-  function openPopup(id) {
+
+function openPopup(id) {
   const popup = document.getElementById(id);
   popup.style.display = "flex";
-  setTimeout(() => popup.classList.add("show"), 10);
+  popup.classList.add("show"); // 👈 important
 }
 
 function closePopup(id) {
   const popup = document.getElementById(id);
+  popup.style.display = "none";
   popup.classList.remove("show");
-  setTimeout(() => popup.style.display = "none", 300);
 }
-
   
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
