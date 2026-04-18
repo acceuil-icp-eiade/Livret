@@ -680,13 +680,13 @@ html, body {
     <ul>
     <li><strong>ANESTHÉSIE:</strong></li>
       <p>Chef de service: Dr Desbordes</p>
-      <p>Réanimation: Professeur Moussa</p>
+      <p>Réanimation: Pr Moussa</p>
       <li><strong>BLOC OPÉRATOIRE:</strong></li>
-      <p>Chirurgie cardiaque: Professeur Vincentelli </p>
-      <p>Chirurgie thoracique: Professeur Venissac</p>   
+      <p>Chirurgie cardiaque: Pr Vincentelli </p>
+      <p>Chirurgie thoracique: Pr Venissac</p>   
       <p>Pneumologie: Dr Fournier </p>
       <li><strong>PTI:</strong></li>
-      <p>Cardiologie: Professeur Lemesle</p>
+      <p>Cardiologie: Pr Lemesle</p>
       <p>Radiologie: Dr Pontana</p>
     
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
@@ -712,9 +712,9 @@ html, body {
     <li><strong>IADE Référente de soins:</strong></li>
     <p>Mme Hennache Audrey </p><p></p>
     <li><strong>Référents IADE :</strong></li>
-    <p>Tosolini Karen</p><p>Carrier Sabah</p><p>Lavergne Sebastien</p><p>Molinaro Camille</p>
+    <p>Mme Tosolini Karen</p><p>Mme Carrier Sabah</p><p>Mr Lavergne Sebastien</p><p>Mr Molinaro Camille</p>
       <li><strong>Référent SSPI:</strong></li>
-      <p>Bichelberger Eve</p>
+      <p>Mme Bichelberger Eve</p>
       </ul>
   </div>
   </div>
