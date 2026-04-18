@@ -188,7 +188,7 @@ button:hover {
   padding: 20px;
   border-radius: 16px;
 
-  width: 90%;
+  width: 100%;
   max-width: 500px;
 
   position: relative;
