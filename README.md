@@ -708,9 +708,9 @@ html, body {
     <h2> ♻️ Référents</h2>
     <ul>
       <li><strong>cadre supérieur:</strong></li>
-      <li> Mme Reumaux Laurence </li><p></p>
+      <p> Mme Reumaux Laurence </p><p></p>
     <li><strong>IADE Référente de soins:</strong></li>
-    <li>Mme Hennache Audrey </li><p></p>
+    <p>Mme Hennache Audrey </p><p></p>
     <li><strong>Référents IADE :</strong></li>
     <p>Tosolini Karen</p><p>Carrier Sabah</p><p>Lavergne Sebastien</p><p>Molinaro Camille</p>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
