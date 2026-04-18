@@ -670,20 +670,19 @@ border-radius: 16px;
   width: 80%;
   max-width: 500px;
 }
-.close-btn {
+
+
+    .close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 22px;
   border: none;
-  background: none;
-  font-size: 20px;
+  background: transparent;
   cursor: pointer;
-}
-  .close-btn {
-  color: black;
-  }
-
-    
+  color: #333;
+  z-index: 10;
+    }
 /* Petit effet bouton */
 .clickable {
   cursor: pointer;
