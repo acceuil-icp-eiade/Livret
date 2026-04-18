@@ -620,7 +620,7 @@ border-radius: 16px;
   display: flex;
   gap: 10px;
 }
- .popup-content {
+    .popup-content {
   transform: scale(0.9);
   opacity: 0;
   transition: 0.3s ease;
@@ -635,7 +635,7 @@ border-radius: 16px;
   top: 0;
   left: 0;
   width: 100%;
-  height: 25%;
+  height: 100%;
   background: rgba(0,0,0,0.6);
   display: none;
   justify-content: center;
@@ -651,30 +651,6 @@ border-radius: 16px;
   text-align: left;
 }
 
-
-
-.close-btn {
-  position: sticky;
-  top: 0;
-  float: right;
-
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-
-  background: white;
-  border-radius: 50%;
-  padding: 5px 10px;
-
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  z-index: 10;
-}
-
-.close-btn:active {
-  transform: scale(0.9);
-}
-
-    
 /* Petit effet bouton */
 .clickable {
   cursor: pointer;
@@ -684,24 +660,7 @@ border-radius: 16px;
 .clickable:active {
   transform: scale(0.98);
 }
-    .page {
-  transition: all 0.4s ease;
-}
-
-.slide-out {
-  opacity: 0;
-  transform: translateX(-30px);
-}
-
-.slide-in {
-  opacity: 0;
-  transform: translateX(30px);
-}
-
-.slide-in.show {
-  opacity: 1;
-  transform: translateX(0);
-}
+    
 </style>
 
 </head>
@@ -716,8 +675,7 @@ border-radius: 16px;
 </header>
 
 <!-- 🔐 PAGE DE CONNEXION -->
-<div id="loginPage" class="login page">
-
+<div id="loginPage" class="login">
   <h2>Accès réservé</h2>
   <input type="password" id="password" placeholder="Mot de passe">
   <button onclick="checkPassword()">Entrer</button>
@@ -758,7 +716,8 @@ border-radius: 16px;
   <a href="#retour">📝</a>
   <a href="pdf/telephones.pdf">☎️</a>
 </div>
-<div id="content" class="hidden page slide-in">
+
+<div id="content" class="hidden">
 
 <div class="container">
 
@@ -783,9 +742,9 @@ border-radius: 16px;
   </div>
     
     <!-- Popup Votre premier jour -->
-  
+    
 <div id="popupJour" class="popup">
-  <div class="popup-content">  <span class="close-btn" onclick="closePopup('popupJour')">✕</span>
+  <div class="popup-content" onclick="closePopup('popupJour')">
     <h2>📍 Votre premier jour ▶️ </h2>
     
     <ul>
@@ -1016,7 +975,7 @@ href="pdf/POUMON.pdf" target="_blank">
       💊 Antibioprophylaxie
 </a>
 <a class="btn bilan" href="docs/bilan_de_demi_stage.pdf" target="_blank">
-      ⚕️ bilan de demi-stage ⚕️
+      ✒️ bilan de demi-stage
     </a>
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
@@ -1048,18 +1007,18 @@ function toggleChir() {
   var menu = document.getElementById("chirMenu");
   menu.classList.toggle("hidden");
 }
-
-function openPopup(id) {
+  function openPopup(id) {
   const popup = document.getElementById(id);
   popup.style.display = "flex";
-  popup.classList.add("show"); // 👈 important
+  setTimeout(() => popup.classList.add("show"), 10);
 }
 
 function closePopup(id) {
   const popup = document.getElementById(id);
-  popup.style.display = "none";
   popup.classList.remove("show");
+  setTimeout(() => popup.style.display = "none", 300);
 }
+
   
 function toggleUrgences() {
   const menu = document.getElementById("urgencesMenu");
@@ -1140,22 +1099,11 @@ function acceptDisclaimer() {
     content.classList.remove("hidden");
   }, 300);
 }
-
   function acceptDisclaimer() {
   const disclaimer = document.getElementById("disclaimer");
   const content = document.getElementById("content");
-
-  disclaimer.classList.remove("show");
-
-  setTimeout(() => {
-    content.classList.remove("hidden");
-
-    // petite animation entrée
-    setTimeout(() => {
-      content.classList.add("show");
-    }, 10);
-
-  }, 300);
+disclaimer.classList.remove("show");
+  content.classList.remove("hidden");
   }
 function toggleItem(element) {
   const content = element.querySelector(".content");
