@@ -443,7 +443,16 @@ html, body {
 .btn.chirurgie {
   background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
 }
+    /* =========================
+    couleur 
+========================= */
+.rouge {
+  color: red;
+}
 
+.vert {
+  color: green;
+}
 /* =========================
    ANIMATION URGENCE
 ========================= */
@@ -605,7 +614,8 @@ html, body {
     <h2>🏥 Vie pratique  </h2>
     
     <ul>
-    <li> À VOTRE DISPOSITION</li>
+    
+    <li><span class:"rouge">À VOTRE DISPOSITION</span></li>
     <h3>👕 Vestiaires</h3>
     <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
     <li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
