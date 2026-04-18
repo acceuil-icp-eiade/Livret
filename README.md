@@ -637,14 +637,15 @@ border-radius: 16px;
   align-items: center;
   z-index: 1000;
 }
+    
 .popup-content {
   background: white;
   padding: 20px;
   border-radius: 20px;
 
-  width: 90%;
-  max-width: 400px;
-  max-height: 75vh;
+  width: 95%;
+  max-width: 500px;
+  max-height: 90vh;
 
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -656,7 +657,13 @@ border-radius: 16px;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
-
+.popup-content {
+  width: 100%;
+  height: 85vh;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: 0;
+}
     
 /* Petit effet bouton */
 .clickable {
