@@ -302,7 +302,7 @@ button:hover {
 .bottom-menu {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   background: linear-gradient(135deg, #48c9b0, #5dade2);
   display: flex;
