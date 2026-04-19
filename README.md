@@ -698,7 +698,7 @@ html, body {
       <p>Pneumologie: Dr Fournier </p>
       <li><strong>PTI:</strong></li>
       <p>Cardiologie: Professeur Lemesle</p>
-      <p>Radiologie: Dr </p>
+      <p>Radiologie: Pr Pontana </p>
     
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
@@ -721,7 +721,7 @@ html, body {
       <li><strong>cadre supérieur:</strong> Mme Reumaux Laurence </li><p></p>
     <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li><p></p>
     <li><strong>Référents IADE :</strong></li>
-    <p>Tosolini Karen</p><p>Carrier Sabah</p><p>Lavergne Sebastien</p><p>Molinaro Camille</p>
+    <p>Mme Tosolini Karen</p><p> Mme Carrier Sabah</p><p> Mr Lavergne Sebastien</p><p>Mr Molinaro Camille</p>
       <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
   </div>
