@@ -454,67 +454,6 @@ html, body {
 .vert {
   color: green;
 }
-    /* =========================
-   PLAN
-========================= */
-    .pdf-viewer {
-  position: fixed;
-  inset: 0;
-  background: black;
-  z-index: 3000;
-
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.pdf-viewer.active {
-  display: block;
-  opacity: 1;
-}
-
-/* PDF plein écran */
-.pdf-viewer iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Bouton fermer */
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-
-  background: rgba(0,0,0,0.6);
-  color: white;
-  font-size: 20px;
-
-  padding: 8px 12px;
-  border-radius: 8px;
-
-  cursor: pointer;
-  z-index: 10;
-}
-    .pdf-viewer {
-  position: fixed;
-  inset: 0;
-  background: black;
-  z-index: 3000;
-
-  display: none;
-}
-
-.pdf-viewer.active {
-  display: block;
-}
-
-/* PDF */
-.pdf-viewer iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 /* =========================
    ANIMATION URGENCE
 ========================= */
@@ -676,7 +615,7 @@ html, body {
     <h2>🏥 Vie pratique  </h2>
     
     <ul>
-   <p><span class="rouge">À VOTRE DISPOSITION</span></p> 
+    <li> À VOTRE DISPOSITION</li>
     <h3>👕 Vestiaires</h3>
     <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
     <li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
@@ -696,21 +635,16 @@ html, body {
 </div>
 
 </div>
+<div>
 <div class="card" id="plan">
   
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
 
-  <button onclick="openPlan()">📄 Voir le plan</button>
-
+  <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
+    📄 Télécharger le plan
+  </a>
 </div>
-
-<!-- Viewer plein écran -->
-<div id="pdfViewer" class="pdf-viewer" onclick="closePlan()">
-  <iframe src="pdf/plan2.pdf"></iframe>
-
-</div>
-
 </div>
 <div>
 <div class="card" id="visite">
@@ -747,14 +681,14 @@ html, body {
     <ul>
     <li><strong>ANESTHÉSIE:</strong></li>
       <p>Chef de service: Dr Desbordes</p>
-      <p>Réanimation: Pr Moussa</p>
+      <p>Réanimation: Professeur Moussa</p>
       <li><strong>BLOC OPÉRATOIRE:</strong></li>
-      <p>Chirurgie cardiaque: Pr Vincentelli </p>
-      <p>Chirurgie thoracique: Pr Venissac</p>   
+      <p>Chirurgie cardiaque: Professeur Vincentelli </p>
+      <p>Chirurgie thoracique: Professeur Venissac</p>   
       <p>Pneumologie: Dr Fournier </p>
       <li><strong>PTI:</strong></li>
-      <p>Cardiologie: Pr Lemesle</p>
-      <p>Radiologie: Dr Pontana</p>
+      <p>Cardiologie: Professeur Lemesle</p>
+      <p>Radiologie: Dr </p>
     
     <li> Vous serez encadré(e)s par une équipe d’IADE, de médecins anesthésistes et d’IDE expérimenté(e)s. </li>
     </ul>
@@ -774,14 +708,11 @@ html, body {
 
     <h2> ♻️ Référents</h2>
     <ul>
-      <li><strong>cadre supérieur:</strong></li>
-      <p> Mme Reumaux Laurence </p><p></p>
-    <li><strong>IADE Référente de soins:</strong></li>
-    <p>Mme Hennache Audrey </p><p></p>
+      <li><strong>cadre supérieur:</strong> Mme Reumaux Laurence </li><p></p>
+    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li><p></p>
     <li><strong>Référents IADE :</strong></li>
-    <p>Mme Tosolini Karen</p><p>Mme Carrier Sabah</p><p>Mr Lavergne Sebastien</p><p>Mr Molinaro Camille</p>
-      <li><strong>Référent SSPI:</strong></li>
-      <p>Mme Bichelberger Eve</p>
+    <p>Tosolini Karen</p><p>Carrier Sabah</p><p>Lavergne Sebastien</p><p>Molinaro Camille</p>
+      <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
       </ul>
   </div>
   </div>
@@ -923,39 +854,6 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
-  
-function openPlan() {
-  document.getElementById("pdfViewer").classList.add("active");
-}
-
-function closePlan() {
-  document.getElementById("pdfViewer").classList.remove("active");
-}
-
-  
-function openPlan() {
-  const viewer = document.getElementById("pdfViewer");
-  viewer.classList.add("active");
-
-  // tentative paysage (mobile)
-  if (screen.orientation && screen.orientation.lock) {
-    screen.orientation.lock("landscape").catch(() => {});
-  }
-}
-
-function closePlan() {
-  const viewer = document.getElementById("pdfViewer");
-  viewer.classList.remove("active");
-
-  // retour orientation normale
-  if (screen.orientation && screen.orientation.unlock) {
-    screen.orientation.unlock();
-  }
-  if (navigator.vibrate) {
-  navigator.vibrate(30);
-  }
-}
-
 function softClick() {
   // vibration mobile (si supporté)
   if (navigator.vibrate) {
