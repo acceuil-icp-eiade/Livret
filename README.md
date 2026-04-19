@@ -137,7 +137,14 @@ button:hover {
   flex: 1;
   min-width: 0; /* 🔥 évite le débordement */
 }
+.card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
 
+.card:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 /* =========================
    6. BUTTONS
 ========================= */
@@ -160,6 +167,48 @@ button:hover {
 /* =========================
    POPUP BASE
 ========================= */
+    /* POPUP overlay */
+.popup {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* important pour le slide */
+
+  background: rgba(0,0,0,0);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease, background 0.3s ease;
+  z-index: 1000;
+}
+
+/* état actif */
+.popup.active {
+  opacity: 1;
+  pointer-events: auto;
+  background: rgba(0,0,0,0.5);
+}
+
+/* CONTENU popup */
+.popup-content {
+  background: white;
+  width: 100%;
+  max-height: 90vh;
+
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+/* animation slide */
+.popup.active .popup-content {
+  transform: translateY(0);
+}
 .popup {
   position: fixed;
   inset: 0;
@@ -584,21 +633,14 @@ html, body {
     <p><strong>👉 Il n’y a pas de "mauvaises questions".</strong></p>
   </div>
   
-  <div class="cards-row">
+  <div id="popupJour" class="popup" onclick="closePopup('popupJour')">
+  
+  <div class="popup-content" onclick="event.stopPropagation()">
     
-  <div class="card clickable" onclick="openPopup('popupJour')">
-  <h2>📍 Votre premier jour ▶️ </h2>
-  </div>
-    
-    <!-- Popup Votre premier jour -->
-    
-<div id="popupJour" class="popup">
-  <div class="popup-content">
     <button class="close-btn" onclick="closePopup('popupJour')">✖️</button>
 
-    <h2>📍 Votre premier jour </h2>    
-    <ul>
-      <li><strong>Heure :</strong> RDV à 8h</li>
+    <h2>📍 Votre premier jour </h2>
+    <li><strong>Heure :</strong> RDV à 8h</li>
       <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
       <li><strong>Tenue :</strong> Pyjama de bloc, calot jetable, masque, sabots dédiés</li>
       <li><strong>À prévoir :</strong> Badge, feuilles d'évaluation de stage</li>
@@ -875,6 +917,13 @@ document.querySelectorAll(".btn, .card, .clickable").forEach(el => {
     softClick();
   });
 });
+function openPopup(id) {
+  document.getElementById(id).classList.add("active");
+}
+
+function closePopup(id) {
+  document.getElementById(id).classList.remove("active");
+}
   function openPopup(id) {
   const popup = document.getElementById(id);
   popup.style.display = "flex";
