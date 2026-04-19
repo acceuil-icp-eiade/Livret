@@ -120,7 +120,7 @@ button:hover {
   background: white;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: 0.2s;
 }
