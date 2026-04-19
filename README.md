@@ -900,25 +900,51 @@ let currentY = 0;
 let dragging = false;
 
 document.addEventListener("DOMContentLoaded", () => {
+
   const popups = document.querySelectorAll(".popup-content");
 
-  popups.forEach(popup => {
+  popups.forEach(content => {
 
-    popup.addEventListener("touchstart", (e) => {
+    content.addEventListener("touchstart", (e) => {
       startY = e.touches[0].clientY;
       dragging = true;
-      popup.style.transition = "none";
+      content.style.transition = "none";
     });
 
-    popup.addEventListener("touchmove", (e) => {
+    content.addEventListener("touchmove", (e) => {
       if (!dragging) return;
 
       currentY = e.touches[0].clientY - startY;
 
-      if (currentY > 0) { // seulement vers le bas
-        popup.style.transform = `translateY(${currentY}px)`;
+      if (currentY > 0) {
+        content.style.transform = `translateY(${currentY}px)`;
       }
     });
+
+    content.addEventListener("touchend", () => {
+      dragging = false;
+      content.style.transition = "transform 0.3s ease";
+
+      const popup = content.closest(".popup");
+
+      if (currentY > 120) {
+        popup.classList.remove("show");
+
+        setTimeout(() => {
+          popup.style.display = "none";
+          content.style.transform = "translateY(0)";
+        }, 250);
+
+      } else {
+        content.style.transform = "translateY(0)";
+      }
+
+      currentY = 0;
+    });
+
+  });
+
+});
 
     popup.addEventListener("touchend", () => {
       dragging = false;
