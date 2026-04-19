@@ -308,7 +308,6 @@ button:hover {
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  border-top: 1px solid rgba(0,0,0,0.05);
 }
     .bottom-menu a {
   color: #2c3e50;
