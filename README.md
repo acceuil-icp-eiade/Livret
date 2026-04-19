@@ -699,7 +699,6 @@ html, body {
 
 </div>
 </div>
-</div>
 <div>
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
