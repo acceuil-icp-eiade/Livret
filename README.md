@@ -184,13 +184,7 @@ button:hover {
   visibility: visible;
   pointer-events: all;
 }
-.drag-bar {
-  width: 50px;
-  height: 5px;
-  background: #ccc;
-  border-radius: 10px;
-  margin: 10px auto;
-}
+
 /* =========================
    POPUP CONTENT (clean)
 ========================= */
@@ -206,9 +200,7 @@ button:hover {
 
   transform: translateY(40px) scale(0.96);
 }
-.popup-content {
-  touch-action: none; /* important pour mobile */
-}
+
 /* animation ouverture */
 .popup.show .popup-content {
   animation: iosBounce 0.45s ease-out forwards;
@@ -599,7 +591,7 @@ html, body {
   </div>
     
     <!-- Popup Votre premier jour -->
-    <div class="drag-bar"></div>
+    
 <div id="popupJour" class="popup">
   <div class="popup-content">
     <button class="close-btn" onclick="closePopup('popupJour')">✖️</button>
@@ -895,77 +887,6 @@ function closePopup(id) {
   popup.classList.remove("show");
   setTimeout(() => popup.style.display = "none", 300);
 }
-let startY = 0;
-let currentY = 0;
-let dragging = false;
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const popups = document.querySelectorAll(".popup-content");
-
-  popups.forEach(content => {
-
-    content.addEventListener("touchstart", (e) => {
-      startY = e.touches[0].clientY;
-      dragging = true;
-      content.style.transition = "none";
-    });
-
-    content.addEventListener("touchmove", (e) => {
-      if (!dragging) return;
-
-      currentY = e.touches[0].clientY - startY;
-
-      if (currentY > 0) {
-        content.style.transform = `translateY(${currentY}px)`;
-      }
-    });
-
-    content.addEventListener("touchend", () => {
-      dragging = false;
-      content.style.transition = "transform 0.3s ease";
-
-      const popup = content.closest(".popup");
-
-      if (currentY > 120) {
-        popup.classList.remove("show");
-
-        setTimeout(() => {
-          popup.style.display = "none";
-          content.style.transform = "translateY(0)";
-        }, 250);
-
-      } else {
-        content.style.transform = "translateY(0)";
-      }
-
-      currentY = 0;
-    });
-
-  });
-
-});
-
-    popup.addEventListener("touchend", () => {
-      dragging = false;
-      popup.style.transition = "transform 0.3s ease";
-
-      if (currentY > 120) {
-        // 🔥 fermeture si on descend assez
-        const parentPopup = popup.closest(".popup");
-        if (parentPopup) {
-          parentPopup.classList.remove("active");
-        }
-      } else {
-        // retour en place
-        popup.style.transform = "translateY(0)";
-      }
-
-      currentY = 0;
-    });
-
-  });
-});
 function toggleMenu(id) {
   const menus = document.querySelectorAll(".submenu");
 
