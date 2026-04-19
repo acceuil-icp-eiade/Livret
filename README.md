@@ -448,6 +448,7 @@ html, body {
 ========================= */
 .rouge {
   color: red;
+  font-weight: bold;
 }
 
 .vert {
