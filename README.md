@@ -722,7 +722,7 @@ html, body {
     <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li><p></p>
     <li><strong>Référents IADE :</strong></li>
     <p>Mme Tosolini Karen</p><p> Mme Carrier Sabah</p><p> Mr Lavergne Sebastien</p><p>Mr Molinaro Camille</p>
-      <li><strong>Référent SSPI:</strong> Bichelberger Eve</li>
+      <li><strong>Référent SSPI:</strong>Mme Bichelberger Eve</li>
       </ul>
   </div>
   </div>
