@@ -718,11 +718,11 @@ html, body {
 
     <h2> ♻️ Référents</h2>
     <ul>
-      <li><strong>cadre supérieur:</strong> Mme Reumaux Laurence </li><p></p>
-    <li><strong>IADE Référente de soins:</strong> Mme Hennache Audrey </li><p></p>
+      <li><strong>cadre supérieur:</strong><p></p> Mme Reumaux Laurence </li><p></p>
+    <li><strong>IADE Référente de soins:</strong><p></p> Mme Hennache Audrey </li><p></p>
     <li><strong>Référents IADE :</strong></li>
     <p>Mme Tosolini Karen</p><p> Mme Carrier Sabah</p><p> Mr Lavergne Sebastien</p><p>Mr Molinaro Camille</p>
-      <li><strong>Référent SSPI:</strong>Mme Bichelberger Eve</li>
+      <li><strong>Référent SSPI:</strong><p></p>Mme Bichelberger Eve</li>
       </ul>
   </div>
   </div>
