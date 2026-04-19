@@ -615,7 +615,8 @@ html, body {
     <h2>🏥 Vie pratique  </h2>
     
     <ul>
-    <li> À VOTRE DISPOSITION</li>
+      <p><span class="rouge">À VOTRE DISPOSITION</span></p> 
+    
     <h3>👕 Vestiaires</h3>
     <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
     <li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
