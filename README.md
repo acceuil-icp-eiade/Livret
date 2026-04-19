@@ -454,6 +454,11 @@ html, body {
 .vert {
   color: green;
 }
+    .hint {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+    }
 /* =========================
    ANIMATION URGENCE
 ========================= */
@@ -615,7 +620,7 @@ html, body {
     <h2>🏥 Vie pratique  </h2>
     
     <ul>
-  <p><span class="rouge">À VOTRE DISPOSITION</span></p> 
+      <p><span class="rouge">À VOTRE DISPOSITION</span></p> 
     
     <h3>👕 Vestiaires</h3>
     <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
@@ -645,6 +650,10 @@ html, body {
   <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
     📄 Télécharger le plan
   </a>
+  <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
+  📄 Ouvrir le plan (plein écran)
+</a>
+<p class="hint">👉 Appuyez sur retour pour revenir au site</p>
 </div>
 </div>
 <div>
