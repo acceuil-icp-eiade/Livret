@@ -454,6 +454,48 @@ html, body {
 .vert {
   color: green;
 }
+    /* =========================
+   PLAN
+========================= */
+    .pdf-viewer {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 3000;
+
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pdf-viewer.active {
+  display: block;
+  opacity: 1;
+}
+
+/* PDF plein écran */
+.pdf-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Bouton fermer */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 20px;
+
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  cursor: pointer;
+  z-index: 10;
+}
 /* =========================
    ANIMATION URGENCE
 ========================= */
@@ -644,6 +686,22 @@ html, body {
   <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
     📄 Télécharger le plan
   </a>
+  <button onclick="openPlan()">📄 Voir le plan</button>
+
+<div id="pdfViewer" class="pdf-viewer">
+  
+  <!-- Bouton fermer -->
+  <div class="close-btn" onclick="closePlan()">✖️</div>
+
+  <!-- PDF -->
+  <iframe src="plan2.pdf"></iframe>
+  <div id="pdfViewer" class="pdf-viewer" onclick="closePlan()">
+  <div class="close-btn" onclick="closePlan()">✖️</div>
+
+  <iframe src="plan2.pdf" onclick="event.stopPropagation()"></iframe>
+</div>
+
+</div>
 </div>
 </div>
 <div>
@@ -857,6 +915,30 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
+  
+function openPlan() {
+  const viewer = document.getElementById("pdfViewer");
+  viewer.classList.add("active");
+
+  // tentative paysage (mobile)
+  if (screen.orientation && screen.orientation.lock) {
+    screen.orientation.lock("landscape").catch(() => {});
+  }
+}
+
+function closePlan() {
+  const viewer = document.getElementById("pdfViewer");
+  viewer.classList.remove("active");
+
+  // retour orientation normale
+  if (screen.orientation && screen.orientation.unlock) {
+    screen.orientation.unlock();
+  }
+  if (navigator.vibrate) {
+  navigator.vibrate(30);
+  }
+}
+
 function softClick() {
   // vibration mobile (si supporté)
   if (navigator.vibrate) {
