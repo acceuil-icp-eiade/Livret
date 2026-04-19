@@ -1,7 +1,6 @@
 
 <html lang="fr">
 <head>
-  <meta name="theme-color" content="#5dade2">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil IADE - ICP</title>
@@ -32,20 +31,15 @@ body {
 /* =========================
    3. HEADER
 ========================= */
-  header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-
+header {
   background: linear-gradient(135deg, #5dade2, #48c9b0);
-  backdrop-filter: blur(10px);
-
   color: white;
   padding: 15px 10px;
   text-align: center;
   border-radius: 16px;
   margin-bottom: 10px;
-    }
+  animation: fadeInHeader 0.8s ease;
+}
 
 header h1 {
   font-size: 20px;
@@ -122,26 +116,15 @@ button:hover {
 /* =========================
    5. CARDS
 ========================= */
-    .card {
+.card {
   background: white;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: 0.2s;
-    }
-.card {
-  opacity: 0;
-  transform: translateY(15px);
-  animation: fadeInCard 0.5s ease forwards;
 }
 
-@keyframes fadeInCard {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .card:hover {
   transform: translateY(-2px);
 }
@@ -169,19 +152,11 @@ button:hover {
   text-align: center;
   font-weight: bold;
 }
-    .btn, .card, .clickable, button {
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 0.08s ease, box-shadow 0.08s ease;
+    .btn:active,
+.card:active {
+  transform: scale(0.97);
+  transition: 0.1s;
 }
-
-.btn:active,
-.card:active,
-.clickable:active,
-button:active {
-  transform: scale(0.96);
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-}
-    
 /* =========================
    POPUP BASE
 ========================= */
@@ -223,13 +198,9 @@ button:active {
 
   position: relative;
 
-  transform: translateY(60px) scale(0.95);
-  will-change: transform;
+  transform: translateY(40px) scale(0.96);
 }
-.popup-content {
-  max-height: 85vh;
-  overflow-y: auto;
-}
+
 /* animation ouverture */
 .popup.show .popup-content {
   animation: iosBounce 0.45s ease-out forwards;
@@ -338,13 +309,7 @@ button:active {
   justify-content: space-around;
   padding: 10px;
 }
-body {
-  padding-bottom: calc(70px + env(safe-area-inset-bottom));
-}
 
-.bottom-menu {
-  padding-bottom: env(safe-area-inset-bottom);
-}
 /* =========================
    11. ANIMATIONS
 ========================= */
@@ -903,7 +868,7 @@ href="pdf/POUMON.pdf" target="_blank">
 function softClick() {
   // vibration mobile (si supporté)
   if (navigator.vibrate) {
-    navigator.vibrate(5); // très léger = "soft click"
+    navigator.vibrate(10); // très léger = "soft click"
   }
 }
 document.querySelectorAll(".btn, .card, .clickable").forEach(el => {
@@ -991,6 +956,17 @@ function toggleVideo() {
     
 function showDisclaimer() {
   document.getElementById("disclaimer").classList.add("show");
+}
+function acceptDisclaimer() {
+  const disclaimer = document.getElementById("disclaimer");
+  const content = document.getElementById("content");
+
+  // fade out disclaimer
+  disclaimer.classList.remove("show");
+
+  setTimeout(() => {
+    content.classList.remove("hidden");
+  }, 300);
 }
   function acceptDisclaimer() {
   const disclaimer = document.getElementById("disclaimer");
