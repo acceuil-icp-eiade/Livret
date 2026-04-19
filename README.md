@@ -496,6 +496,25 @@ html, body {
   cursor: pointer;
   z-index: 10;
 }
+    .pdf-viewer {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 3000;
+
+  display: none;
+}
+
+.pdf-viewer.active {
+  display: block;
+}
+
+/* PDF */
+.pdf-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 /* =========================
    ANIMATION URGENCE
 ========================= */
@@ -682,22 +701,16 @@ html, body {
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
 
-  <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
-    📄 Télécharger le plan
-  </a>
-
   <button onclick="openPlan()">📄 Voir le plan</button>
 
 </div>
 
-<!-- Viewer EN DEHORS de la carte -->
+<!-- Viewer plein écran -->
 <div id="pdfViewer" class="pdf-viewer" onclick="closePlan()">
-  
-  <div class="close-btn" onclick="closePlan()">✖️</div>
-
-  <iframe src="pdf/plan2.pdf" onclick="event.stopPropagation()"></iframe>
+  <iframe src="pdf/plan2.pdf"></iframe>
 
 </div>
+
 </div>
 <div>
 <div class="card" id="visite">
@@ -910,6 +923,15 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
+  
+function openPlan() {
+  document.getElementById("pdfViewer").classList.add("active");
+}
+
+function closePlan() {
+  document.getElementById("pdfViewer").classList.remove("active");
+}
+
   
 function openPlan() {
   const viewer = document.getElementById("pdfViewer");
