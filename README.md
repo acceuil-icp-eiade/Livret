@@ -304,7 +304,7 @@ button:hover {
   bottom: 0;
   width: 100%;
   max-width: 500px;
-  background:#f3e8ff;
+  background:#e8f8f5;
   display: flex;
   justify-content: space-around;
   padding: 10px;
