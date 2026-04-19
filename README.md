@@ -677,7 +677,6 @@ html, body {
 </div>
 
 </div>
-<div>
 <div class="card" id="plan">
   
   <h3>🗺️ Plan du bloc opératoire</h3>
@@ -686,20 +685,17 @@ html, body {
   <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
     📄 Télécharger le plan
   </a>
+
   <button onclick="openPlan()">📄 Voir le plan</button>
 
-<div id="pdfViewer" class="pdf-viewer">
-  
-  <!-- Bouton fermer -->
-  <div class="close-btn" onclick="closePlan()">✖️</div>
-
-  <!-- PDF -->
-  <iframe src="plan2.pdf"></iframe>
-  <div id="pdfViewer" class="pdf-viewer" onclick="closePlan()">
-  <div class="close-btn" onclick="closePlan()">✖️</div>
-
-  <iframe src="plan2.pdf" onclick="event.stopPropagation()"></iframe>
 </div>
+
+<!-- Viewer EN DEHORS de la carte -->
+<div id="pdfViewer" class="pdf-viewer" onclick="closePlan()">
+  
+  <div class="close-btn" onclick="closePlan()">✖️</div>
+
+  <iframe src="pdf/plan2.pdf" onclick="event.stopPropagation()"></iframe>
 
 </div>
 </div>
