@@ -310,6 +310,17 @@ button:hover {
   padding: 10px;
   border-top: 1px solid rgba(0,0,0,0.05);
 }
+    .bottom-menu a {
+  color: #2c3e50;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+ .bottom-menu a.active {
+  color: #2ecc71;
+  transform: scale(1.2);
+  text-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+    }
 /* =========================
    11. ANIMATIONS
 ========================= */
@@ -865,6 +876,19 @@ href="pdf/POUMON.pdf" target="_blank">
 </footer>
 
 <script>
+  
+  document.querySelectorAll(".bottom-menu a").forEach(link => {
+  link.addEventListener("click", function () {
+
+    // enlève actif sur tous
+    document.querySelectorAll(".bottom-menu a").forEach(l => {
+      l.classList.remove("active");
+    });
+
+    // ajoute sur celui cliqué
+    this.classList.add("active");
+  });
+});
 function softClick() {
   // vibration mobile (si supporté)
   if (navigator.vibrate) {
