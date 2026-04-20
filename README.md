@@ -307,7 +307,7 @@ button:hover {
   bottom: 0;
   width: 100%;
   max-width: 500px;
-  background: transparent;
+  background: white;
   display: flex;
   justify-content: space-around;
   padding: 10px;
