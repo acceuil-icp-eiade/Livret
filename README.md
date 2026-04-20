@@ -28,7 +28,7 @@
   padding: 0;
     }
     .container {
-  padding: 10px;
+  padding: 0px;
     }
 
 /* =========================
