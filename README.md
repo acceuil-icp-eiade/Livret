@@ -18,15 +18,14 @@
 /* =========================
    2. BASE
 ========================= */
-body {
+    body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #f7f9fb;
   color: #2c3e50;
-  max-width: 500px;
-  margin: auto;
-  padding: 5px;
-  padding-bottom: 70px;
-}
+
+  margin: 0;
+  padding: 10px;
+    }
 
 /* =========================
    3. HEADER
