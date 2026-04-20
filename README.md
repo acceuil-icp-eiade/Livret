@@ -24,25 +24,32 @@
   color: #2c3e50;
 
   margin: 0;
-  padding: 10px;
+  padding: 0px;
     }
 .container {
   max-width: 500px;
   margin: auto;
-}
+  padding: 12px;
+    }
 /* =========================
    3. HEADER
 ========================= */
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   background: linear-gradient(135deg, #5dade2, #48c9b0);
   color: white;
-  padding: 15px 10px;
-  text-align: center;
-  border-radius: 16px;
-  margin-bottom: 10px;
-  animation: fadeInHeader 0.8s ease;
-}
 
+  padding: 20px 15px;
+  text-align: center;
+
+  border-radius: 0; /* plein écran */
+  animation: fadeInHeader 0.8s ease;
+
+}
 header h1 {
   font-size: 20px;
 }
@@ -118,15 +125,15 @@ button:hover {
 /* =========================
    5. CARDS
 ========================= */
+
 .card {
   background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 18px;
+  margin-bottom: 14px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
   transition: 0.2s;
 }
-
 .card:hover {
   transform: translateY(-2px);
 }
@@ -139,7 +146,9 @@ button:hover {
   flex: 1;
   min-width: 0; /* 🔥 évite le débordement */
 }
-
+.card:first-child {
+  margin-top: 10px;
+}
 /* =========================
    6. BUTTONS
 ========================= */
@@ -301,16 +310,19 @@ button:hover {
 /* =========================
    10. MENU BAS
 ========================= */
-.bottom-menu {
+
+    .bottom-menu {
   position: fixed;
   bottom: 0;
-  width: 95%;
-  max-width: 500px;
-  background: linear-gradient(135deg, #48c9b0, #5dade2);
+  left: 0;
+  width: 100%;
+  max-width: none;
+      background: linear-gradient(135deg, #48c9b0, #5dade2);
   display: flex;
   justify-content: space-around;
-  padding: 10px;
-}
+  padding: 12px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+    }
     .bottom-menu a {
   color: #2c3e50;
   font-size: 22px;
