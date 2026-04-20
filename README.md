@@ -590,7 +590,7 @@ html, body {
   <div class="cards-row">
     
   <div class="card clickable" onclick="openPopup('popupJour')">
-  <h2>📍 Votre premier jour ▶️ </h2>
+  <h2>📍 Votre premier jour ➡️ </h2>
   </div>
     
     <!-- Popup Votre premier jour -->
@@ -613,7 +613,7 @@ html, body {
 
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popupVie')">
-  <h2>🏥 Vie pratique   ▶️ </h2>
+  <h2>🏥 Vie pratique  ➡️ </h2>
 </div>
 
 <!-- Popup -->
