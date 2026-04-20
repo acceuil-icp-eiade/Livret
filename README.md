@@ -26,7 +26,10 @@
   margin: 0;
   padding: 10px;
     }
-
+.container {
+  max-width: 500px;
+  margin: auto;
+}
 /* =========================
    3. HEADER
 ========================= */
