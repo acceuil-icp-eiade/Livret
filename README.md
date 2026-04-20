@@ -27,6 +27,9 @@
   margin: 0;
   padding: 0;
     }
+    .container {
+  padding: 12px;
+    }
 
 /* =========================
    3. HEADER
