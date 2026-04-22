@@ -738,7 +738,7 @@ html, body {
   
   
     <div class="card" id="documents">
-  <h2>📄 Accès rapide aux documents</h2><p>(source principale  RFE SFAR)</p>
+  <h2>📄 Accès rapide aux documents</h2><i>(source principale  RFE SFAR)</i>
   <p class="hint">👉 Appuyez sur retour pour revenir au site</p>
   </div>
   
