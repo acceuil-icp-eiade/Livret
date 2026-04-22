@@ -857,7 +857,7 @@ href="pdf/POUMON.pdf" target="_blank">
 
   <p>
     Votre avis est essentiel pour améliorer l’accueil des étudiants.
-  </p>
+  </p><p>Ce questionnaire est anonyme.</p>
 
   <a class="btn" href="https://forms.gle/4ATLvfYK83cmkXiN7" target="_blank">
     📝 Donner mon avis
