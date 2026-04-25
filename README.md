@@ -662,6 +662,7 @@ html, body {
 <div>
 <div class="card" id="visite">
   <h2>🎥 Visite du service</h2>
+  <i>disponible prochainement</i>
 
   <button id="videoBtn" class="video-btn" onclick="toggleVideo()">
     ▶️ Voir la visite du bloc
