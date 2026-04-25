@@ -694,10 +694,11 @@ html, body {
     <ul>
     <li><strong>ANESTHÉSIE:</strong></li>
       <p>Chef de service: Dr Desbordes</p>
-      <p>Réanimation: Pr Moussa</p>
-      <li><strong>BLOC OPÉRATOIRE:</strong></li>
+      <p>Responsable réanimation: Pr Moussa</p>
+      <p>Responsable SIPO: Dr Robin</p>      <li><strong>BLOC OPÉRATOIRE:</strong></li>
       <p>Chirurgie cardiaque: Pr Vincentelli </p>
       <p>Chirurgie thoracique: Pr Venissac</p>   
+      <p>Chirurgie Vasculaire: Pr Sobocinski</p>  
       <p>Pneumologie: Dr Fournier </p>
       <li><strong>PTI:</strong></li>
       <p>Cardiologie: Pr Lemesle</p>
