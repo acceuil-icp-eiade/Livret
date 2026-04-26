@@ -602,7 +602,7 @@ html, body {
     <h2>📍 Votre premier jour </h2>    
     <ul>
       <li><strong>Heure :</strong> RDV à 8h</li>
-      <li><strong>Lieu :</strong> Salle de réveil du bloc</li>
+      <li><strong>Lieu :</strong> la salle de réveil du bloc</li>
       <li><strong>Tenue :</strong> Pyjama de bloc, calot jetable, masque, sabots dédiés</li>
       <li><strong>À prévoir :</strong> Badge, feuilles d'évaluation de stage</li>
       <li>une bannette <strong>"étudiants IADE "</strong> vous permettra de déposer vos fiches d'horaire ainsi que vos rapports de stage</li>
