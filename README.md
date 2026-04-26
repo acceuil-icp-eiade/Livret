@@ -649,8 +649,8 @@ html, body {
   
   <h3>🗺️ Plan du bloc opératoire</h3>
   <p>Consultez le plan pour vous repérer facilement dans le service.</p>
-<a href="plan2.pdf" download>
-    📄 Télécharger le plan
+<a href="pdf/plan2.pdf" download>
+   ✅️  Télécharger le plan
   </a>
   <a href="pdf/plan2.pdf" target="_blank" class="btn-pdf">
   📄 Ouvrir le plan (plein écran)
