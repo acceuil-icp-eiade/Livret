@@ -964,17 +964,7 @@ function toggleVideo() {
 function showDisclaimer() {
   document.getElementById("disclaimer").classList.add("show");
 }
-function acceptDisclaimer() {
-  const disclaimer = document.getElementById("disclaimer");
-  const content = document.getElementById("content");
 
-  // fade out disclaimer
-  disclaimer.classList.remove("show");
-
-  setTimeout(() => {
-    content.classList.remove("hidden");
-  }, 300);
-}
   function acceptDisclaimer() {
   const disclaimer = document.getElementById("disclaimer");
   const content = document.getElementById("content");
