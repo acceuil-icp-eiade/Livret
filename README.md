@@ -781,7 +781,7 @@ href="pdf/anatomiepulmonaire.pdf" target="_blank">
   </div>
 
   <div class="fiche">
-    <a href="pdf/CHIRURGIE_THORACIQUE.pdf" target="_blank">
+    <a href="pdf/Présentation chir tho 2024.pdf" target="_blank">
       🫁 Chirurgie thoracique
     </a>
   </div>
