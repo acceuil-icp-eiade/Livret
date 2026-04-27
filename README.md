@@ -761,7 +761,7 @@ href="pdf/VASCULAIRE.pdf" target="_blank">
 📕 vasculaire</a>    
     <a class="btn menu"
 href="pdf/anatomiepulmonaire.pdf" target="_blank">
-🩻 thoracique<i>(disponible prochainement)</i></a>
+🩻 thoracique</a>
       
   </div>
 </div>
