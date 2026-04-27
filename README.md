@@ -843,7 +843,7 @@ href="pdf/POUMON.pdf" target="_blank">
   target="_blank">
       💊 Antibioprophylaxie
 </a>
-<a class="btn bilan" href="pdf/bilandemistage.pdf" target="_blank">
+<a class="btn bilan" href="pdf/Bilandemistage.pdf" target="_blank">
       ✒️ bilan de demi-stage
     </a>
   <div class="card">
