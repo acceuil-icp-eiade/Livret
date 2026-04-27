@@ -786,9 +786,9 @@ href="pdf/anatomiepulmonaire.pdf" target="_blank">
     </a>
   </div>
   <div class="fiche">
-  <a href="pdf/endoscopie_bronchique.pdf"
+  <a href="pdf/endoscopie bronchique.pdf"
     target="_blank">
-  🩻 médecine endobronchique 
+     🩻 médecine endobronchique 
   </a>
   </div>
   
