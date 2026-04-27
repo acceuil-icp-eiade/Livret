@@ -760,7 +760,7 @@ html, body {
 href="pdf/VASCULAIRE.pdf" target="_blank">
 📕 vasculaire</a>    
     <a class="btn menu"
-href="pdf/POUMON.pdf" target="_blank">
+href="pdf/anatomiepulmonaire.pdf" target="_blank">
 🩻 thoracique<i>(disponible prochainement)</i></a>
       
   </div>
