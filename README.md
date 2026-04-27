@@ -785,7 +785,13 @@ href="pdf/anatomiepulmonaire.pdf" target="_blank">
       🫁 Chirurgie thoracique
     </a>
   </div>
-
+  <div class="fiche">
+  <a href="pdf/endoscopie_bronchique.pdf"
+    target="_blank">
+  🩻 médecine endobronchique 
+  </a>
+  </div>
+  
   <div class="fiche">
     <a href="pdf/CHIRURGIE_VASCULAIRE.pdf" target="_blank">
       🩸 Chirurgie vasculaire
