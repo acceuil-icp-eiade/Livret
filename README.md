@@ -607,6 +607,7 @@ html, body {
       <li><strong>À prévoir :</strong> Badge, feuilles d'évaluation de stage</li>
       <li>une bannette <strong>"étudiants IADE "</strong> vous permettra de déposer vos fiches d'horaire ainsi que vos rapports de stage</li>
       <li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
+      <li>une date de <strong>bilan de demi-stage</strong> sera fixée pour chaque Étudiant</li>
     </ul>
   </div>
 </div>
