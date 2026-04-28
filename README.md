@@ -727,7 +727,7 @@ html, body {
     <li><strong>IADE Référente de soins:</strong><p></p> Mme Hennache Audrey </li><p></p>
     <li><strong>Référents IADE :</strong><p></p>
     <p>Mme Tosolini Karen</p></li>
-    <p> Mme Carrier Sabah</p>
+    <p>Mme Ait Ben Said Sabah</p>
     <p> Mr Lavergne Sebastien</p><p>Mr Molinaro Camille</p><p></p>
       <li><strong>Référent SSPI:</strong><p></p>Mme Bichelberger Eve</li>
       </ul>
