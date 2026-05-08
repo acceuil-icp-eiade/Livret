@@ -248,6 +248,9 @@ font-weight: bold;
 max-width: 100%;
 box-sizing: border-box;
 }
+body {
+  color: #1e1e1e;
+}
 .btn {
   text-decoration: none;
   font-weight: bold;
