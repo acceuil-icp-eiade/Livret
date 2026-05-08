@@ -457,7 +457,7 @@ max-width: 100%;
 width: 100%;
 }
 
-/* 🔥 Corrige le menu du bas /
+/* 🔥 Corrige le menu du bas */
 .bottom-menu {
 left: 50%;
 transform: translateX(-50%);
@@ -599,7 +599,7 @@ transform 0.3s ease;
 
 /* 🔼 état ouvert */
 .submenu.open {
-max-height: 500px; / assez grand pour contenir */
+max-height: 500px; / *assez grand pour contenir */
 opacity: 1;
 transform: translateY(0);
 }
