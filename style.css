@@ -599,7 +599,7 @@ transform 0.3s ease;
 
 /* 🔼 état ouvert */
 .submenu.open {
-max-height: 500px; / *assez grand pour contenir */
+max-height: 500px; 
 opacity: 1;
 transform: translateY(0);
 }
