@@ -2,7 +2,7 @@
 /* =========================
 1. RESET
 ========================= */
-• {
+* {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
@@ -234,7 +234,7 @@ min-width: 0; /* 🔥 évite le débordement */
 
 /* =========================
 6. BUTTONS
-========================= /
+========================= */
 .btn {
 display: block;
 background: #3498db;
