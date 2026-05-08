@@ -609,76 +609,7 @@ html, body {
     transform: translateY(0);
   }
 }
-    /* HERO */
-.hero {
-height: 100vh;
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-color: #fff;
-font-family: Arial, sans-serif;
-}
 
-.overlay {
-max-width: 700px;
-padding: 20px;
-}
-
-.hero h1 {
-font-size: 2.5em;
-margin-bottom: 10px;
-}
-
-.hero p {
-font-size: 1.2em;
-opacity: 0.9;
-}
-
-/* BUTTONS */
-.buttons {
-margin-top: 30px;
-}
-
-.btn {
-display: inline-block;
-padding: 15px 25px;
-margin: 10px;
-border-radius: 10px;
-text-decoration: none;
-font-weight: bold;
-transition: 0.3s;
-}
-
-.btn-light {
-background: #22c55e;
-color: white;
-}
-
-.btn-light:hover {
-background: #16a34a;
-transform: translateY(-2px);
-}
-
-.btn-dark {
-background: #1e3a8a;
-color: white;
-}
-
-.btn-dark:hover {
-background: #172554;
-transform: translateY(-2px);
-}
-
-.info {
-margin-top: 20px;
-font-size: 0.9em;
-opacity: 0.7;
-}
 /* =========================
    SPLASH SCREEN
 ========================= */
