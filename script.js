@@ -128,6 +128,4 @@ function toggleItem(element) {
     }
   }, 800);
 });
-function toggleMenu(id) {
-  alert("CLICK OK : " + id);
-}
+
