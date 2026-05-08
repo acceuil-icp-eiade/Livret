@@ -455,7 +455,7 @@ left: 50%;
 transform: translateX(-50%);
 max-width: 500px;
 }
-/ =========================
+/* =========================
 FICHES
 ========================= */
 .fiche {
@@ -542,7 +542,7 @@ transform: scale(1.05);
 .btn.chirurgie {
 background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
 }
-/ =========================
+/* =========================
 couleur
 ========================= */
 .rouge {
@@ -560,7 +560,7 @@ margin-top: 5px;
 }
 /* =========================
 ANIMATION URGENCE
-========================= /
+========================= */
 @keyframes pulseUrgence {
 0% { transform: scale(1); }
 50% { transform: scale(1.05); }
@@ -573,11 +573,11 @@ color: #2c3e50;
 box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-/* petit effet au survol /
+/* petit effet au survol */
 .btn.menu:hover {
 background: #f0f6ff;
 }
-/ 🔽 Menu animé */
+/* 🔽 Menu animé */
 .submenu {
 max-height: 0;
 overflow: hidden;
@@ -589,7 +589,7 @@ opacity 0.3s ease,
 transform 0.3s ease;
 }
 
-/* 🔼 état ouvert /
+/* 🔼 état ouvert */
 .submenu.open {
 max-height: 500px; / assez grand pour contenir */
 opacity: 1;
