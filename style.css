@@ -248,6 +248,10 @@ font-weight: bold;
 max-width: 100%;
 box-sizing: border-box;
 }
+.btn {
+  text-decoration: none;
+  font-weight: bold;
+}
 .btn:active,
 .card:active {
 transform: scale(0.97);
