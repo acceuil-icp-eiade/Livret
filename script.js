@@ -155,7 +155,7 @@ items.forEach(item => {
 /* Position initiale */
 moveBlob(document.querySelector(".menu-item.active"));
 
-/* mouvement inter section */
+/* effets glissement*/
 
 const sections = document.querySelectorAll("section");
 
@@ -182,4 +182,3 @@ const observer = new IntersectionObserver(
 sections.forEach(section => {
   observer.observe(section);
 });
-
