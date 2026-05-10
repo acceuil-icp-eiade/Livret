@@ -947,6 +947,8 @@ MENU IOS PREMIUM
   transform: translateY(-4px) scale(1.08);
 }
 
+backdrop-filter: blur(25px);
+-webkit-backdrop-filter: blur(25px);
 section {
   opacity: 0;
 }
@@ -956,7 +958,7 @@ section.show {
   animation: iosBounce 0.8s ease forwards;
 }
 
-/* footer */
+/* Footer*/
 footer {
   text-align: center;
 
