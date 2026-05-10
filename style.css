@@ -946,3 +946,12 @@ MENU IOS PREMIUM
   color: white;
   transform: translateY(-4px) scale(1.08);
 }
+
+section {
+  opacity: 0;
+}
+
+/* SECTION VISIBLE */
+section.show {
+  animation: iosBounce 0.8s ease forwards;
+}
