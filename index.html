@@ -97,7 +97,7 @@ En cliquant sur Continuer, vous reconnaissez avoir pris connaissance de cet aver
 
 </div>
 </div>
-
+</div>
 <!-- 🔓 CONTENU -->
 <div class="bottom-menu">
 
@@ -157,17 +157,31 @@ Votre bien être, votre épanouissement professionnel et votre autonomisation so
 <div id="popupJour" class="popup">
 <div class="popup-content">
 <button class="close-btn" onclick="closePopup('popupJour')">✖️</button>
+  
+<h2>📍 Votre premier jour</h2>
 
-<h2>📍 Votre premier jour </h2>
- <ul>
-<li><strong>Heure :</strong> RDV à 8h</li>
-<li><strong>Lieu :</strong> la salle de réveil du bloc</li>
-<li><strong>Tenue :</strong> Pyjama de bloc, calot jetable, masque, sabots dédiés</li>
-<li><strong>À prévoir :</strong> Badge, feuilles d'évaluation de stage</li>
-<li>une bannette <strong>"étudiants IADE "</strong> vous permettra de déposer vos fiches d'horaire ainsi que vos rapports de stage</li>
-<li>vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage</li>
-<li>une date de <strong>bilan de demi-stage</strong> sera fixée pour chaque Étudiant</li>
+<ul class="stage-list">
+  <li><strong>Heure :</strong> RDV à 8h</li>
+
+  <li><strong>Lieu :</strong> la salle de réveil du bloc</li>
+
+  <li><strong>Tenue :</strong> Pyjama de bloc, calot jetable, masque, sabots dédiés</li>
+
+  <li><strong>À prévoir :</strong> Badge, feuilles d'évaluation de stage</li>
+
+  <li>
+    Une bannette <strong>"Étudiants IADE"</strong> vous permettra de déposer vos fiches d'horaire ainsi que vos rapports de stage
+  </li>
+
+  <li>
+    Vous y trouverez une <strong>fiche de suivi</strong> à remplir tout au long du stage
+  </li>
+
+  <li>
+    Une date de <strong>bilan de demi-stage</strong> sera fixée pour chaque étudiant
+  </li>
 </ul>
+
 </div>
 </div>
 
@@ -182,24 +196,41 @@ Votre bien être, votre épanouissement professionnel et votre autonomisation so
 <button class="close-btn" onclick="closePopup('popupVie')">✖️</button>
 <h2>🏥 Vie pratique </h2>
 
-<ul>
-<p><span class="rouge">À VOTRE DISPOSITION</span></p>
+<div class="infos-stage">
 
-<h3>👕 Vestiaires</h3>
-<li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
-<li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
-<h3>🧥 Casiers</h3>
-<li>Des casiers sont à votre disposition en SSPI.</li>
-<h3>☕ Salle de pause</h3>
-<li>Une salle de pause est à votre disposition.</li>
-<li>👉 Espace de repos réservé au café.</li>
-<h3>🍽️ restauration</h3>
-<li>La salle à manger est située au sein du bloc.</li>
-<li>le self est situé au niveau-2.</li>
- <li>le relais H est situé au niveau 0.</li>
-<li>👉 Possibilité de réchauffer vos repas sur place.
-</li>
-</ul>
+  <p class="section-title">
+    <span class="rouge">À VOTRE DISPOSITION</span>
+  </p>
+
+  <div class="info-card">
+    <h3>👕 Vestiaires</h3>
+    <ul>
+      <li>👉 Pensez à prévoir un cadenas pour votre casier.</li>
+      <li>👉 Merci de ne pas y laisser d’objets de valeur.</li>
+    </ul>
+    <h3>🧥 Casiers</h3>
+    <ul>
+      <li>Des casiers sont à votre disposition en SSPI.</li>
+    </ul>
+  </div>
+
+  <div class="info-card">
+    <h3>☕ Salle de pause</h3>
+    <ul>
+      <li>Une salle de pause est à votre disposition.</li>
+      <li>👉 Espace de repos réservé au café.</li>
+    </ul>
+    <h3>🍽️ Restauration</h3>
+    <ul>
+      <li>La salle à manger est située au sein du bloc.</li>
+      <li>Le self est situé au niveau -2.</li>
+      <li>Le Relais H est situé au niveau 0.</li>
+      <li>👉 Possibilité de réchauffer vos repas sur place.</li>
+    </ul>
+  </div>
+
+</div>
+
 </div>
 </div>
 
@@ -307,7 +338,7 @@ allowfullscreen>
 <div id="contactsList">
  
 </div>
-</div>
+
 
 </div>
 
