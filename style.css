@@ -515,9 +515,7 @@ cursor: pointer;
 .bottom-menu {
   transition: all 0.3s ease;
 }
-.bottom-menu {
-  display: none;
-}
+
 .bottom-menu.hidden {
   opacity: 0;
   transform: translateY(30px);
