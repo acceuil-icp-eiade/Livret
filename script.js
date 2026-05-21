@@ -118,13 +118,7 @@ const content = document.getElementById("content");
 disclaimer.classList.remove("show");
 content.classList.remove("hidden");
 }
-function acceptDisclaimer() {
-  document.getElementById("disclaimer").style.display = "none";
-  document.querySelector(".wrapper").classList.remove("hidden");
 
-  // 👇 afficher le bottom menu ici
-  document.querySelector(".bottom-menu").style.display = "flex";
-}
 function toggleItem(element) {
 const content = element.querySelector(".content");
 content.classList.toggle("hidden");
