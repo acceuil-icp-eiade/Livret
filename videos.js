@@ -30,6 +30,21 @@ const videos = [
         "valvulopathie"
     ]
 },
+        {
+    titre: "VALVE TRICUSPIDE",
+    fichier: "videos/cardiologie/valvetricuspide.mp4",
+    miniature: "miniatures/cardiologie/tricuspide.png",
+    motsCles: [
+        "ttvr",
+        "valve",
+        "tricuspide",
+        "cardiologie",
+        "interventionnelle",
+        "insuffisance",
+        "edwards",
+        "valvulopathie"
+    ]
+},
 
 {
     titre: "Ablation de FA par radiofréquence",
@@ -100,4 +115,3 @@ const videos = [
     ]
         }
 ];
-
