@@ -30,6 +30,21 @@ const videos = [
         "valvulopathie"
     ]
 },
+       {
+    titre: "CHIRURGIE VALVE AORTIQUE",
+    fichier: "videos/cardiologie/remplacementchirvalveaortique.mp4",
+    miniature: "miniatures/cardiologie/valves.jpg",
+    motsCles: [
+        "aortique",
+        "valve",
+        "remplacement",
+        "cardiologie",
+        "chirurgie",
+        "insuffisance",
+        "invasif",
+        "valvulopathie"
+    ]
+},
         {
     titre: "VALVE TRICUSPIDE",
     fichier: "videos/cardiologie/valvetricuspide.mp4",
