@@ -81,6 +81,7 @@ menu.classList.remove("open");
 }
 });
 }
+
 function toggleVideo() {
     const videoContainer = document.getElementById("videoContainer");
     const videoPlayer = document.getElementById("videoPlayer");
