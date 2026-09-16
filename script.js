@@ -102,7 +102,7 @@ function toggleVideo() {
 
     } else {
 
-        // Afficher la vidéo
+        // Afficher la vidéo sous le bouton
         videoContainer.classList.remove("hidden");
 
         setTimeout(() => {
@@ -111,25 +111,13 @@ function toggleVideo() {
 
         button.innerHTML = "❌ Fermer la vidéo";
 
-        // Démarrer la vidéo après le clic
-        videoPlayer.play();
-
-        // Passage en plein écran
-        setTimeout(() => {
-
-            if (videoPlayer.requestFullscreen) {
-                videoPlayer.requestFullscreen();
-
-            } else if (videoPlayer.webkitEnterFullscreen) {
-                videoPlayer.webkitEnterFullscreen();
-
-            } else if (videoPlayer.webkitRequestFullscreen) {
-                videoPlayer.webkitRequestFullscreen();
-            }
-
-        }, 500);
+        // Démarrer la vidéo
+        videoPlayer.play().catch(error => {
+            console.log("Lecture automatique impossible :", error);
+        });
     }
 }
+
 
 
 function showDisclaimer() {
